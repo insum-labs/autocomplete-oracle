@@ -1,3 +1,4 @@
+create or replace package             provider_data
 /*
     Package: provider_data
     Purpose: Generate the data as a JSON feed that Atom will use to aid in
@@ -5,17 +6,15 @@
     Notes: Must be run as sys to gain access to DBA dictionary views
     Status:
         [*] - keywords
-        [ ] - Packages
+        [*] - Packages
         [ ] - Package procedures
         [ ] - Procedure arguments
         [ ] - Package types
 
 
 */
-create or replace package provider_data
 as
 
-    procedure keywords;
+    procedure dataBuilder;
 
 end provider_data;
-/
