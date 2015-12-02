@@ -1,5 +1,6 @@
 //Run this on the documention index: https://docs.oracle.com/cd/E11882_01/appdev.112/e40758/toc.htm
 //to get an `in` filter for query `all_procedures`
+//There are some extra ones you need to strip off, starting from 'ANYDATA TYPE'
 var returnFilter = '';
 $('.tocheader > a:nth-child(2)').each(function(idx,el){ 
     if (idx > 3)  {
