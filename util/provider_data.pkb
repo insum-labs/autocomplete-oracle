@@ -1,4 +1,4 @@
-create or replace PACKAGE BODY     PROVIDER_DATA
+create or replace PACKAGE BODY         PROVIDER_DATA
 AS
 
     type t_keyword_list is table of varchar2(50)
@@ -86,11 +86,26 @@ AS
         l_pkg_list t_package_list;
     begin
 
-        select distinct object_name
+        with unique_package_names as (
+            select distinct
+                case
+                    when aliass.synonym_name is not null
+                        then aliass.synonym_name
+                    else
+                        all_procedures.object_name
+                end object_name
+            from
+                all_procedures
+                left outer join all_synonyms aliass on (
+                    all_procedures.owner = aliass.table_owner
+                    and all_procedures.object_name = aliass.table_name
+                 )
+            where procedure_name is not null
+        )
+        select object_name
         bulk collect into l_pkg_list
-        from all_procedures
-        where procedure_name is not null
-        and object_name in (
+        from unique_package_names
+        where object_name in (
             'APEX_CUSTOM_AUTH',
             'APEX_APPLICATION',
             'APEX_ITEM',
@@ -329,9 +344,38 @@ AS
             'UTL_SPADV',
             'UTL_TCP',
             'UTL_URL',
-            'WPG_DOCLOAD'
+            'WPG_DOCLOAD',
+            --from synonyms; package names extracted from published documentation
+            'APEX_APPLICATION',
+            'APEX_APPLICATION_INSTALL',
+            'APEX_AUTHENTICATION',
+            'APEX_AUTHORIZATION',
+            'APEX_COLLECTION',
+            'APEX_CSS',
+            'APEX_CUSTOM_AUTH',
+            'APEX_DEBUG',
+            'APEX_ERROR',
+            'APEX_ESCAPE',
+            'APEX_INSTANCE_ADMIN',
+            'APEX_IR',
+            'APEX_ITEM',
+            'APEX_JAVASCRIPT',
+            'APEX_JSON',
+            'APEX_LANG',
+            'APEX_LDAP',
+            'APEX_MAIL',
+            'APEX_PAGE',
+            'APEX_PLSQL_JOB',
+            'APEX_PLUGIN',
+            'APEX_PLUGIN_UTIL',
+            'APEX_REGION',
+            'APEX_SPATIAL',
+            'APEX_UI_DEFAULT_UPDATE',
+            'APEX_UTIL',
+            'APEX_WEB_SERVICE',
+            'APEX_ZIP'
         )
-        order by  1;
+        order by  1 asc;
 
         return l_pkg_list;
 
