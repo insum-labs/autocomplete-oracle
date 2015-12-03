@@ -5,6 +5,14 @@
   "main": "./lib/main.js",
   "license": "MIT",
   "repository": "https://github.com/tschf/autocomplete-oracle",
+  "keywords": [
+    "autocomplete",
+    "autocomplete-plus",
+    "Oracle",
+    "plsql",
+    "PL/SQL",
+    "SQL"
+  ],
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
