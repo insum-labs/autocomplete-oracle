@@ -1,10 +1,13 @@
-create or replace PACKAGE BODY         PROVIDER_DATA
+create or replace PACKAGE BODY             PROVIDER_DATA
 AS
 
     type t_keyword_list is table of varchar2(50)
         index by PLS_INTEGER;
 
     type t_package_list is table of all_procedures.object_name%type
+        index by PLS_INTEGER;
+
+    type t_procedure_list is table of all_procedures.procedure_name%type
         index by PLS_INTEGER;
 
     function get_tab_chars(
@@ -381,10 +384,46 @@ AS
 
     end get_packages;
 
+    function get_procedures(
+        p_package_name in all_procedures.object_name%type
+    )
+    return t_procedure_list
+    as
+        l_procs t_procedure_list;
+    begin
+
+        if p_package_name not like 'APEX_%'
+        then
+
+            select distinct procedure_name
+            bulk collect into l_procs
+            from all_procedures
+            where object_name = p_package_name
+            and procedure_name is not null
+            order by 1;
+        else
+            select distinct procedure_name
+            bulk collect into l_procs
+            from
+                all_procedures
+                join all_synonyms on (all_synonyms.table_owner = all_procedures.owner and all_synonyms.table_name = all_procedures.object_name)
+            and
+                all_synonyms.synonym_name = p_package_name
+                and all_synonyms.table_owner = apex_application.G_FLOW_SCHEMA_OWNER
+                and all_procedures.procedure_name is not null
+            order by 1;
+
+        end if;
+
+
+        return l_procs;
+    end get_procedures;
+
 
     procedure dataBuilder AS
         l_keys t_keyword_list;
         l_pks t_package_list;
+        l_procs t_procedure_list;
     BEGIN
 
         l_keys := get_keywords();
@@ -411,11 +450,34 @@ AS
 
         for i in 1..l_pks.COUNT
         loop
+
+            l_procs := get_procedures(l_pks(i));
+
+            dbms_output.put_line(get_tab_chars(2) || '"'||l_pks(i)||'": {');
+
+
+            dbms_output.put_line(get_tab_chars(3) || '"procedures": [');
+
+            for i in 1..l_procs.COUNT
+            loop
+
+                if i = l_procs.COUNT
+                then
+                    dbms_output.put_line(get_tab_chars(4) || '"' || l_procs(i) || '"');
+                else
+                    dbms_output.put_line(get_tab_chars(4) || '"' || l_procs(i) || '",');
+                end if;
+
+            end loop;
+
+            dbms_output.put_line(get_tab_chars(3) || ']');
+
+
             if i = l_pks.COUNT
             then
-                dbms_output.put_line(get_tab_chars(2) || '"'||l_pks(i)||'": { }');
+                dbms_output.put_line(get_tab_chars(2) || '}');
             else
-                dbms_output.put_line(get_tab_chars(2) || '"'||l_pks(i)||'": { },');
+                dbms_output.put_line(get_tab_chars(2) || '},');
             end if;
         end loop;
 

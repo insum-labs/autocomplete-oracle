@@ -1,4 +1,4 @@
-create or replace package             provider_data
+create or replace package                 provider_data
 /*
     Package: provider_data
     Purpose: Generate the data as a JSON feed that Atom will use to aid in
@@ -7,7 +7,7 @@ create or replace package             provider_data
     Status:
         [*] - keywords
         [*] - Packages
-        [ ] - Package procedures
+        [*] - Package procedures
         [ ] - Procedure arguments
         [ ] - Package types
 
