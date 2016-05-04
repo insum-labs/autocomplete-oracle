@@ -1735,6 +1735,81 @@
                 "TRIM_NL_SP_TAB",
                 "TRIM_SQL",
                 "UPDATE_CACHE_WITH_WRITE"
+            ],
+            "identifiers": [
+            ]
+        },
+        "APEX_APPLICATION": {
+            "procedures": [
+                "ACCEPT",
+                "APPS_ONLY_WORKSPACE",
+                "CLEAR_APP_CACHE",
+                "CLEAR_COMPONENT",
+                "CLEAR_FLOW_CACHE",
+                "CLEAR_PAGE_CACHE",
+                "CLEAR_PAGE_CACHES",
+                "CLEAR_USER_CACHE",
+                "DEBUG",
+                "DO_SUBSTITUTIONS",
+                "FETCH_APP_ITEM",
+                "FETCH_FLOW_ITEM",
+                "FIND_ITEM_ID",
+                "FIND_ITEM_NAME",
+                "GET_APPLICATION_ID",
+                "GET_BROWSER_VERSION",
+                "GET_COMPANY_NAME",
+                "GET_COMPONENT",
+                "GET_CUSTOM_AUTH_LOGIN_URL",
+                "GET_ELAPSED_TIME",
+                "GET_FORM_CLOSE_TAG",
+                "GET_G_BASE_HREF",
+                "GET_HOME_LINK_URL",
+                "GET_NEXT_SESSION_ID",
+                "GET_NLS_DECIMAL_SEPARATOR",
+                "GET_NLS_GROUP_SEPARATOR",
+                "GET_PAGE_ALIAS",
+                "GET_PAGE_ID",
+                "GET_SECURITY_GROUP_ID",
+                "GET_SESSION_ID",
+                "GET_SGID",
+                "GET_TRANSLATED_APP_ID",
+                "GET_UNIQUE_ID",
+                "G_INLINE_VALIDATION_ERROR_CNT",
+                "HELP",
+                "IS_CUSTOM_AUTH_PAGE",
+                "IS_PRESSED_BUTTON",
+                "JS_MESSAGES",
+                "NULL_PAGE_CACHE",
+                "NULL_PAGE_CACHES",
+                "NULL_STEP_CACHE",
+                "NULL_STEP_CACHES",
+                "PAINT_BUTTONS",
+                "PAINT_FORMOPEN",
+                "PROCESS_STATE",
+                "PUBLIC_ROLE_CHECK",
+                "PUBLIC_SECURITY_CHECK",
+                "REPLACE_CGI_ENV",
+                "RESET_G_BASE_HREF",
+                "RESET_G_NLS_DATE_FORMAT",
+                "RESET_G_NLS_DECIMAL_SEPARATOR",
+                "RESET_PAGE_PROCESS",
+                "RESET_PAGE_PROCESSESS",
+                "RESET_SECURITY_CHECK",
+                "RESOLVE_FRIENDLY_URL",
+                "S",
+                "SET_COMPONENT",
+                "SET_G_BASE_HREF",
+                "SET_G_NLS_DATE_FORMAT",
+                "SET_G_NLS_DECIMAL_SEPARATOR",
+                "SET_PPR_QUERY_SESSION_STATE",
+                "SHOW",
+                "SHOW_ERROR_MESSAGE",
+                "STOP_APEX_ENGINE",
+                "TRIM_NL_SP_TAB",
+                "TRIM_SQL",
+                "UPDATE_CACHE_WITH_WRITE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_APPLICATION_INSTALL": {
@@ -1767,6 +1842,8 @@
                 "SET_STATIC_PLUGIN_FILE_PREFIX",
                 "SET_STATIC_THEME_FILE_PREFIX",
                 "SET_WORKSPACE_ID"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_AUTHENTICATION": {
@@ -1780,6 +1857,8 @@
                 "LOGOUT",
                 "POST_LOGIN",
                 "SEND_LOGIN_USERNAME_COOKIE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_AUTHORIZATION": {
@@ -1787,6 +1866,8 @@
                 "ENABLE_DYNAMIC_GROUPS",
                 "IS_AUTHORIZED",
                 "RESET_CACHE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_COLLECTION": {
@@ -1820,6 +1901,8 @@
                 "UPDATE_MEMBER",
                 "UPDATE_MEMBERS",
                 "UPDATE_MEMBER_ATTRIBUTE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_CSS": {
@@ -1829,6 +1912,8 @@
                 "ADD_FILE",
                 "NEW_CSS_REPOSITORY_RECORD",
                 "REMOVE_CSS"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_CUSTOM_AUTH": {
@@ -1858,6 +1943,39 @@
                 "SET_SESSION_ID",
                 "SET_SESSION_ID_TO_NEXT_VALUE",
                 "SET_USER"
+            ],
+            "identifiers": [
+            ]
+        },
+        "APEX_CUSTOM_AUTH": {
+            "procedures": [
+                "APPLICATION_PAGE_ITEM_EXISTS",
+                "CURRENT_PAGE_IS_PUBLIC",
+                "DEFINE_USER_SESSION",
+                "GET_COOKIE_PROPS",
+                "GET_LDAP_PROPS",
+                "GET_NEXT_SESSION_ID",
+                "GET_SECURITY_GROUP_ID",
+                "GET_SESSION_ID",
+                "GET_SESSION_ID_FROM_COOKIE",
+                "GET_USER",
+                "GET_USERNAME",
+                "IS_SESSION_VALID",
+                "LDAP_AUTHENTICATE",
+                "LDAP_DNPREP",
+                "LOGIN",
+                "LOGOUT",
+                "LOGOUT_THEN_GO_TO_PAGE",
+                "LOGOUT_THEN_GO_TO_URL",
+                "PORTAL_SSO_SENTRY_V1",
+                "POST_LOGIN",
+                "REMOVE_SESSION",
+                "SESSION_ID_EXISTS",
+                "SET_SESSION_ID",
+                "SET_SESSION_ID_TO_NEXT_VALUE",
+                "SET_USER"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_DEBUG": {
@@ -1881,6 +1999,8 @@
                 "TOCHAR",
                 "TRACE",
                 "WARN"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_ERROR": {
@@ -1894,6 +2014,8 @@
                 "GET_FIRST_ORA_ERROR_TEXT",
                 "HAVE_ERRORS_OCCURRED",
                 "INIT_ERROR_RESULT"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_ESCAPE": {
@@ -1911,6 +2033,8 @@
                 "NOOP",
                 "REGEXP",
                 "SET_HTML_ESCAPING_MODE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_INSTANCE_ADMIN": {
@@ -1948,6 +2072,8 @@
                 "SET_WORKSPACE_PARAMETER",
                 "TRUNCATE_LOG",
                 "UNRESTRICT_SCHEMA"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_IR": {
@@ -1962,6 +2088,8 @@
                 "GET_LAST_VIEWED_REPORT_ID",
                 "GET_REPORT",
                 "RESET_REPORT"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_ITEM": {
@@ -1989,6 +2117,37 @@
                 "TEXTAREA",
                 "TEXT_FROM_LOV",
                 "TEXT_FROM_LOV_QUERY"
+            ],
+            "identifiers": [
+            ]
+        },
+        "APEX_ITEM": {
+            "procedures": [
+                "CHECKBOX",
+                "CHECKBOX2",
+                "DATE_POPUP",
+                "DATE_POPUP2",
+                "DISPLAY_AND_SAVE",
+                "HIDDEN",
+                "MD5_CHECKSUM",
+                "MD5_HIDDEN",
+                "MULTI_ROW_UPDATE",
+                "POPUPKEY_FROM_LOV",
+                "POPUPKEY_FROM_QUERY",
+                "POPUP_FROM_LOV",
+                "POPUP_FROM_QUERY",
+                "RADIOGROUP",
+                "SELECT_LIST",
+                "SELECT_LIST_FROM_LOV",
+                "SELECT_LIST_FROM_LOV_XL",
+                "SELECT_LIST_FROM_QUERY",
+                "SELECT_LIST_FROM_QUERY_XL",
+                "TEXT",
+                "TEXTAREA",
+                "TEXT_FROM_LOV",
+                "TEXT_FROM_LOV_QUERY"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_JAVASCRIPT": {
@@ -2000,6 +2159,8 @@
                 "ADD_ONLOAD_CODE",
                 "ADD_VALUE",
                 "ESCAPE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_JSON": {
@@ -2031,6 +2192,8 @@
                 "WRITE_ITEMS",
                 "WRITE_LINKS",
                 "WRITE_RAW"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_LANG": {
@@ -2047,6 +2210,8 @@
                 "UPDATE_LANGUAGE_MAPPING",
                 "UPDATE_MESSAGE",
                 "UPDATE_TRANSLATED_STRING"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_LDAP": {
@@ -2060,6 +2225,8 @@
                 "MEMBER_OF",
                 "MEMBER_OF2",
                 "SEARCH"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_MAIL": {
@@ -2069,6 +2236,8 @@
                 "GET_INSTANCE_URL",
                 "PUSH_QUEUE",
                 "SEND"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_PAGE": {
@@ -2080,6 +2249,8 @@
                 "IS_JQM_SMARTPHONE_UI",
                 "IS_READ_ONLY",
                 "PURGE_CACHE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_PLSQL_JOB": {
@@ -2089,12 +2260,16 @@
                 "SUBMIT_PROCESS",
                 "TIME_ELAPSED",
                 "UPDATE_JOB_STATUS"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_PLUGIN": {
             "procedures": [
                 "GET_AJAX_IDENTIFIER",
                 "GET_INPUT_NAME_FOR_PAGE_ITEM"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_PLUGIN_UTIL": {
@@ -2144,12 +2319,16 @@
                 "PRINT_PROTECTED",
                 "REPLACE_SUBSTITUTIONS",
                 "SET_COMPONENT_VALUES"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_REGION": {
             "procedures": [
                 "IS_READ_ONLY",
                 "PURGE_CACHE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_SPATIAL": {
@@ -2161,6 +2340,8 @@
                 "INSERT_GEOM_METADATA_LONLAT",
                 "POINT",
                 "RECTANGLE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_UI_DEFAULT_UPDATE": {
@@ -2189,6 +2370,8 @@
                 "UPD_REPORT_FORMAT_MASK",
                 "UPD_REPORT_REGION_TITLE",
                 "UPD_TABLE"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_UTIL": {
@@ -2362,6 +2545,183 @@
                 "USER_IN_GROUP",
                 "WEEKLY_CALENDAR",
                 "WORKSPACE_ACCOUNT_DAYS_LEFT"
+            ],
+            "identifiers": [
+            ]
+        },
+        "APEX_UTIL": {
+            "procedures": [
+                "AGENDA_CALENDAR",
+                "CACHE_GET_DATE_OF_PAGE_CACHE",
+                "CACHE_GET_DATE_OF_REGION_CACHE",
+                "CACHE_PURGE_BY_APPLICATION",
+                "CACHE_PURGE_BY_PAGE",
+                "CACHE_PURGE_STALE",
+                "CHANGE_CURRENT_USER_PW",
+                "CHANGE_PASSWORD_ON_FIRST_USE",
+                "CLEAR_APP_CACHE",
+                "CLEAR_PAGE_CACHE",
+                "CLEAR_USER_CACHE",
+                "CLOSE_OPEN_DB_LINKS",
+                "COMPRESS_INT",
+                "COUNT_CLICK",
+                "CREATE_USER",
+                "CREATE_USER_FROM_FILE",
+                "CREATE_USER_GROUP",
+                "CURRENT_USER_IN_GROUP",
+                "CUSTOM_CALENDAR",
+                "DAILY_CALENDAR",
+                "DECREMENT_CALENDAR",
+                "DELETE_USER_GROUP",
+                "DOWNLOAD_PRINT_DOCUMENT",
+                "EDIT_USER",
+                "END_USER_ACCOUNT_DAYS_LEFT",
+                "EXPIRE_END_USER_ACCOUNT",
+                "EXPIRE_WORKSPACE_ACCOUNT",
+                "EXPORT_APPLICATION",
+                "EXPORT_APPLICATION_COMPONENT",
+                "EXPORT_APPLICATION_PAGE",
+                "EXPORT_USERS",
+                "FEEDBACK_ENABLED",
+                "FETCH_APP_ITEM",
+                "FETCH_USER",
+                "FILESIZE_MASK",
+                "FIND_SECURITY_GROUP_ID",
+                "FIND_WORKSPACE",
+                "FLASH2",
+                "GET_ACCOUNT_LOCKED_STATUS",
+                "GET_APEX_CHAR_ID",
+                "GET_APEX_ID",
+                "GET_APPLICATION_ID_STATUS",
+                "GET_APPLICATION_NAME",
+                "GET_ATTRIBUTE",
+                "GET_AUTHENTICATION_RESULT",
+                "GET_BLOB",
+                "GET_BLOB_FILE",
+                "GET_BLOB_FILE_SRC",
+                "GET_BUILD_OPTION_STATUS",
+                "GET_CURRENT_USER_ID",
+                "GET_DEFAULT_SCHEMA",
+                "GET_EDITION",
+                "GET_EMAIL",
+                "GET_FEEDBACK_FOLLOW_UP",
+                "GET_FILE",
+                "GET_FILE_ID",
+                "GET_FIRST_NAME",
+                "GET_GROUPS_USER_BELONGS_TO",
+                "GET_GROUP_ID",
+                "GET_GROUP_NAME",
+                "GET_HASH",
+                "GET_HIGH_CONTRAST_MODE_TOGGLE",
+                "GET_LANGUAGE_SELECTOR_LIST",
+                "GET_LANGUAGE_SELECTOR_UL",
+                "GET_LANGUAGE_SELECTOR_UL2",
+                "GET_LAST_NAME",
+                "GET_NUMERIC_SESSION_STATE",
+                "GET_PREFERENCE",
+                "GET_PRINT_DOCUMENT",
+                "GET_SCREEN_READER_MODE_TOGGLE",
+                "GET_SESSION_LANG",
+                "GET_SESSION_STATE",
+                "GET_SESSION_TERRITORY",
+                "GET_SESSION_TIME_ZONE",
+                "GET_SINCE",
+                "GET_SINCE_TSWLTZ",
+                "GET_SINCE_TSWTZ",
+                "GET_TIMEFRAME",
+                "GET_USERNAME",
+                "GET_USER_ID",
+                "GET_USER_ROLES",
+                "GET_UUID",
+                "HAS_RESTRICTED_CHARS",
+                "HOST_URL",
+                "HTML_PCT_GRAPH_MASK",
+                "INCREMENT_CALENDAR",
+                "IR_CLEAR",
+                "IR_DELETE_REPORT",
+                "IR_DELETE_SUBSCRIPTION",
+                "IR_FILTER",
+                "IR_RESET",
+                "IS_HIGH_CONTRAST_SESSION",
+                "IS_HIGH_CONTRAST_SESSION_YN",
+                "IS_LOGIN_PASSWORD_VALID",
+                "IS_SCREEN_READER_SESSION",
+                "IS_SCREEN_READER_SESSION_YN",
+                "IS_USERNAME_UNIQUE",
+                "JSON_FROM_ARRAY",
+                "JSON_FROM_ITEMS",
+                "JSON_FROM_SQL",
+                "JSON_FROM_STRING",
+                "KEYVAL_NUM",
+                "KEYVAL_VC2",
+                "LOCK_ACCOUNT",
+                "MINIMUM_FREE_APPLICATION_ID",
+                "MONTH_CALENDAR",
+                "PASSWORD_FIRST_USE_OCCURRED",
+                "PAUSE",
+                "PREPARE_URL",
+                "PUBLIC_CHECK_AUTHORIZATION",
+                "PURGE_REGIONS_BY_APP",
+                "PURGE_REGIONS_BY_NAME",
+                "PURGE_REGIONS_BY_PAGE",
+                "REDIRECT_URL",
+                "REMOVE_PREFERENCE",
+                "REMOVE_SORT_PREFERENCES",
+                "REMOVE_USER",
+                "RESET_AUTHORIZATIONS",
+                "RESET_PASSWORD",
+                "RESET_PW",
+                "RESET_SESSION_LANG",
+                "RESET_SESSION_TERRITORY",
+                "RESET_SESSION_TIME_ZONE",
+                "SAVEKEY_NUM",
+                "SAVEKEY_VC2",
+                "SET_ATTRIBUTE",
+                "SET_AUTHENTICATION_RESULT",
+                "SET_BLOB",
+                "SET_BUILD_OPTION_STATUS",
+                "SET_COMPATIBILITY_MODE",
+                "SET_CURRENT_THEME_STYLE",
+                "SET_CUSTOM_AUTH_STATUS",
+                "SET_EDITION",
+                "SET_EMAIL",
+                "SET_FIRST_NAME",
+                "SET_GROUP_GROUP_GRANTS",
+                "SET_GROUP_USER_GRANTS",
+                "SET_LAST_NAME",
+                "SET_PREFERENCE",
+                "SET_REPORT_COLUMN_FORMAT",
+                "SET_SECURITY_GROUP_ID",
+                "SET_SESSION_HIGH_CONTRAST_OFF",
+                "SET_SESSION_HIGH_CONTRAST_ON",
+                "SET_SESSION_LANG",
+                "SET_SESSION_LIFETIME_SECONDS",
+                "SET_SESSION_MAX_IDLE_SECONDS",
+                "SET_SESSION_SCREEN_READER_OFF",
+                "SET_SESSION_SCREEN_READER_ON",
+                "SET_SESSION_STATE",
+                "SET_SESSION_TERRITORY",
+                "SET_SESSION_TIME_ZONE",
+                "SET_USERNAME",
+                "SHOW_HIGH_CONTRAST_MODE_TOGGLE",
+                "SHOW_SCREEN_READER_MODE_TOGGLE",
+                "STRING_TO_TABLE",
+                "STRONG_PASSWORD_CHECK",
+                "STRONG_PASSWORD_VALIDATION",
+                "SUBMIT_FEEDBACK",
+                "SUBMIT_FEEDBACK_FOLLOWUP",
+                "TABLE_TO_STRING",
+                "TODAY_CALENDAR",
+                "UNCOMPRESS_INT",
+                "UNEXPIRE_END_USER_ACCOUNT",
+                "UNEXPIRE_WORKSPACE_ACCOUNT",
+                "UNLOCK_ACCOUNT",
+                "URL_ENCODE",
+                "USER_IN_GROUP",
+                "WEEKLY_CALENDAR",
+                "WORKSPACE_ACCOUNT_DAYS_LEFT"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_WEB_SERVICE": {
@@ -2375,6 +2735,8 @@
                 "PARSE_RESPONSE_CLOB",
                 "PARSE_XML",
                 "PARSE_XML_CLOB"
+            ],
+            "identifiers": [
             ]
         },
         "APEX_ZIP": {
@@ -2383,6 +2745,8 @@
                 "FINISH",
                 "GET_FILES",
                 "GET_FILE_CONTENT"
+            ],
+            "identifiers": [
             ]
         },
         "CTX_ADM": {
@@ -2395,12 +2759,30 @@
                 "SHUTDOWN",
                 "STOP_OPTIMIZE",
                 "TEST_EXTPROC"
+            ],
+            "identifiers": [
             ]
         },
         "CTX_CLS": {
             "procedures": [
                 "CLUSTERING",
                 "TRAIN"
+            ],
+            "identifiers": [
+                "DOCID_TAB",
+                "CLUSTER_TAB",
+                "PARENT",
+                "QUALITY_SCORE",
+                "SZE",
+                "LABEL",
+                "DESCRIPT",
+                "CLUSTERID",
+                "CLUSTER_REC",
+                "DOC_TAB",
+                "SCORE",
+                "CLUSTERID",
+                "DOCID",
+                "DOC_REC"
             ]
         },
         "CTX_DDL": {
@@ -2462,6 +2844,27 @@
                 "UPDATE_SDATA",
                 "UPDATE_SUB_LEXER",
                 "ZONE_TO_FIELD"
+            ],
+            "identifiers": [
+                "PREFERENCE_IMPLICIT_COMMIT",
+                "SEC_TAB",
+                "SPLIT_TAB",
+                "SECTAG",
+                "SECNAME",
+                "SEC_REC",
+                "IDVAL",
+                "NEW_SEC",
+                "SPLIT_REC",
+                "LOCK_NOWAIT_ERROR",
+                "LOCK_NOWAIT",
+                "LOCK_WAIT",
+                "MAXTIME_UNLIMITED",
+                "OPTLEVEL_MERGE",
+                "OPTLEVEL_REBUILD",
+                "OPTLEVEL_TOKEN_TYPE",
+                "OPTLEVEL_TOKEN",
+                "OPTLEVEL_FULL",
+                "OPTLEVEL_FAST"
             ]
         },
         "CTX_DOC": {
@@ -2493,6 +2896,56 @@
                 "SNIPPET_CLOB_QUERY",
                 "THEMES",
                 "TOKENS"
+            ],
+            "identifiers": [
+                "PART_OF_SPEECH_TAB",
+                "IS_IN_LEXICON",
+                "LENGTH",
+                "OFFSET",
+                "POS_TAGS",
+                "WORD",
+                "PART_OF_SPEECH_REC",
+                "POS_TAG_TAB",
+                "LANGUAGE_TAB",
+                "SCORE",
+                "LANGUAGE",
+                "LANGUAGE_REC",
+                "NOUN_PHRASE_TAB",
+                "IS_IN_LEXICON",
+                "IS_PHRASE_START",
+                "LENGTH",
+                "OFFSET",
+                "POS_TAG",
+                "TERM",
+                "NOUN_PHRASE_REC",
+                "STEM_GROUP_TAB",
+                "LENGTH",
+                "OFFSET",
+                "STEMS",
+                "WORD",
+                "STEM_GROUP_REC",
+                "STEM_TAB",
+                "IS_IN_LEXICON",
+                "STEM",
+                "STEM_REC",
+                "HIGHLIGHT_TAB",
+                "LENGTH",
+                "OFFSET",
+                "HIGHLIGHT_REC",
+                "TOKEN_TAB",
+                "LENGTH",
+                "OFFSET",
+                "TOKEN",
+                "TOKEN_REC",
+                "THEME_TAB",
+                "WEIGHT",
+                "THEME",
+                "THEME_REC",
+                "PV_CTX_DOC_KEY_TYPE",
+                "STEM_DELIMITER",
+                "UNLIMITED_THEMES",
+                "TYPE_PRIMARY_KEY",
+                "TYPE_ROWID"
             ]
         },
         "CTX_ENTITY": {
@@ -2505,6 +2958,18 @@
                 "EXTRACT",
                 "REMOVE_EXTRACT_RULE",
                 "REMOVE_STOP_ENTITY"
+            ],
+            "identifiers": [
+                "STATUS_SUBSET",
+                "STATUS_COMPILED",
+                "STATUS_TOBEDELETED",
+                "STATUS_NOTCOMPILED",
+                "COMPILE_STOP_ENTITIES",
+                "COMPILE_RULES",
+                "COMPILE_ALL",
+                "LOCK_NOWAIT_ERROR",
+                "LOCK_NOWAIT",
+                "LOCK_WAIT"
             ]
         },
         "CTX_OUTPUT": {
@@ -2523,6 +2988,28 @@
                 "RESET_TRACE",
                 "START_LOG",
                 "START_QUERY_LOG"
+            ],
+            "identifiers": [
+                "TRACE_QRY_S_TIME",
+                "TRACE_QRY_K_TIME",
+                "TRACE_QRY_CON_TIME",
+                "TRACE_QRY_R_TIME",
+                "TRACE_QRY_I_SIZE",
+                "TRACE_QRY_I_ROWS",
+                "TRACE_QRY_IR_TIME",
+                "TRACE_QRY_IF_TIME",
+                "TRACE_QRY_X_ROWS",
+                "TRACE_QRY_XF_TIME",
+                "TRACE_QRY_XX_TIME",
+                "TRACE_IDX_AUTO_FILTER",
+                "TRACE_IDX_INSO_FILTER",
+                "TRACE_IDX_USER_DATASTORE",
+                "LOGGING",
+                "DRG_DUMP_ALL_ERRORS",
+                "EVENT_DRG_DUMP_ERRORSTACK",
+                "EVENT_OPT_PRINT_TOKEN",
+                "EVENT_INDEX_PRINT_TOKEN",
+                "EVENT_INDEX_PRINT_ROWID"
             ]
         },
         "CTX_QUERY": {
@@ -2542,6 +3029,28 @@
                 "RESULT_SET_CLOB_QUERY",
                 "STORE_SQE",
                 "STORE_SQE_CLOB_QUERY"
+            ],
+            "identifiers": [
+                "SESS_SQE",
+                "SESS_SQE_T",
+                "DURATION_SESSION",
+                "DURATION_PERSISTENT",
+                "GEN_RS_ONLY_IF_LAST_SEQ",
+                "GEN_RS_ONLY_ON_LAST_SEQ",
+                "RESULT_SET_DOCUMENT",
+                "BROWSE_AFTER",
+                "BROWSE_AROUND",
+                "BROWSE_BEFORE",
+                "BROWSE_TAB",
+                "DOC_COUNT",
+                "WORD",
+                "BROWSE_REC",
+                "DISABLE_TRANSACTIONAL_QUERY",
+                "SAV_INCMPLT_PRG_HITCNT",
+                "POSTFILTER_BATCH",
+                "ORDER_BY",
+                "ALWAYS_BATCH",
+                "PREFERENCE"
             ]
         },
         "CTX_REPORT": {
@@ -2556,6 +3065,25 @@
                 "TOKEN_INFO",
                 "TOKEN_TYPE",
                 "VALIDATE_INDEX"
+            ],
+            "identifiers": [
+                "QUERY_TABLE",
+                "QUERY",
+                "TIMES",
+                "QUERY_RECORD",
+                "FMT_XML",
+                "FMT_TEXT",
+                "TOKEN_TYPE_ATTR_TXT_STEM",
+                "TOKEN_TYPE_ATTR_TXT_PFIX",
+                "TOKEN_TYPE_STEM",
+                "TOKEN_TYPE_PATH_ATTR",
+                "TOKEN_TYPE_PATH_SEC",
+                "TOKEN_TYPE_PREFIX",
+                "TOKEN_TYPE_ATTR_SEC",
+                "TOKEN_TYPE_ATTR_TEXT",
+                "TOKEN_TYPE_ZONE_SEC",
+                "TOKEN_TYPE_THEME",
+                "TOKEN_TYPE_TEXT"
             ]
         },
         "CTX_THES": {
@@ -2589,6 +3117,17 @@
                 "TRSYN",
                 "TT",
                 "UPDATE_TRANSLATION"
+            ],
+            "identifiers": [
+                "OP_SN",
+                "OP_PT",
+                "OP_TRUNCATE",
+                "OP_RENAME",
+                "EXP_TAB",
+                "XPHRASE",
+                "XLEVEL",
+                "XREL",
+                "EXP_REC"
             ]
         },
         "DBMS_ADDM": {
@@ -2607,6 +3146,8 @@
                 "INSERT_PARAMETER_DIRECTIVE",
                 "INSERT_SEGMENT_DIRECTIVE",
                 "INSERT_SQL_DIRECTIVE"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_ADVANCED_REWRITE": {
@@ -2616,6 +3157,8 @@
                 "DECLARE_REWRITE_EQUIVALENCE",
                 "DROP_REWRITE_EQUIVALENCE",
                 "VALIDATE_REWRITE_EQUIVALENCE"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_ADVISOR": {
@@ -2671,6 +3214,43 @@
                 "UPDATE_SQLWKLD_ATTRIBUTES",
                 "UPDATE_SQLWKLD_STATEMENT",
                 "UPDATE_TASK_ATTRIBUTES"
+            ],
+            "identifiers": [
+                "ADVISOR_UNLIMITED",
+                "ADVISOR_DEFAULT",
+                "ADVISOR_CURRENT",
+                "ADVISOR_ALL",
+                "ADV_ID_COMPRESS",
+                "ADV_ID_SQLREPAIR",
+                "ADV_ID_SQLPA",
+                "ADV_ID_TUNEMV",
+                "ADV_ID_SQLWM",
+                "ADV_ID_SEGMENT",
+                "ADV_ID_SQLTUNE",
+                "ADV_ID_UNDO",
+                "ADV_ID_SQLACCESS",
+                "ADV_ID_ADDM",
+                "ADV_ID_DEFAULT",
+                "ADV_NAME_COMPRESS",
+                "ADV_NAME_SQLREPAIR",
+                "ADV_NAME_SQLPA",
+                "ADV_NAME_TUNEMV",
+                "ADV_NAME_SQLWM",
+                "ADV_NAME_SEGMENT",
+                "ADV_NAME_SQLTUNE",
+                "ADV_NAME_UNDO",
+                "ADV_NAME_SQLACCESS",
+                "ADV_NAME_ADDM",
+                "ADV_NAME_DEFAULT",
+                "VARCHAR2ADV",
+                "ARGLIST",
+                "SQLWORKLOAD_MANAGER",
+                "TUNE_MVIEW_ADVISOR",
+                "SQLACCESS_ADVISOR",
+                "SQLACCESS_WAREHOUSE",
+                "SQLACCESS_OLTP",
+                "SQLACCESS_GENERAL",
+                "ADVISOR_UNUSED"
             ]
         },
         "DBMS_ALERT": {
@@ -2682,6 +3262,9 @@
                 "SIGNAL",
                 "WAITANY",
                 "WAITONE"
+            ],
+            "identifiers": [
+                "MAXWAIT"
             ]
         },
         "DBMS_APPLICATION_INFO": {
@@ -2692,6 +3275,9 @@
                 "SET_CLIENT_INFO",
                 "SET_MODULE",
                 "SET_SESSION_LONGOPS"
+            ],
+            "identifiers": [
+                "SET_SESSION_LONGOPS_NOHINT"
             ]
         },
         "DBMS_APPLY_ADM": {
@@ -2722,6 +3308,24 @@
                 "SET_VALUE_DEPENDENCY",
                 "START_APPLY",
                 "STOP_APPLY"
+            ],
+            "identifiers": [
+                "LOCK_ERROR_NUM",
+                "LOCK_ERROR",
+                "DROP_UNUSED_RULE_SET_ERROR_NUM",
+                "DROP_UNUSED_RULE_SET_ERROR",
+                "INVALIDPARAMFORMAT_NUM",
+                "INVALIDPARAMFORMAT",
+                "EXPORT_ERRQ_NUM",
+                "EXPORT_ERRQ_ERROR",
+                "INVALIDRESCOL_NUM",
+                "INVALIDRESCOL",
+                "INVALIDCOL_NUM",
+                "INVALIDCOL",
+                "INVALIDOBJ_NUM",
+                "INVALIDOBJ",
+                "INVALIDPARAM_NUM",
+                "INVALIDPARAM"
             ]
         },
         "DBMS_AQ": {
@@ -2738,6 +3342,8 @@
                 "REGISTER",
                 "UNBIND_AGENT",
                 "UNREGISTER"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_AQADM": {
@@ -2792,6 +3398,36 @@
                 "VERIFY_QUEUE_TYPES",
                 "VERIFY_QUEUE_TYPES_GET_NRP",
                 "VERIFY_QUEUE_TYPES_NO_QUEUE"
+            ],
+            "identifiers": [
+                "DELIVERY_MODE",
+                "BLOCK",
+                "AQ$_PURGE_OPTIONS_T",
+                "AQ$_SUBSCRIBER_LIST_T",
+                "LAST_ACKNOWLEDGED",
+                "LAST_ENQUEUED",
+                "QUEUE_TO_QUEUE_SUBSCRIBER",
+                "PERSISTENT_OR_BUFFERED",
+                "BUFFERED",
+                "PERSISTENT",
+                "AQ_TOPIC_CONNECTION",
+                "AQ_QUEUE_CONNECTION",
+                "TEST_PROTOCOL",
+                "LOGAPPLY_PROTOCOL",
+                "LOGMINER_PROTOCOL",
+                "ANYP",
+                "FTP",
+                "SMTP",
+                "HTTP",
+                "TTC",
+                "NON_REPUDIATE_SNDRCV",
+                "NON_REPUDIATE_SENDER",
+                "NON_PERSISTENT_QUEUE",
+                "EXCEPTION_QUEUE",
+                "NORMAL_QUEUE",
+                "NONE",
+                "TRANSACTIONAL",
+                "INFINITE"
             ]
         },
         "DBMS_AQELM": {
@@ -2806,6 +3442,8 @@
                 "SET_MAILPORT",
                 "SET_PROXY",
                 "SET_SENDFROM"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_AQIN": {
@@ -2837,6 +3475,8 @@
                 "GET_MULTI_RETRY",
                 "SET_DEQ_SORT",
                 "SET_MULTI_RETRY"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_ASSERT": {
@@ -2848,6 +3488,12 @@
                 "SCHEMA_NAME",
                 "SIMPLE_SQL_NAME",
                 "SQL_OBJECT_NAME"
+            ],
+            "identifiers": [
+                "INVALID_QUALIFIED_SQL_NAME",
+                "INVALID_SQL_NAME",
+                "INVALID_OBJECT_NAME",
+                "INVALID_SCHEMA_NAME"
             ]
         },
         "DBMS_AUDIT_MGMT": {
@@ -2868,6 +3514,27 @@
                 "SET_LAST_ARCHIVE_TIMESTAMP",
                 "SET_PURGE_JOB_INTERVAL",
                 "SET_PURGE_JOB_STATUS"
+            ],
+            "identifiers": [
+                "TRACE_LEVEL_ERROR",
+                "TRACE_LEVEL_DEBUG",
+                "PURGE_JOB_DISABLE",
+                "PURGE_JOB_ENABLE",
+                "FILE_DELETE_BATCH_SIZE",
+                "AUD_TAB_MOVEMENT_FLAG",
+                "TRACE_LEVEL",
+                "DB_DELETE_BATCH_SIZE",
+                "DB_AUDIT_TABLEPSACE",
+                "CLEAN_UP_INTERVAL",
+                "OS_FILE_MAX_AGE",
+                "OS_FILE_MAX_SIZE",
+                "AUDIT_TRAIL_ALL",
+                "AUDIT_TRAIL_FILES",
+                "AUDIT_TRAIL_XML",
+                "AUDIT_TRAIL_OS",
+                "AUDIT_TRAIL_DB_STD",
+                "AUDIT_TRAIL_FGA_STD",
+                "AUDIT_TRAIL_AUD_STD"
             ]
         },
         "DBMS_AUTO_SQLTUNE": {
@@ -2875,6 +3542,20 @@
                 "EXECUTE_AUTO_TUNING_TASK",
                 "REPORT_AUTO_TUNING_TASK",
                 "SET_AUTO_TUNING_TASK_PARAMETER"
+            ],
+            "identifiers": [
+                "SECTION_SUMMARY",
+                "SECTION_ALL",
+                "SECTION_ERRORS",
+                "SECTION_INFORMATION",
+                "SECTION_PLANS",
+                "SECTION_FINDINGS",
+                "LEVEL_ALL",
+                "LEVEL_BASIC",
+                "LEVEL_TYPICAL",
+                "TYPE_HTML",
+                "TYPE_XML",
+                "TYPE_TEXT"
             ]
         },
         "DBMS_AUTO_TASK_ADMIN": {
@@ -2887,17 +3568,38 @@
                 "SET_ATTRIBUTE",
                 "SET_CLIENT_SERVICE",
                 "SET_P1_RESOURCES"
+            ],
+            "identifiers": [
+                "ATTRVAL_FALSE",
+                "ATTRVAL_TRUE",
+                "DO_NOT_KILL",
+                "SAFE_TO_KILL",
+                "STABLE",
+                "VOLATILE",
+                "HEAVYWEIGHT",
+                "LIGHTWEIGHT",
+                "PRIORITY_CLEAR",
+                "PRIORITY_URGENT",
+                "PRIORITY_HIGH",
+                "PRIORITY_MEDIUM",
+                "OPTFLG_IMMEDIATE",
+                "OPTFLG_DEFERRED"
             ]
         },
         "DBMS_AUTO_TASK_IMMEDIATE": {
             "procedures": [
                 "GATHER_OPTIMIZER_STATS"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_AW_STATS": {
             "procedures": [
                 "ANALYZE",
                 "CLEAR"
+            ],
+            "identifiers": [
+                "AW_ERROR"
             ]
         },
         "DBMS_CAPTURE_ADM": {
@@ -2920,6 +3622,15 @@
                 "SET_PARAMETER",
                 "START_CAPTURE",
                 "STOP_CAPTURE"
+            ],
+            "identifiers": [
+                "EXP_SYNC_CAPTURE_NUM",
+                "EXP_SYNC_CAPTURE",
+                "INV_SYNC_CAPTURE_PROC_NUM",
+                "INV_SYNC_CAPTURE_PROC",
+                "CREATE_CAPTURE_PROC_NUM",
+                "CREATE_CAPTURE_PROC",
+                "INFINITE"
             ]
         },
         "DBMS_COMPARISON": {
@@ -2930,6 +3641,24 @@
                 "DROP_COMPARISON",
                 "PURGE_COMPARISON",
                 "RECHECK"
+            ],
+            "identifiers": [
+                "RMT_ROWS_DELETED",
+                "LOC_ROWS_DELETED",
+                "RMT_ROWS_MERGED",
+                "LOC_ROWS_MERGED",
+                "SCAN_ID",
+                "COMPARISON_TYPE",
+                "CMP_MIN_ROWS_IN_BUCKET",
+                "CMP_MAX_NUM_BUCKETS",
+                "CMP_NULL_VALUE_DEF",
+                "CMP_CONVERGE_REMOTE_WINS",
+                "CMP_CONVERGE_LOCAL_WINS",
+                "CMP_SCAN_MODE_CUSTOM",
+                "CMP_SCAN_MODE_CYCLIC",
+                "CMP_SCAN_MODE_RANDOM",
+                "CMP_SCAN_MODE_FULL",
+                "CMP_COMPARE_MODE_OBJECT"
             ]
         },
         "DBMS_COMPRESSION": {
@@ -2937,6 +3666,16 @@
                 "GET_COMPRESSION_RATIO",
                 "GET_COMPRESSION_TYPE",
                 "INCREMENTAL_COMPRESS"
+            ],
+            "identifiers": [
+                "COMP_RATIO_ALLROWS",
+                "COMP_RATIO_MINROWS",
+                "COMP_FOR_ARCHIVE_LOW",
+                "COMP_FOR_ARCHIVE_HIGH",
+                "COMP_FOR_QUERY_LOW",
+                "COMP_FOR_QUERY_HIGH",
+                "COMP_FOR_OLTP",
+                "COMP_NOCOMPRESS"
             ]
         },
         "DBMS_CONNECTION_POOL": {
@@ -2946,10 +3685,14 @@
                 "RESTORE_DEFAULTS",
                 "START_POOL",
                 "STOP_POOL"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_CQ_NOTIFICATION": {
             "procedures": [
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_CRYPTO": {
@@ -2961,6 +3704,38 @@
                 "RANDOMBYTES",
                 "RANDOMINTEGER",
                 "RANDOMNUMBER"
+            ],
+            "identifiers": [
+                "DOUBLEENCRYPTION",
+                "KEYBADSIZE",
+                "KEYNULL",
+                "CIPHERSUITENULL",
+                "CIPHERSUITEINVALID",
+                "AES_CBC_PKCS5",
+                "DES3_CBC_PKCS5",
+                "DES_CBC_PKCS5",
+                "ENCRYPT_RC4",
+                "PAD_ORCL",
+                "PAD_ZERO",
+                "PAD_NONE",
+                "PAD_PKCS5",
+                "CHAIN_OFB",
+                "CHAIN_ECB",
+                "CHAIN_CFB",
+                "CHAIN_CBC",
+                "ENCRYPT_AES256",
+                "ENCRYPT_AES192",
+                "ENCRYPT_AES128",
+                "ENCRYPT_PBE_MD5DES",
+                "ENCRYPT_AES",
+                "ENCRYPT_3DES",
+                "ENCRYPT_3DES_2KEY",
+                "ENCRYPT_DES",
+                "HMAC_SH1",
+                "HMAC_MD5",
+                "HASH_SH1",
+                "HASH_MD5",
+                "HASH_MD4"
             ]
         },
         "DBMS_CSX_ADMIN": {
@@ -2974,6 +3749,17 @@
                 "PATHIDTABLE",
                 "QNAMEIDTABLE",
                 "REGISTERTOKENTABLESET"
+            ],
+            "identifiers": [
+                "NO_DEFAULT_TOKS",
+                "DEFAULT_TOKS",
+                "WITH_INDEXES",
+                "NO_INDEXES",
+                "NO_CREATE",
+                "NOREG_LEVEL",
+                "TBS_LEVEL",
+                "TAB_LEVEL",
+                "DEFAULT_LEVEL"
             ]
         },
         "DBMS_CUBE_LOG": {
@@ -3011,6 +3797,63 @@
                 "VERBOSE_STATS",
                 "VERSION",
                 "WRITE_TO_OPLOG"
+            ],
+            "identifiers": [
+                "INVALID_LOG_MSG_NAME",
+                "NO_LIMITS",
+                "INVALID_ID",
+                "INVALID_SQL_ID",
+                "INVALID_LOCATION",
+                "INVALID_VERSION",
+                "INVALID_LEVEL",
+                "INVALID_TARGET",
+                "INVALID_TYPE",
+                "CONTINUE_AFTER_MAX_YES",
+                "CONTINUE_AFTER_MAX_NO",
+                "CONTINUE_AFTER_MAX_REJECTS",
+                "MAX_REJECT_LOBS",
+                "ALLOW_ERRORS",
+                "LOG_EVERY_N",
+                "FULL_RECORD_NEVER",
+                "FULL_RECORD_ALWAYS",
+                "FULL_RECORD_AUTO",
+                "LOG_FULL_RECORD",
+                "FLUSH_INTERVAL",
+                "MAX_ERRORS",
+                "BUILD_VCURRENT",
+                "BUILD_V11200",
+                "BUILD_V11200B3",
+                "BUILD_V11200B2",
+                "BUILD_V11107",
+                "BUILD_V11106A",
+                "BUILD_V11106",
+                "DIMENSION_COMPILE_VCURRENT",
+                "DIMENSION_COMPILE_V112",
+                "DIMENSION_COMPILE_V112ALPHA",
+                "REJECTED_RECORDS_VCURRENT",
+                "REJECTED_RECORDS_V112",
+                "REJECTED_RECORDS_V112ALPHA",
+                "OPERATIONS_VCURRENT",
+                "OPERATIONS_V112",
+                "OPERATIONS_V112ALPHA",
+                "VERBOSE_DEBUG_C",
+                "VERBOSE_STATS_C",
+                "VERBOSE_INFO_C",
+                "VERBOSE_NOTICE_C",
+                "VERBOSE_ACTION_C",
+                "LEVEL_HIGHEST_C",
+                "LEVEL_HIGH_C",
+                "LEVEL_MEDIUM_C",
+                "LEVEL_LOW_C",
+                "LEVEL_LOWEST_C",
+                "TARGET_LOB_C",
+                "TARGET_FILE_C",
+                "TARGET_TRACE_C",
+                "TARGET_TABLE_C",
+                "TYPE_BUILD_C",
+                "TYPE_DIMENSION_COMPILE_C",
+                "TYPE_REJECTED_RECORDS_C",
+                "TYPE_OPERATIONS_C"
             ]
         },
         "DBMS_DATAPUMP": {
@@ -3048,6 +3891,87 @@
                 "TEST_REMOTE_CONTEXT1020",
                 "TEST_REMOTE_CONTEXT1120",
                 "WAIT_FOR_JOB"
+            ],
+            "identifiers": [
+                "NO_DUMPFILE_INFO_NUM",
+                "NO_DUMPFILE_INFO",
+                "SUCCESS_WITH_INFO_NUM",
+                "SUCCESS_WITH_INFO",
+                "INTERNAL_ERROR_NUM",
+                "INTERNAL_ERROR",
+                "NO_SUCH_JOB_NUM",
+                "NO_SUCH_JOB",
+                "JOB_EXISTS_NUM",
+                "JOB_EXISTS",
+                "INVALID_STATE_NUM",
+                "INVALID_STATE",
+                "INVALID_HANDLE_NUM",
+                "INVALID_HANDLE",
+                "PRIVILEGE_ERROR_NUM",
+                "PRIVILEGE_ERROR",
+                "INCONSISTENT_ARGS_NUM",
+                "INCONSISTENT_ARGS",
+                "INVALID_OPERATION_NUM",
+                "INVALID_OPERATION",
+                "INVALID_ARGVAL_NUM",
+                "INVALID_ARGVAL",
+                "KU$_DATAOPT_DISABL_APPEND_HINT",
+                "KU$_DATAOPT_NOTYPE_EVOL",
+                "KU$_DATAOPT_XMLTYPE_CLOB",
+                "KU$_DATAOPT_SKIP_CONST_ERR",
+                "KU$_COMPRESS_METADATA",
+                "KU$_COMPRESS_NONE",
+                "KU$_DFHDR_ENCPWD_MODE_TRANS",
+                "KU$_DFHDR_ENCPWD_MODE_DUAL",
+                "KU$_DFHDR_ENCPWD_MODE_PASSWORD",
+                "KU$_DFHDR_ENCPWD_MODE_NONE",
+                "KU$_DFHDR_ENCPWD_MODE_UNKNOWN",
+                "KU$_DFHDR_MAX_ITEM_CODE",
+                "KU$_DFHDR_ENCPWD_MODE",
+                "KU$_DFHDR_COLUMNS_ENCRYPTED",
+                "KU$_DFHDR_DATA_ENCRYPTED",
+                "KU$_DFHDR_METADATA_ENCRYPTED",
+                "KU$_DFHDR_DATA_COMPRESSED",
+                "KU$_DFHDR_MASTER_PIECE_NUMBER",
+                "KU$_DFHDR_MASTER_PIECE_COUNT",
+                "KU$_DFHDR_DB_VERSION",
+                "KU$_DFHDR_METADATA_COMPRESSED",
+                "KU$_DFHDR_DIRPATH",
+                "KU$_DFHDR_BLOCKSIZE",
+                "KU$_DFHDR_LANGUAGE",
+                "KU$_DFHDR_INSTANCE",
+                "KU$_DFHDR_PLATFORM",
+                "KU$_DFHDR_JOB_NAME",
+                "KU$_DFHDR_FLAGS",
+                "KU$_DFHDR_CREATION_DATE",
+                "KU$_DFHDR_CHARSET_ID",
+                "KU$_DFHDR_FILE_NUMBER",
+                "KU$_DFHDR_GUID",
+                "KU$_DFHDR_MASTER_PRESENT",
+                "KU$_DFHDR_FILE_VERSION",
+                "KU$_JOB_ABORTED",
+                "KU$_JOB_STOPPED",
+                "KU$_JOB_COMPLETE_ERRORS",
+                "KU$_JOB_COMPLETE",
+                "KU$_JOB_VIEW_ENCCOL_TABLES",
+                "KU$_JOB_VIEW_TTS_TABLESPACES",
+                "KU$_JOB_VIEW_ALL",
+                "KU$_STATUS_VERSION",
+                "KU$_STATUS_VERSION_3",
+                "KU$_STATUS_VERSION_2",
+                "KU$_STATUS_VERSION_1",
+                "KU$_DUMPFILE_TYPE_TEMPLATE",
+                "KU$_DUMPFILE_TYPE_TAPE",
+                "KU$_DUMPFILE_TYPE_PIPE",
+                "KU$_DUMPFILE_TYPE_DISK",
+                "KU$_FILE_TYPE_SQL_FILE",
+                "KU$_FILE_TYPE_LOG_FILE",
+                "KU$_FILE_TYPE_BAD_FILE",
+                "KU$_FILE_TYPE_DUMP_FILE",
+                "KU$_STATUS_JOB_ERROR",
+                "KU$_STATUS_JOB_STATUS",
+                "KU$_STATUS_JOB_DESC",
+                "KU$_STATUS_WIP"
             ]
         },
         "DBMS_DATA_MINING": {
@@ -3083,6 +4007,109 @@
                 "RANK_APPLY",
                 "REMOVE_COST_MATRIX",
                 "RENAME_MODEL"
+            ],
+            "identifiers": [
+                "INTERNAL_DEFAULT_SETTINGS",
+                "EXTERNAL_DEFAULT_SETTINGS",
+                "DEFAULT_SETTINGS_TYPE",
+                "TRANSFORM_LIST",
+                "GLMS_VIF_RIDGE_DISABLE",
+                "GLMS_VIF_RIDGE_ENABLE",
+                "GLMS_RIDGE_REG_DISABLE",
+                "GLMS_RIDGE_REG_ENABLE",
+                "GLMS_VIF_FOR_RIDGE",
+                "GLMS_CONF_LEVEL",
+                "GLMS_RIDGE_VALUE",
+                "GLMS_REFERENCE_CLASS_NAME",
+                "GLMS_DIAGNOSTICS_TABLE_NAME",
+                "GLMS_RIDGE_REGRESSION",
+                "TREE_IMPURITY_ENTROPY",
+                "TREE_IMPURITY_GINI",
+                "TREE_TERM_MINPCT_NODE",
+                "TREE_TERM_MINREC_NODE",
+                "TREE_TERM_MINPCT_SPLIT",
+                "TREE_TERM_MINREC_SPLIT",
+                "TREE_TERM_MAX_DEPTH",
+                "TREE_IMPURITY_METRIC",
+                "OCLT_MAX_BUFFER",
+                "OCLT_SENSITIVITY",
+                "NMFS_NONNEG_SCORING_DISABLE",
+                "NMFS_NONNEG_SCORING_ENABLE",
+                "NMFS_NONNEGATIVE_SCORING",
+                "NMFS_RANDOM_SEED",
+                "NMFS_CONV_TOLERANCE",
+                "NMFS_NUM_ITERATIONS",
+                "KMNS_VARIANCE",
+                "KMNS_SIZE",
+                "KMNS_FAST_COSINE",
+                "KMNS_COSINE",
+                "KMNS_EUCLIDEAN",
+                "KMNS_NUM_BINS",
+                "KMNS_BLOCK_GROWTH",
+                "KMNS_MIN_PCT_ATTR_SUPPORT",
+                "KMNS_SPLIT_CRITERION",
+                "KMNS_CONV_TOLERANCE",
+                "KMNS_ITERATIONS",
+                "KMNS_DISTANCE",
+                "SVMS_AL_DISABLE",
+                "SVMS_AL_ENABLE",
+                "SVMS_GAUSSIAN",
+                "SVMS_LINEAR",
+                "SVMS_OUTLIER_RATE",
+                "SVMS_ACTIVE_LEARNING",
+                "SVMS_KERNEL_FUNCTION",
+                "SVMS_EPSILON",
+                "SVMS_KERNEL_CACHE_SIZE",
+                "SVMS_COMPLEXITY_FACTOR",
+                "SVMS_STD_DEV",
+                "SVMS_CONV_TOLERANCE",
+                "NABS_SINGLETON_THRESHOLD",
+                "NABS_PAIRWISE_THRESHOLD",
+                "ABNS_NAIVE_BAYES",
+                "ABNS_SINGLE_FEATURE",
+                "ABNS_MULTI_FEATURE",
+                "ABNS_MAX_NB_PREDICTORS",
+                "ABNS_MAX_PREDICTORS",
+                "ABNS_MAX_BUILD_MINUTES",
+                "ABNS_MODEL_TYPE",
+                "ALGO_GENERALIZED_LINEAR_MODEL",
+                "ALGO_DECISION_TREE",
+                "ALGO_AI_MDL",
+                "ALGO_OCLUSTER",
+                "ALGO_KMEANS",
+                "ALGO_APRIORI_ASSOCIATION_RULES",
+                "ALGO_NONNEGATIVE_MATRIX_FACTOR",
+                "ALGO_SUPPORT_VECTOR_MACHINES",
+                "ALGO_ADAPTIVE_BAYES_NETWORK",
+                "ALGO_NAIVE_BAYES",
+                "ALGO_NAME",
+                "CLUS_NUM_CLUSTERS",
+                "FEAT_NUM_FEATURES",
+                "ASSO_MIN_SUPPORT",
+                "ASSO_MIN_CONFIDENCE",
+                "ASSO_MAX_RULE_LENGTH",
+                "CLAS_COST_TABLE_NAME",
+                "CLAS_WEIGHTS_TABLE_NAME",
+                "CLAS_PRIORS_TABLE_NAME",
+                "ATTRIBUTE_IMPORTANCE",
+                "FEATURE_EXTRACTION",
+                "ASSOCIATION",
+                "CLUSTERING",
+                "REGRESSION",
+                "CLASSIFICATION",
+                "ODMS_ITEM_VALUE_COLUMN_NAME",
+                "ODMS_ITEM_ID_COLUMN_NAME",
+                "ODMS_MISSING_VALUE_DELETE_ROW",
+                "ODMS_MISSING_VALUE_MEAN_MODE",
+                "ODMS_MISSING_VALUE_TREATMENT",
+                "COST_MATRIX_TYPE_CREATE",
+                "COST_MATRIX_TYPE_SCORE",
+                "ODMS_ROW_WEIGHT_COLUMN_NAME",
+                "SCORE_CRITERION_COST",
+                "SCORE_CRITERION_PROBABILITY",
+                "PREP_AUTO_ON",
+                "PREP_AUTO_OFF",
+                "PREP_AUTO"
             ]
         },
         "DBMS_DATA_MINING_TRANSFORM": {
@@ -3127,6 +4154,23 @@
                 "XFORM_MISS_NUM",
                 "XFORM_NORM_LIN",
                 "XFORM_STACK"
+            ],
+            "identifiers": [
+                "NEST_CAT_COL_TYPE",
+                "NEST_NUM_COL_TYPE",
+                "TRANSFORM_LIST",
+                "ATTRIBUTE_SPEC",
+                "REVERSE_EXPRESSION",
+                "EXPRESSION",
+                "ATTRIBUTE_SUBNAME",
+                "ATTRIBUTE_NAME",
+                "TRANSFORM_REC",
+                "UB",
+                "LB",
+                "LSTMT",
+                "EXPRESSION_REC",
+                "DESCRIBE_LIST",
+                "COLUMN_LIST"
             ]
         },
         "DBMS_DBFS_CONTENT": {
@@ -3200,6 +4244,186 @@
                 "UNLOCKPATH",
                 "UNMOUNTSTORE",
                 "UNREGISTERSTORE"
+            ],
+            "identifiers": [
+                "OP_STORE",
+                "OP_ACL",
+                "OP_UNLOCK",
+                "OP_LOCK",
+                "OP_SEARCH",
+                "OP_LIST",
+                "OP_SETPATH",
+                "OP_RENAMETO",
+                "MOUNTS_T",
+                "MOUNT_PROPERTIES",
+                "CREATED",
+                "STORE_MOUNT",
+                "STORE_GUID",
+                "STORE_FEATURES",
+                "PROVIDER_VERSION",
+                "PROVIDER_ID",
+                "PROVIDER_PKG",
+                "PROVIDER_NAME",
+                "STORE_ID",
+                "STORE_NAME",
+                "MOUNT_T",
+                "STORES_T",
+                "STORE_GUID",
+                "STORE_FEATURES",
+                "CREATED",
+                "PROVIDER_VERSION",
+                "PROVIDER_ID",
+                "PROVIDER_PKG",
+                "PROVIDER_NAME",
+                "STORE_ID",
+                "STORE_NAME",
+                "STORE_T",
+                "PROPERTIES_T",
+                "TYPECODE",
+                "PROPVALUE",
+                "PROPERTY_T",
+                "READONLY_PATH",
+                "INVALID_PROVIDER",
+                "INVALID_MOUNT",
+                "INVALID_STORE",
+                "LOCK_CONFLICT",
+                "INVALID_ACCESS",
+                "INVALID_ARGUMENTS",
+                "UNSUPPORTED_OPERATION",
+                "INVALID_PATH",
+                "INVALID_PARENT",
+                "PATH_EXISTS",
+                "OP_RENAMEFROM",
+                "OP_RENAME",
+                "OP_PUT",
+                "OP_WRITE",
+                "OP_GET",
+                "OP_READ",
+                "OP_PURGE",
+                "OP_RESTORE",
+                "OP_DELETEDIRECTORY",
+                "OP_DELETEFILE",
+                "OP_DELETE",
+                "OP_CREATEDIRECTORY",
+                "OP_CREATEREFERENCE",
+                "OP_CREATELINK",
+                "OP_CREATEFILE",
+                "OP_CREATE",
+                "PROP_SPC",
+                "PROP_DATA",
+                "PROP_ALL",
+                "PROP_USR",
+                "PROP_OPT",
+                "PROP_STD",
+                "PROP_NONE",
+                "OPT_CONTENT_ID",
+                "OPT_VERSION_PATH",
+                "OPT_VERSION",
+                "OPT_LOCK_STATUS",
+                "OPT_LOCKER",
+                "OPT_LOCK_DATA",
+                "OPT_LOCK_COUNT",
+                "OPT_HASH_VALUE",
+                "OPT_HASH_TYPE",
+                "STD_REFERENT",
+                "STD_PARENT_GUID",
+                "STD_OWNER",
+                "STD_MODIFICATION_TIME",
+                "STD_LENGTH",
+                "STD_GUID",
+                "STD_DELETED",
+                "STD_CREATION_TIME",
+                "STD_CONTENT_TYPE",
+                "STD_CHILDREN",
+                "STD_CHANGE_TIME",
+                "STD_CANONICAL_PATH",
+                "STD_ACL",
+                "STD_ACCESS_TIME",
+                "LOCK_READ_WRITE",
+                "LOCK_WRITE_ONLY",
+                "LOCK_READ_ONLY",
+                "FEATURE_GETATTR_VIEW",
+                "FEATURE_NO_SPECIAL",
+                "FEATURE_LAZY_PATH",
+                "FEATURE_CONTENT_ID",
+                "FEATURE_LOCATOR",
+                "FEATURE_CLONES",
+                "FEATURE_DOT_SNAPSHOT",
+                "FEATURE_SNAPSHOTS",
+                "FEATURE_PROVIDER_PROPS",
+                "FEATURE_ASOF",
+                "FEATURE_SEARCHING",
+                "FEATURE_FILTERING",
+                "FEATURE_HASH_LOOKUP",
+                "FEATURE_HASHING",
+                "FEATURE_SOFT_DELETES",
+                "FEATURE_VERSION_PATH",
+                "FEATURE_VERSIONING",
+                "FEATURE_LOCK_CONVERT",
+                "FEATURE_LOCK_HIERARCHY",
+                "FEATURE_LOCKING",
+                "FEATURE_REFERENCES",
+                "FEATURE_LINK_DEREF",
+                "FEATURE_LINKS",
+                "FEATURE_ACLS",
+                "FEATURE_NOWAIT",
+                "FEATURE_FOIAT",
+                "FEATURE_FOLDERS",
+                "TYPE_REFERENCE",
+                "TYPE_LINK",
+                "TYPE_DIRECTORY",
+                "TYPE_FILE",
+                "PROPVAL_T",
+                "PROPVAL_MAX",
+                "PROPNAME_T",
+                "PROPNAME_MAX",
+                "CONTENT_ID_T",
+                "CONTENT_ID_MAX",
+                "PATH_T",
+                "PATH_MAX",
+                "NAME_T",
+                "NAME_MAX",
+                "PROP_ITEMS_T",
+                "PROPERTY_TYPE",
+                "PROPERTY_VALUE",
+                "PROPERTY_NAME",
+                "PATHNAME",
+                "MOUNT",
+                "STORE",
+                "PROP_ITEM_T",
+                "PATH_ITEMS_T",
+                "OPT_CONTENT_ID",
+                "OPT_VERSION_PATH",
+                "OPT_VERSION",
+                "OPT_LOCK_STATUS",
+                "OPT_LOCKER",
+                "OPT_LOCK_DATA",
+                "OPT_LOCK_COUNT",
+                "OPT_HASH_VALUE",
+                "OPT_HASH_TYPE",
+                "STD_REFERENT",
+                "STD_PARENT_GUID",
+                "STD_OWNER",
+                "STD_MODIFICATION_TIME",
+                "STD_GUID",
+                "STD_DELETED",
+                "STD_CREATION_TIME",
+                "STD_CONTENT_TYPE",
+                "STD_CHILDREN",
+                "STD_CHANGE_TIME",
+                "STD_ACL",
+                "STD_ACCESS_TIME",
+                "FILEDATA",
+                "PATHTYPE",
+                "PATHNAME",
+                "MOUNT",
+                "STORE",
+                "PATH_ITEM_T",
+                "FEATURES_T",
+                "FEATURE_STATE",
+                "FEATURE_MASK",
+                "FEATURE_NAME",
+                "FEATURE_T"
             ]
         },
         "DBMS_DBFS_CONTENT_SPI": {
@@ -3234,6 +4458,8 @@
                 "SPACEUSAGE",
                 "SPACEUSAGEFULL",
                 "UNLOCKPATH"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_DBFS_HS": {
@@ -3277,6 +4503,80 @@
                 "SPACEUSAGE",
                 "STOREPUSH",
                 "UNLOCKPATH"
+            ],
+            "identifiers": [
+                "BEFORE_GET",
+                "BEFORE_PUT",
+                "DISABLE_CLEANUPBACKUPFILES",
+                "ERROR",
+                "SUCCESS",
+                "FAIL",
+                "FILENOTFOUND_ERR",
+                "FILENOTFOUND_MSG",
+                "FILENOTFOUND",
+                "THRASHING_ERR",
+                "THRASHING_MSG",
+                "THRASHING",
+                "FILESIZEMISMATCH_ERR",
+                "FILESIZEMISMATCH_MSG",
+                "FILESIZEMISMATCH",
+                "INVALIDCOMPRESSION_ERR",
+                "INVALIDCOMPRESSION_MSG",
+                "INVALIDCOMPRESSION",
+                "INVALID_LOBCACHEQUOTA_ERR",
+                "INVALID_LOBCACHEQUOTA_MSG",
+                "INVALID_LOBCACHEQUOTA",
+                "STRING_OVERFLOW_ERR",
+                "STRING_OVERFLOW_MSG",
+                "STRING_OVERFLOW",
+                "INSUFFICIENT_CACHE_ERR",
+                "INSUFFICIENT_CACHE_MSG",
+                "INSUFFICIENT_CACHE",
+                "STORETYPE_ERR",
+                "STORETYPE_MSG",
+                "STORETYPE",
+                "INVALIDPCTX_ERR",
+                "INVALIDPCTX_MSG",
+                "INVALIDPCTX",
+                "CHANGE_STAGINGAREA_ERR",
+                "CHANGE_STAGINGAREA_MSG",
+                "CHANGE_STAGINGAREA",
+                "TBSNOTFOUND_ERR",
+                "TBSNOTFOUND_MSG",
+                "TBSNOTFOUND",
+                "PROPERTYNF_ERR",
+                "PROPERTYNF_MSG",
+                "PROPERTYNF",
+                "STORENF_ERR",
+                "STORENF_MSG",
+                "STORENF",
+                "PROPNAME_STORE_TYPE",
+                "PROPNAME_MAX_BACKUPFILE_SIZE",
+                "PROPNAME_ENABLECLEANUPONDELETE",
+                "PROPNAME_STREAMABLE",
+                "PROPVAL_CHUNKSIZE",
+                "PROPVAL_MAXBF_S3",
+                "PROPNAME_LRUTS_UPD_FREQ",
+                "PROPVAL_COMPLVL_HIGH",
+                "PROPVAL_COMPLVL_MEDIUM",
+                "PROPVAL_COMPLVL_LOW",
+                "PROPVAL_COMPLVL_NONE",
+                "PROPNAME_COMPRESSLEVEL",
+                "PROPNAME_LOBCACHE_QUOTA",
+                "PROPNAME_CACHESIZE",
+                "PROPNAME_LICENSEID",
+                "PROPNAME_ALIAS",
+                "PROPNAME_BUCKET",
+                "PROPNAME_WALLET",
+                "PROPNAME_HTTPPROXY",
+                "PROPNAME_S3HOST",
+                "PROPNAME_WRITECHUNKSIZE",
+                "PROPNAME_READCHUNKSIZE",
+                "PROPNAME_OPTTARBALLSIZE",
+                "PROPNAME_MEDIAPOOL",
+                "PROPNAME_SBTLIBRARY",
+                "STORETYPE_AMAZONS3",
+                "STORETYPE_TAPE"
             ]
         },
         "DBMS_DBFS_SFS": {
@@ -3367,6 +4667,73 @@
                 "TO_EPOCH",
                 "UNLOCKPATH",
                 "UNREGISTERFILESYSTEM"
+            ],
+            "identifiers": [
+                "PARTITION_BY_GUID",
+                "PARTITION_BY_PATH",
+                "PARTITION_BY_ITEM",
+                "DEFAULT_PARTITIONS",
+                "ENCRYPTION_AES256",
+                "ENCRYPTION_AES192",
+                "ENCRYPTION_AES128",
+                "ENCRYPTION_3DES168",
+                "ENCRYPTION_DEFAULT",
+                "COMPRESSION_HIGH",
+                "COMPRESSION_MEDIUM",
+                "COMPRESSION_LOW",
+                "COMPRESSION_DEFAULT",
+                "PROPNAMES_T",
+                "DIR_ENTRIES_T",
+                "ST_CTIME",
+                "ST_MTIME",
+                "ST_ATIME",
+                "ST_BLOCKS",
+                "ST_BLKSIZE",
+                "ST_SIZE",
+                "ST_GID",
+                "ST_UID",
+                "ST_NLINK",
+                "ST_MODE",
+                "ST_INO",
+                "ITEM_NAME",
+                "PATH",
+                "DIR_ENTRY_T",
+                "FILESYSTEMS_T",
+                "CREATED",
+                "SNAPSHOT_NAME",
+                "VOLUME_NAME",
+                "TABLE_NAME",
+                "SCHEMA_NAME",
+                "STORE_NAME",
+                "FILESYSTEM_T",
+                "SNAPSHOTS_T",
+                "CREATED",
+                "SNAPSHOT_NAME",
+                "VOLUME_NAME",
+                "TABLE_NAME",
+                "SCHEMA_NAME",
+                "SNAPSHOT_T",
+                "VOLUMES_T",
+                "FROM_SNAPSHOT",
+                "FROM_VOLUME",
+                "CREATED",
+                "VOLUME_NAME",
+                "TABLE_NAME",
+                "SCHEMA_NAME",
+                "VOLUME_T",
+                "TABLES_T",
+                "PROPERTIES",
+                "FORMATTED",
+                "CREATED",
+                "VERSION#",
+                "PTABLE_NAME",
+                "TABLE_NAME",
+                "SCHEMA_NAME",
+                "TABLE_T",
+                "SFS_PROPS_DF",
+                "SFS_PROPS_NORMID",
+                "SFS_PROPS_ROOTID",
+                "SFS_PROPS_PTS"
             ]
         },
         "DBMS_DDL": {
@@ -3380,6 +4747,11 @@
                 "IS_TRIGGER_FIRE_ONCE_INTERNAL",
                 "SET_TRIGGER_FIRING_PROPERTY",
                 "WRAP"
+            ],
+            "identifiers": [
+                "MALFORMED_WRAP_INPUT",
+                "APPLY_SERVER_ONLY",
+                "FIRE_ONCE"
             ]
         },
         "DBMS_DEBUG": {
@@ -3420,6 +4792,149 @@
                 "SHOW_SOURCE",
                 "SYNCHRONIZE",
                 "TARGET_PROGRAM_RUNNING"
+            ],
+            "identifiers": [
+                "LIBUNITTYPE",
+                "LINE#",
+                "DBLINK",
+                "OWNER",
+                "NAME",
+                "BREAKPOINT_INFO",
+                "OER",
+                "PROGRAM",
+                "REASON",
+                "INTERPRETERDEPTH",
+                "STACKDEPTH",
+                "BREAKPOINT",
+                "TERMINATED",
+                "LINE#",
+                "RUNTIME_INFO",
+                "ENTRYPOINTNAME",
+                "LIBUNITTYPE",
+                "LINE#",
+                "DBLINK",
+                "OWNER",
+                "NAME",
+                "NAMESPACE",
+                "PROGRAM_INFO",
+                "FULL_DIAGNOSTICS",
+                "DIAGNOSTIC_LEVEL",
+                "DEFAULT_TIMEOUT",
+                "NO_TARGET_PROGRAM",
+                "TARGET_ERROR",
+                "UNIMPLEMENTED",
+                "DESUPPORTED",
+                "PIPE_DATA_ERROR",
+                "PIPE_DATATYPE_MISMATCH",
+                "PIPE_RECEIVE_FAILURE",
+                "PIPE_SEND_FAILURE",
+                "PIPE_CREATION_FAILURE",
+                "ILLEGAL_INIT",
+                "ABORT_ON_TIMEOUT",
+                "NODEBUG_ON_TIMEOUT",
+                "CONTINUE_ON_TIMEOUT",
+                "RETRY_ON_TIMEOUT",
+                "CFLAGS_DYNAMIC_OPEN",
+                "CFLAGS_FIRST_ITER",
+                "CFLAGS_DYNAMIC_SQL",
+                "CFLAGS_REFCUR_BIND",
+                "CFLAGS_RECURSIVE",
+                "CFLAGS_UNINITIALIZED",
+                "CFLAGS_NOTFOUND",
+                "CFLAGS_FOUND",
+                "CFLAGS_OPEN",
+                "ERROR_INCOMPATIBLE",
+                "ERROR_SYNCH",
+                "ERROR_UNRECOGNIZED",
+                "ERROR_REINIT",
+                "ERROR_NOLOGON",
+                "ERROR_NOASYNC",
+                "ERROR_UPIERR",
+                "ERROR_PROBE_INVALID",
+                "ERROR_NO_RPH",
+                "ERROR_PBRUN_MISMATCH",
+                "ERROR_TIMEOUT",
+                "ERROR_COMMUNICATION",
+                "ERROR_EXCEPTION",
+                "ERROR_DEFERRED",
+                "ERROR_UNIMPLEMENTED",
+                "ERROR_BAD_HANDLE",
+                "ERROR_STALE_BREAKPT",
+                "ERROR_IDLE_BREAKPT",
+                "ERROR_NO_SUCH_BREAKPT",
+                "ERROR_ILLEGAL_LINE",
+                "ERROR_NAME_INCOMPLETE",
+                "ERROR_OTHER",
+                "ERROR_VALUE_MALFORMED",
+                "ERROR_ILLEGAL_NULL",
+                "ERROR_ILLEGAL_VALUE",
+                "ERROR_NULLVALUE",
+                "ERROR_NULLCOLLECTION",
+                "ERROR_ILLEGAL_INDEX",
+                "ERROR_INDEXED_TABLE",
+                "ERROR_UNKNOWN_TYPE",
+                "ERROR_NO_SUCH_OBJECT",
+                "ERROR_NO_DEBUG_INFO",
+                "ERROR_BOGUS_FRAME",
+                "SUCCESS",
+                "REASON_OER_BREAKPOINT",
+                "REASON_ICD_RETURN",
+                "REASON_ICD_CALL",
+                "REASON_UNHANDLED",
+                "REASON_RPC",
+                "REASON_WATCH",
+                "REASON_SQL",
+                "REASON_KNL_EXIT",
+                "REASON_ABORT",
+                "REASON_INSTANTIATE",
+                "REASON_TIMEOUT",
+                "REASON_HANDLER",
+                "REASON_EXIT",
+                "REASON_EXCEPTION",
+                "REASON_INTERRUPT",
+                "REASON_LINE",
+                "REASON_FINISH",
+                "REASON_RETURN",
+                "REASON_ENTER",
+                "REASON_BREAKPOINT",
+                "REASON_INTERPRETER_STARTING",
+                "REASON_NONE",
+                "INFO_GETOERINFO",
+                "INFO_GETLINEINFO",
+                "INFO_GETBREAKPOINT",
+                "INFO_GETSTACKDEPTH",
+                "BREAK_RPC",
+                "BREAK_CONTROL_C",
+                "ABORT_EXECUTION",
+                "BREAK_HANDLER",
+                "BREAK_ANY_RETURN",
+                "BREAK_NEXT_LINE",
+                "BREAK_RETURN",
+                "BREAK_ANY_CALL",
+                "BREAK_EXCEPTION",
+                "LIBUNITTYPE_UNKNOWN",
+                "LIBUNITTYPE_TRIGGER",
+                "LIBUNITTYPE_PACKAGE_BODY",
+                "LIBUNITTYPE_PACKAGE",
+                "LIBUNITTYPE_FUNCTION",
+                "LIBUNITTYPE_PROCEDURE",
+                "LIBUNITTYPE_CURSOR",
+                "NAMESPACE_NONE",
+                "NAMESPACE_TRIGGER",
+                "NAMESPACE_PKG_BODY",
+                "NAMESPACE_PKGSPEC_OR_TOPLEVEL",
+                "NAMESPACE_CURSOR",
+                "OER_TABLE",
+                "VC2_TABLE",
+                "BREAKPOINT_TABLE",
+                "BACKTRACE_TABLE",
+                "INDEX_TABLE",
+                "BREAKPOINT_STATUS_REMOTE",
+                "BREAKPOINT_STATUS_DISABLED",
+                "BREAKPOINT_STATUS_ACTIVE2",
+                "BREAKPOINT_STATUS_ACTIVE",
+                "BREAKPOINT_STATUS_UNUSED",
+                "STATUS"
             ]
         },
         "DBMS_DEFER": {
@@ -3453,6 +4968,62 @@
                 "TSTZ_ARG",
                 "TTZ_ARG",
                 "VARCHAR2_ARG"
+            ],
+            "identifiers": [
+                "RPCDISABLED_NUM",
+                "RPCDISABLED",
+                "PARAMLEN_MSG",
+                "EXECUTIONDISABLED_NUM",
+                "EXECUTIONDISABLED",
+                "PARAMLEN_MSG",
+                "PARAMLEN_NUM",
+                "PARAMETERLENGTH",
+                "MIXEDDEST_MSG",
+                "MIXEDDEST_NUM",
+                "MIXEDDEST",
+                "NOPARALPROP_NUM",
+                "NOPARALPROP",
+                "COMMFAIL_MSG",
+                "COMMFAIL_NUM",
+                "COMMFAILURE",
+                "CONDESCFAIL_NUM",
+                "CONDESCFAILURE",
+                "CONFLICT_MSG",
+                "CONFLICT_NUM",
+                "UPDATECONFLICT",
+                "MALFORMED_NUM",
+                "MALFORMEDCALL",
+                "DEFERROR_NUM",
+                "DBMS_DEFERERROR",
+                "QUIESCE_MSG",
+                "QUIESCE_NUM",
+                "DEFERRED_RPC_QUIESCE",
+                "BAD_PARAM_NUM",
+                "BAD_PARAM_TYPE",
+                "NODE_LIST_T",
+                "REPCAT_STATUS_NORMAL",
+                "ARG_FORM_ANY",
+                "ARG_FORM_NCHAR",
+                "ARG_FORM_IMPLICIT",
+                "ARG_FORM_NONE",
+                "ARG_CSETID_NONE",
+                "ARG_TYPE_TSLTZ",
+                "ARG_TYPE_IDS",
+                "ARG_TYPE_IYM",
+                "ARG_TYPE_TSTZ",
+                "ARG_TYPE_TIMESTAMP",
+                "ARG_TYPE_TTZ",
+                "ARG_TYPE_TIME",
+                "ARG_TYPE_CFIL",
+                "ARG_TYPE_BFIL",
+                "ARG_TYPE_CLOB",
+                "ARG_TYPE_BLOB",
+                "ARG_TYPE_RAW",
+                "ARG_TYPE_ROWID",
+                "ARG_TYPE_DATE",
+                "ARG_TYPE_VARCHAR2",
+                "ARG_TYPE_CHAR",
+                "ARG_TYPE_NUM"
             ]
         },
         "DBMS_DEFER_QUERY": {
@@ -3481,6 +5052,35 @@
                 "GET_TSTZ_ARG",
                 "GET_TTZ_ARG",
                 "GET_VARCHAR2_ARG"
+            ],
+            "identifiers": [
+                "VAL_ARY",
+                "TYPE_ARY",
+                "REPCAT_STATUS_NORMAL",
+                "ARG_FORM_ANY",
+                "ARG_FORM_NCHAR",
+                "ARG_FORM_IMPLICIT",
+                "ARG_FORM_NONE",
+                "ARG_CSETID_NONE",
+                "ARG_TYPE_ANYDATA",
+                "ARG_TYPE_OBJECT_NULL_VECTOR",
+                "ARG_TYPE_TSLTZ",
+                "ARG_TYPE_IDS",
+                "ARG_TYPE_IYM",
+                "ARG_TYPE_TSTZ",
+                "ARG_TYPE_TIMESTAMP",
+                "ARG_TYPE_TTZ",
+                "ARG_TYPE_TIME",
+                "ARG_TYPE_CFIL",
+                "ARG_TYPE_BFIL",
+                "ARG_TYPE_CLOB",
+                "ARG_TYPE_BLOB",
+                "ARG_TYPE_RAW",
+                "ARG_TYPE_ROWID",
+                "ARG_TYPE_DATE",
+                "ARG_TYPE_VARCHAR2",
+                "ARG_TYPE_CHAR",
+                "ARG_TYPE_NUM"
             ]
         },
         "DBMS_DEFER_SYS": {
@@ -3512,22 +5112,72 @@
                 "UNSCHEDULE_EXECUTION",
                 "UNSCHEDULE_PURGE",
                 "UNSCHEDULE_PUSH"
+            ],
+            "identifiers": [
+                "DELIVERY_ORDER_INFINITY",
+                "TRANSACTIONS_INFINITY",
+                "SECONDS_INFINITY",
+                "PURGE_METHOD_PRECISE",
+                "PURGE_METHOD_QUICK",
+                "RESULT_CANT_GET_SR_ENQ",
+                "RESULT_PURGE_DISABLED",
+                "RESULT_PUSH_DISABLED",
+                "RESULT_ERRORS",
+                "RESULT_DELIVERY_ORDER_LIMIT",
+                "RESULT_TRANSACTION_COUNT",
+                "RESULT_EXECUTION_SECONDS",
+                "RESULT_STARTUP_SECONDS",
+                "RESULT_OK",
+                "CANTSETDISABLED_NUM",
+                "CANTSETDISABLED",
+                "SERIALPROPNOTALLOWED_NUM",
+                "SERIALPROPNOTALLOWED",
+                "NOTEMPTYQUEUE_NUM",
+                "NOTEMPTYQUEUE",
+                "ARGOUTOFRANGE_NUM",
+                "ARGOUTOFRANGE",
+                "INCOMPLETEPARALLELPUSH_NUM",
+                "INCOMPLETEPARALLELPUSH",
+                "PROPAGATOR_INUSE_NUM",
+                "PROPAGATOR_INUSE",
+                "MISSINGPROPAGATOR_NUM",
+                "MISSINGPROPAGATOR",
+                "DUPLICATEPROPAGATOR_NUM",
+                "DUPLICATEPROPAGATOR",
+                "ALREADYPROPAGATOR_NUM",
+                "ALREADYPROPAGATOR",
+                "MISSINGUSER_NUM",
+                "MISSINGUSER",
+                "NOREPOPTION_NUM",
+                "NOREPOPTION",
+                "CRT_ERR_MSG",
+                "CRT_ERR_NUM",
+                "CRT_ERR_ERR"
             ]
         },
         "DBMS_DESCRIBE": {
             "procedures": [
                 "DESCRIBE_PROCEDURE"
+            ],
+            "identifiers": [
+                "NUMBER_TABLE",
+                "VARCHAR2_TABLE"
             ]
         },
         "DBMS_DG": {
             "procedures": [
                 "INITIATE_FS_FAILOVER"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_DIMENSION": {
             "procedures": [
                 "DESCRIBE_DIMENSION",
                 "VALIDATE_DIMENSION"
+            ],
+            "identifiers": [
+                "DIMENSIONNOTFOUND"
             ]
         },
         "DBMS_DISTRIBUTED_TRUST_ADMIN": {
@@ -3536,6 +5186,8 @@
                 "ALLOW_SERVER",
                 "DENY_ALL",
                 "DENY_SERVER"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_DST": {
@@ -3553,11 +5205,17 @@
                 "UPGRADE_DATABASE",
                 "UPGRADE_SCHEMA",
                 "UPGRADE_TABLE"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_EDITIONS_UTILITIES": {
             "procedures": [
                 "SET_EDITIONING_VIEWS_READ_ONLY"
+            ],
+            "identifiers": [
+                "MISSING_TAB",
+                "INSUF_PRIV"
             ]
         },
         "DBMS_EPG": {
@@ -3578,11 +5236,30 @@
                 "SET_DAD_ATTRIBUTE",
                 "SET_GLOBAL_ATTRIBUTE",
                 "UNMAP_DAD"
+            ],
+            "identifiers": [
+                "LOG_DEBUG",
+                "LOG_INFO",
+                "LOG_NOTICE",
+                "LOG_WARNING",
+                "LOG_ERR",
+                "LOG_CRIT",
+                "LOG_ALERT",
+                "LOG_EMERG",
+                "UNKNOWN_ATTRIBUTE_NUM",
+                "DAD_NOT_FOUND_NUM",
+                "INVALID_DAD_NAME_NUM",
+                "UNKNOWN_ATTRIBUTE",
+                "DAD_NOT_FOUND",
+                "INVALID_DAD_NAME",
+                "VARCHAR2_TABLE"
             ]
         },
         "DBMS_ERRLOG": {
             "procedures": [
                 "CREATE_ERROR_LOG"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_FGA": {
@@ -3591,6 +5268,14 @@
                 "DISABLE_POLICY",
                 "DROP_POLICY",
                 "ENABLE_POLICY"
+            ],
+            "identifiers": [
+                "ANY_COLUMNS",
+                "ALL_COLUMNS",
+                "XML",
+                "DB_EXTENDED",
+                "DB",
+                "EXTENDED"
             ]
         },
         "DBMS_FILE_GROUP": {
@@ -3609,6 +5294,17 @@
                 "REMOVE_FILE",
                 "REVOKE_OBJECT_PRIVILEGE",
                 "REVOKE_SYSTEM_PRIVILEGE"
+            ],
+            "identifiers": [
+                "READ_ON_FILE_GROUP",
+                "MANAGE_ON_FILE_GROUP",
+                "READ_ANY_FILE_GROUP",
+                "MANAGE_ANY_FILE_GROUP",
+                "MANAGE_FILE_GROUP",
+                "DATAFILE",
+                "DATAPUMP_LOG_FILE",
+                "EXPORT_DUMP_FILE",
+                "INFINITE"
             ]
         },
         "DBMS_FILE_TRANSFER": {
@@ -3616,6 +5312,11 @@
                 "COPY_FILE",
                 "GET_FILE",
                 "PUT_FILE"
+            ],
+            "identifiers": [
+                "PACKAGE_FLAG",
+                "INVALID_PARAMETER_NUM",
+                "INVALID_PARAMETER"
             ]
         },
         "DBMS_FLASHBACK": {
@@ -3625,18 +5326,28 @@
                 "ENABLE_AT_TIME",
                 "GET_SYSTEM_CHANGE_NUMBER",
                 "TRANSACTION_BACKOUT"
+            ],
+            "identifiers": [
+                "CASCADE",
+                "NONCONFLICT_ONLY",
+                "NOCASCADE_FORCE",
+                "NOCASCADE"
             ]
         },
         "DBMS_FLASHBACK_ARCHIVE": {
             "procedures": [
                 "DISASSOCIATE_FBA",
                 "REASSOCIATE_FBA"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_FREQUENT_ITEMSET": {
             "procedures": [
                 "FI_HORIZONTAL",
                 "FI_TRANSACTIONAL"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_HM": {
@@ -3647,6 +5358,10 @@
                 "GET_RUN_REPORT",
                 "RUN_CHECK",
                 "RUN_DDE_ACTION"
+            ],
+            "identifiers": [
+                "INTERNAL_ERROR_NUM",
+                "INTERNAL_ERROR"
             ]
         },
         "DBMS_HPROF": {
@@ -3654,6 +5369,8 @@
                 "ANALYZE",
                 "START_PROFILING",
                 "STOP_PROFILING"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_HS_PARALLEL": {
@@ -3662,6 +5379,23 @@
                 "CREATE_TABLE_TEMPLATE",
                 "DROP_VIEW",
                 "LOAD_TABLE"
+            ],
+            "identifiers": [
+                "HS_SAMPLE_REFCUR_T",
+                "HS_PARTION_REFCUR_T",
+                "HS_PART_REFCUR_T",
+                "T",
+                "HS_SAMPLE_REC",
+                "T",
+                "HS_PARTION_REC",
+                "T",
+                "HS_PART_REC",
+                "NO_VIEW_NUM",
+                "NO_REMOTE_TABLE_NUM",
+                "NO_DBLINK_NUM",
+                "NO_VIEW",
+                "NO_REMOTE_TABLE",
+                "NO_DBLINK"
             ]
         },
         "DBMS_JOB": {
@@ -3679,6 +5413,9 @@
                 "SUBMIT",
                 "USER_EXPORT",
                 "WHAT"
+            ],
+            "identifiers": [
+                "ANY_INSTANCE"
             ]
         },
         "DBMS_LDAP": {
@@ -3724,6 +5461,167 @@
                 "SIMPLE_BIND_S",
                 "UNBIND_S",
                 "VALUE_FREE_BLOB"
+            ],
+            "identifiers": [
+                "BLOB_COLLECTION",
+                "BERVAL_COLLECTION",
+                "BINVAL_COLLECTION",
+                "STRING_COLLECTION",
+                "BER_ELEMENT",
+                "LDCTL_ISCRITICAL",
+                "LDCTL_VALUE",
+                "LDCTL_OID",
+                "LDAPCONTROL",
+                "USECONDS",
+                "SECONDS",
+                "TIMEVAL",
+                "BERVAL",
+                "MOD_ARRAY",
+                "MESSAGE",
+                "SESSION",
+                "INTERFACE_VERSION",
+                "VERSION",
+                "NO_MEMORY",
+                "PARAM_ERROR",
+                "USER_CANCELLED",
+                "FILTER_ERROR",
+                "AUTH_UNKNOWN",
+                "TIMEOUT",
+                "DECODING_ERROR",
+                "ENCODING_ERROR",
+                "LOCAL_ERROR",
+                "SERVER_DOWN",
+                "OTHER",
+                "RESULTS_TOO_LARGE",
+                "NO_OBJECT_CLASS_MODS",
+                "ALREADY_EXISTS",
+                "NOT_ALLOWED_ON_RDN",
+                "NOT_ALLOWED_ON_NONLEAF",
+                "OBJECT_CLASS_VIOLATION",
+                "NAMING_VIOLATION",
+                "LOOP_DETECT",
+                "UNWILLING_TO_PERFORM",
+                "UNAVAILABLE",
+                "BUSY",
+                "INSUFFICIENT_ACCESS",
+                "INVALID_CREDENTIALS",
+                "INAPPROPRIATE_AUTH",
+                "ALIAS_DEREF_PROBLEM",
+                "IS_LEAF",
+                "INVALID_DN_SYNTAX",
+                "ALIAS_PROBLEM",
+                "NO_SUCH_OBJECT",
+                "INVALID_SYNTAX",
+                "TYPE_OR_VALUE_EXISTS",
+                "CONSTRAINT_VIOLATION",
+                "INAPPROPRIATE_MATCHING",
+                "UNDEFINED_TYPE",
+                "NO_SUCH_ATTRIBUTE",
+                "UNAVAILABLE_CRITIC",
+                "ADMINLIMIT_EXCEEDED",
+                "REFERRAL",
+                "PARTIAL_RESULTS",
+                "STRONG_AUTH_REQUIRED",
+                "STRONG_AUTH_NOT_SUPPORTED",
+                "COMPARE_TRUE",
+                "COMPARE_FALSE",
+                "SIZELIMIT_EXCEEDED",
+                "TIMELIMIT_EXCEEDED",
+                "PROTOCOL_ERROR",
+                "OPERATIONS_ERROR",
+                "SUCCESS",
+                "TYPE_ADD_INFO",
+                "URL_ERR_MEM",
+                "URL_ERR_BADSCOPE",
+                "URL_ERR_NODN",
+                "URL_ERR_NOTLDAP",
+                "DEREF_ALWAYS",
+                "DEREF_FINDING",
+                "DEREF_SEARCHING",
+                "DEREF_NEVER",
+                "REQST_WRITING",
+                "REQST_NOTCONNECTED",
+                "REQST_CHASINGREFS",
+                "REQST_INPROGRESS",
+                "CONNST_CONNECTED",
+                "CONNST_CONNECTING",
+                "CONNST_NEEDSOCKET",
+                "AUTH_SASL",
+                "AUTH_SIMPLE",
+                "AUTH_NONE",
+                "MOD_BVALUES",
+                "MOD_REPLACE",
+                "MOD_DELETE",
+                "MOD_ADD",
+                "SCOPE_SUBTREE",
+                "SCOPE_ONELEVEL",
+                "SCOPE_BASE",
+                "GSLC_SSL_TWOWAY_AUTH",
+                "GSLC_SSL_ONEWAY_AUTH",
+                "GSLC_SSL_NO_AUTH",
+                "OPT_OFF",
+                "OPT_ON",
+                "OPT_ERROR_STRING",
+                "OPT_ERROR_NUMBER",
+                "OPT_PREFERRED_LANGUAGE",
+                "OPT_CLIENT_CONTROLS",
+                "OPT_SERVER_CONTROLS",
+                "OPT_PROTOCOL_VERSION",
+                "OPT_REFERRAL_HOP_LIMIT",
+                "OPT_CACHE_ENABLE",
+                "OPT_CACHE_STRATEGY",
+                "OPT_CACHE_FN_PTRS",
+                "OPT_IO_FN_PTRS",
+                "OPT_SSL",
+                "OPT_RESTART",
+                "OPT_REFERRALS",
+                "OPT_REBIND_ARG",
+                "OPT_REBIND_FN",
+                "OPT_THREAD_FN_PTRS",
+                "OPT_TIMELIMIT",
+                "OPT_SIZELIMIT",
+                "OPT_DEREF",
+                "OPT_DESC",
+                "SSL_PORT",
+                "PORT",
+                "UTF8_CONVERSION",
+                "USE_EXCEPTION",
+                "MTS_MODE_NOT_SUPPORTED",
+                "INVALID_SSL_AUTH_MODE",
+                "INVALID_SSL_WALLET_PASSWD",
+                "INVALID_SSL_WALLET_LOC",
+                "INVALID_NOTYPES",
+                "INVALID_DELETEOLDRDN",
+                "INVALID_NEWPARENT",
+                "INVALID_RDN",
+                "INVALID_MOD_VALUE",
+                "INVALID_MOD_TYPE",
+                "INVALID_MOD_OPTION",
+                "INVALID_MOD_ARRAY",
+                "INVALID_ENTRY_DN",
+                "GET_DN_ERROR",
+                "COUNT_ENTRY_ERROR",
+                "INVALID_MESSAGE",
+                "INVALID_SEARCH_TIME_VAL",
+                "INVALID_SEARCH_SCOPE",
+                "INVALID_AUTH_METHOD",
+                "INVALID_SESSION",
+                "INIT_FAILED",
+                "GENERAL_ERROR",
+                "INVALID_SSLAUTH",
+                "INVALID_SSLWALLETPASSWD",
+                "INVALID_SSLWRL",
+                "INVALID_LDAP_DELETEOLDRDN",
+                "INVALID_LDAP_NEWPARENT",
+                "INVALID_LDAP_NEWRDN",
+                "INVALID_LDAP_DN",
+                "INVALID_LDAPMOD",
+                "INVALID_LDAP_ENTRY_DN",
+                "INVALID_LDAP_MESSAGE",
+                "INVALID_LDAP_TIME_VALUE",
+                "INVALID_LDAP_SEARCH_SCOPE",
+                "INVALID_LDAP_AUTH_METHOD",
+                "INVALID_LDAP_SESSION"
             ]
         },
         "DBMS_LDAP_UTL": {
@@ -3767,6 +5665,84 @@
                 "SET_USER_PROPERTIES",
                 "SUBSCRIBE_USER",
                 "UNSUBSCRIBE_USER"
+            ],
+            "identifiers": [
+                "SERVICE_HANDLE",
+                "ORCLCTX_HANDLE",
+                "APP_HANDLE",
+                "GROUP_HANDLE",
+                "USER_HANDLE",
+                "SUBSCRIBER_HANDLE",
+                "TYPE_DEFAULT",
+                "TYPE_DN",
+                "TYPE_GUID",
+                "TYPE_NICKNAME",
+                "AUTH_EXTENDED",
+                "AUTH_SIMPLE",
+                "DELETE_PROPERTY_SET",
+                "MODIFY_PROPERTY_SET",
+                "ADD_PROPERTY_SET",
+                "DELETE_PROPERTY",
+                "REPLACE_PROPERTY",
+                "ADD_PROPERTY",
+                "IDENTIFICATION_PROPERTIES",
+                "DEFAULT_RAD_PROPERTIES",
+                "EXTPROPTYPE_RAD",
+                "NICKNAME_PROPERTY",
+                "COMMON_PROPERTIES",
+                "DETACHED_PROPERTIES",
+                "ENTRY_PROPERTIES",
+                "DIRECT_MEMBERSHIP",
+                "NESTED_MEMBERSHIP",
+                "ERR_INTERNAL",
+                "ERR_MEM_ALLOC",
+                "INVALID_SERVICE_SCHEMA",
+                "USER_NOT_SUBSCRIBED",
+                "NO_SERVICES_INSTALLED",
+                "NO_SUBSCRIPTIONS_TO_SERVICES",
+                "NO_USER_SUBSCRIPTIONS",
+                "NO_SUCH_SERVICE",
+                "PROPERTY_NOT_FOUND",
+                "USER_PROPERTY_NOT_FOUND",
+                "SUBSCRIBER_NOT_FOUND",
+                "RESET_HANDLE",
+                "AUTH_PASSWD_CHANGE_WARN",
+                "USER_ACCT_DISABLED_ERROR",
+                "PWD_MUSTCHANGE_ERROR",
+                "PWD_GRACELOGIN_WARN",
+                "PWD_ILLEGALVALUE_ERROR",
+                "PWD_INHISTORY_ERROR",
+                "PWD_NULL_ERROR",
+                "PWD_NUMERIC_ERROR",
+                "PWD_MINLENGTH_ERROR",
+                "PWD_EXPIRE_WARN",
+                "PWD_EXPIRED_EXCEPTION",
+                "ACCT_TOTALLY_LOCKED_EXCEPTION",
+                "AUTH_FAILURE_EXCEPTION",
+                "MULTIPLE_GROUP_ENTRIES",
+                "NO_SUCH_GROUP",
+                "MULTIPLE_USER_ENTRIES",
+                "INVALID_SUBSCRIBER_ORCL_CTX",
+                "NO_SUBSCRIBER_ORCL_CTX",
+                "INVALID_ROOT_ORCL_CTX",
+                "MULTIPLE_SUBSCRIBER_ENTRIES",
+                "NO_ROOT_ORCL_CTX",
+                "NO_SUCH_USER",
+                "NO_SUCH_SUBSCRIBER",
+                "NO_GROUP_MEMBERSHIP",
+                "PARAM_ERROR",
+                "GENERAL_ERROR",
+                "SUCCESS",
+                "SESSION",
+                "BLOB_COLLECTION",
+                "BINVAL_COLLECTION",
+                "STRING_COLLECTION",
+                "PROPERTY_SET_COLLECTION",
+                "MOD_PROPERTY_SET",
+                "PROPERTY_SET",
+                "HANDLE",
+                "INTERFACE_VERSION",
+                "VERSION"
             ]
         },
         "DBMS_LOB": {
@@ -3818,6 +5794,77 @@
                 "TRIM",
                 "WRITE",
                 "WRITEAPPEND"
+            ],
+            "identifiers": [
+                "CONTENTTYPEBUF_WRONG_NUM",
+                "CONTENTTYPEBUF_WRONG",
+                "CONTENTTYPE_TOOLONG_NUM",
+                "CONTENTTYPE_TOOLONG",
+                "SECUREFILE_OUTOFBOUNDS_NUM",
+                "SECUREFILE_OUTOFBOUNDS",
+                "SECUREFILE_MARKERASED_NUM",
+                "SECUREFILE_MARKERASED",
+                "SECUREFILE_BADPARAM_NUM",
+                "SECUREFILE_BADPARAM",
+                "SECUREFILE_BADLOB_NUM",
+                "SECUREFILE_BADLOB",
+                "OPEN_TOOMANY_NUM",
+                "OPEN_TOOMANY",
+                "UNOPENED_FILE_NUM",
+                "UNOPENED_FILE",
+                "OPERATION_FAILED_NUM",
+                "OPERATION_FAILED",
+                "INVALID_DIRECTORY_NUM",
+                "INVALID_DIRECTORY",
+                "NOPRIV_DIRECTORY_NUM",
+                "NOPRIV_DIRECTORY",
+                "NOEXIST_DIRECTORY_NUM",
+                "NOEXIST_DIRECTORY",
+                "ECCESS_ERROR_NUM",
+                "ACCESS_ERROR",
+                "INVALID_ARGVAL_NUM",
+                "INVALID_ARGVAL",
+                "CLOB_DEDUPLICATE_REGION_TAB",
+                "MIME_TYPE",
+                "PRIMARY_LOB_OFFSET",
+                "PRIMARY_LOB",
+                "LEN",
+                "LOB_OFFSET",
+                "CLOB_DEDUPLICATE_REGION",
+                "BLOB_DEDUPLICATE_REGION_TAB",
+                "MIME_TYPE",
+                "PRIMARY_LOB_OFFSET",
+                "PRIMARY_LOB",
+                "LEN",
+                "LOB_OFFSET",
+                "BLOB_DEDUPLICATE_REGION",
+                "CONTENTTYPE_MAX_SIZE",
+                "DBFS_LINK_PATH_MAX_SIZE",
+                "DBFS_LINK_CACHE",
+                "DBFS_LINK_NOCACHE",
+                "DBFS_LINK_NO",
+                "DBFS_LINK_YES",
+                "DBFS_LINK_NEVER",
+                "DEDUPLICATE_ON",
+                "DEDUPLICATE_OFF",
+                "ENCRYPT_ON",
+                "ENCRYPT_OFF",
+                "COMPRESS_ON",
+                "COMPRESS_OFF",
+                "OPT_DEDUPLICATE",
+                "OPT_ENCRYPT",
+                "OPT_COMPRESS",
+                "NO_WARNING",
+                "DEFAULT_LANG_CTX",
+                "DEFAULT_CSID",
+                "WARN_INCONVERTIBLE_CHAR",
+                "SESSION",
+                "TRANSACTION",
+                "CALL",
+                "LOBMAXSIZE",
+                "LOB_READWRITE",
+                "LOB_READONLY",
+                "FILE_READONLY"
             ]
         },
         "DBMS_LOCK": {
@@ -3827,6 +5874,15 @@
                 "RELEASE",
                 "REQUEST",
                 "SLEEP"
+            ],
+            "identifiers": [
+                "MAXWAIT",
+                "X_MODE",
+                "SSX_MODE",
+                "S_MODE",
+                "SX_MODE",
+                "SS_MODE",
+                "NL_MODE"
             ]
         },
         "DBMS_LOGMNR": {
@@ -3837,12 +5893,45 @@
                 "MINE_VALUE",
                 "REMOVE_LOGFILE",
                 "START_LOGMNR"
+            ],
+            "identifiers": [
+                "LOGFILEDESCRIPTION",
+                "LOGFILEDESCTEMPLATE",
+                "LOGFILENAME",
+                "LOGFILENAMETEMPLATE",
+                "HOLE_IN_LOGSTREAM",
+                "ASSEMBLY_REQUIRED_SQL",
+                "CORRUPTED_BLK_IN_REDO",
+                "UNGUARANTEED_SQL",
+                "INVALID_SQL",
+                "VALID_SQL",
+                "THREADID",
+                "LENGTH",
+                "STRING_LITERALS_IN_STMT",
+                "NO_ROWID_IN_STMT",
+                "CONTINUOUS_MINE",
+                "PRINT_PRETTY_SQL",
+                "NO_SQL_DELIMITER",
+                "DICT_FROM_REDO_LOGS",
+                "DICT_FROM_ONLINE_CATALOG",
+                "DDL_DICT_TRACKING",
+                "SKIP_CORRUPTION",
+                "COMMITTED_DATA_ONLY",
+                "NO_DICT_RESET_ONSELECT",
+                "ADDFILE",
+                "REMOVEFILE",
+                "NEW"
             ]
         },
         "DBMS_LOGMNR_D": {
             "procedures": [
                 "BUILD",
                 "SET_TABLESPACE"
+            ],
+            "identifiers": [
+                "MARK_SAFE_MINE_POINT",
+                "STORE_IN_REDO_LOGS",
+                "STORE_IN_FLAT_FILE"
             ]
         },
         "DBMS_LOGSTDBY": {
@@ -3868,6 +5957,15 @@
                 "UNSKIP_ERROR",
                 "UNSKIP_TRANSACTION",
                 "VALIDATE_AUTH"
+            ],
+            "identifiers": [
+                "CHAR1",
+                "MAX_EVENTS",
+                "SKIP_ACTION_NOPRIVS",
+                "SKIP_ACTION_ERROR",
+                "SKIP_ACTION_REPLACE",
+                "SKIP_ACTION_APPLY",
+                "SKIP_ACTION_SKIP"
             ]
         },
         "DBMS_METADATA": {
@@ -3945,6 +6043,43 @@
                 "SET_REMAP_PARAM",
                 "SET_TRANSFORM_PARAM",
                 "SET_XMLFORMAT"
+            ],
+            "identifiers": [
+                "DBMSJAVA_ERROR_NUM",
+                "DBMSJAVA_ERROR",
+                "SQL_ERROR_NUM",
+                "SQL_ERROR",
+                "STYLESHEET_LOAD_ERROR_NUM",
+                "STYLESHEET_LOAD_ERROR",
+                "OBJECT_NOT_FOUND2_NUM",
+                "OBJECT_NOT_FOUND2",
+                "INCONSISTENT_OPERATION_NUM",
+                "INCONSISTENT_OPERATION",
+                "INVALID_OBJECT_PARAM_NUM",
+                "INVALID_OBJECT_PARAM",
+                "OBJECT_NOT_FOUND_NUM",
+                "OBJECT_NOT_FOUND",
+                "INCONSISTENT_ARGS_NUM",
+                "INCONSISTENT_ARGS",
+                "INVALID_OPERATION_NUM",
+                "INVALID_OPERATION",
+                "INVALID_ARGVAL_NUM",
+                "INVALID_ARGVAL",
+                "MULTIOBJECTS",
+                "T_VAR_COLL",
+                "OBJDDL",
+                "ALT_CONNECT_TYPE",
+                "BIND_PATTERN",
+                "GRANTOR",
+                "LEN",
+                "POS",
+                "OFFSET",
+                "NEWBLOCK_APPEND",
+                "NEWBLOCK_BEGIN",
+                "NEWBLOCK_CONTINUE",
+                "MAX_PROCOBJ_RETLEN",
+                "SESSION_HANDLE",
+                "SESSION_TRANSFORM"
             ]
         },
         "DBMS_METADATA_DIFF": {
@@ -3956,6 +6091,8 @@
                 "COMPARE_SXML",
                 "FETCH_CLOB",
                 "OPENC"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_MONITOR": {
@@ -3972,10 +6109,16 @@
                 "SERV_MOD_ACT_TRACE_ENABLE",
                 "SESSION_TRACE_DISABLE",
                 "SESSION_TRACE_ENABLE"
+            ],
+            "identifiers": [
+                "ALL_ACTIONS",
+                "ALL_MODULES"
             ]
         },
         "DBMS_MVIEW": {
             "procedures": [
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_NETWORK_ACL_ADMIN": {
@@ -3991,6 +6134,28 @@
                 "HANDLEPREDELETE",
                 "UNASSIGN_ACL",
                 "UNASSIGN_WALLET_ACL"
+            ],
+            "identifiers": [
+                "DOMAIN_MASK",
+                "HOSTNAME_MASK",
+                "IP_SUBNET_MASK",
+                "IP_ADDR_MASK",
+                "BAD_ARGUMENT_NUM",
+                "INVALID_WALLET_PATH_NUM",
+                "INVALID_PRIVILEGE_NUM",
+                "INVALID_HOST_NUM",
+                "INVALID_ACL_PATH_NUM",
+                "ACL_NOT_FOUND_NUM",
+                "EMPTY_ACL_NUM",
+                "ACE_ALREADY_EXISTS_NUM",
+                "BAD_ARGUMENT",
+                "INVALID_WALLET_PATH",
+                "INVALID_PRIVILEGE",
+                "INVALID_HOST",
+                "INVALID_ACL_PATH",
+                "ACL_NOT_FOUND",
+                "EMPTY_ACL",
+                "ACE_ALREADY_EXISTS"
             ]
         },
         "DBMS_NETWORK_ACL_UTILITY": {
@@ -3999,6 +6164,9 @@
                 "DOMAINS",
                 "DOMAIN_LEVEL",
                 "EQUALS_HOST"
+            ],
+            "identifiers": [
+                "DOMAIN_TABLE"
             ]
         },
         "DBMS_OBFUSCATION_TOOLKIT": {
@@ -4010,6 +6178,13 @@
                 "DESENCRYPT",
                 "DESGETKEY",
                 "MD5"
+            ],
+            "identifiers": [
+                "INVALIDTRIPLEDESMODE",
+                "THREEKEYMODE",
+                "TWOKEYMODE",
+                "RAW_CHECKSUM",
+                "VARCHAR2_CHECKSUM"
             ]
         },
         "DBMS_ODCI": {
@@ -4021,6 +6196,8 @@
                 "RESTOREREFCURSOR",
                 "SAVEREFCURSOR",
                 "UPGRADE_SECOBJ"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_OFFLINE_OG": {
@@ -4032,10 +6209,25 @@
                 "END_INSTANTIATION",
                 "END_LOAD",
                 "RESUME_SUBSET_OF_MASTERS"
+            ],
+            "identifiers": [
+                "UNKNOWNSITE_NUM",
+                "UNKNOWNSITE",
+                "WRONGSITE_NUM",
+                "WRONGSITE",
+                "SITEALREADYEXISTS_NUM",
+                "SITEALREADYEXISTS",
+                "WRONGSTATE_NUM",
+                "WRONGSTATE",
+                "BADARGUMENT_NUM",
+                "BADARGUMENT",
+                "SETOFSITETYPE"
             ]
         },
         "DBMS_OUTLN": {
             "procedures": [
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_OUTPUT": {
@@ -4047,6 +6239,9 @@
                 "NEW_LINE",
                 "PUT",
                 "PUT_LINE"
+            ],
+            "identifiers": [
+                "CHARARR"
             ]
         },
         "DBMS_PARALLEL_EXECUTE": {
@@ -4071,11 +6266,37 @@
                 "SET_CHUNK_STATUS",
                 "STOP_TASK",
                 "TASK_STATUS"
+            ],
+            "identifiers": [
+                "CHUNK_NOT_FOUND",
+                "TASK_NOT_FOUND",
+                "DUPLICATE_TASK_NAME",
+                "INVALID_STATE_FOR_RESUME",
+                "INVALID_STATE_FOR_RUN",
+                "INVALID_STATUS",
+                "INVALID_STATE_FOR_CHUNK",
+                "INVALID_TABLE",
+                "MISSING_ROLE",
+                "CRASHED",
+                "FINISHED_WITH_ERROR",
+                "FINISHED",
+                "PROCESSING",
+                "CHUNKED",
+                "CHUNKING_FAILED",
+                "CHUNKING",
+                "CREATED",
+                "PROCESSED_WITH_ERROR",
+                "PROCESSED",
+                "ASSIGNED",
+                "UNASSIGNED"
             ]
         },
         "DBMS_PCLXUTIL": {
             "procedures": [
                 "BUILD_PART_INDEX"
+            ],
+            "identifiers": [
+                "JOBLIST"
             ]
         },
         "DBMS_PIPE": {
@@ -4094,6 +6315,9 @@
                 "UNPACK_MESSAGE",
                 "UNPACK_MESSAGE_RAW",
                 "UNPACK_MESSAGE_ROWID"
+            ],
+            "identifiers": [
+                "MAXWAIT"
             ]
         },
         "DBMS_PREDICTIVE_ANALYTICS": {
@@ -4101,12 +6325,19 @@
                 "EXPLAIN",
                 "PREDICT",
                 "PROFILE"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_PREPROCESSOR": {
             "procedures": [
                 "GET_POST_PROCESSED_SOURCE",
                 "PRINT_POST_PROCESSED_SOURCE"
+            ],
+            "identifiers": [
+                "EMPTY_INPUT",
+                "WRAPPED_INPUT",
+                "SOURCE_LINES_T"
             ]
         },
         "DBMS_PROFILER": {
@@ -4120,6 +6351,16 @@
                 "ROLLUP_UNIT",
                 "START_PROFILER",
                 "STOP_PROFILER"
+            ],
+            "identifiers": [
+                "PROFILER_ERROR",
+                "VERSION_MISMATCH",
+                "MINOR_VERSION",
+                "MAJOR_VERSION",
+                "ERROR_VERSION",
+                "ERROR_IO",
+                "ERROR_PARAM",
+                "SUCCESS"
             ]
         },
         "DBMS_PROPAGATION_ADM": {
@@ -4129,6 +6370,8 @@
                 "DROP_PROPAGATION",
                 "START_PROPAGATION",
                 "STOP_PROPAGATION"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_RANDOM": {
@@ -4140,6 +6383,9 @@
                 "STRING",
                 "TERMINATE",
                 "VALUE"
+            ],
+            "identifiers": [
+                "NUM_ARRAY"
             ]
         },
         "DBMS_RECTIFIER_DIFF": {
@@ -4148,6 +6394,26 @@
                 "RECTIFY",
                 "TURN_REPLICATION_OFF",
                 "TURN_REPLICATION_ON"
+            ],
+            "identifiers": [
+                "BADMRNAME_NUM",
+                "BADMRNAME",
+                "UNSUPPORTEDTYPE_NUM",
+                "UNSUPPORTEDTYPE",
+                "UNKNOWNCOLUMN_NUM",
+                "UNKNOWNCOLUMN",
+                "NOTSHAPEEQUIVALENT_NUM",
+                "NOTSHAPEEQUIVALENT",
+                "CANNOTBENULL_NUM",
+                "CANNOTBENULL",
+                "BADNAME_NUM",
+                "BADNAME",
+                "MISSINGPRIMARYKEY_NUM",
+                "MISSINGPRIMARYKEY",
+                "BADNUMBER_NUM",
+                "BADNUMBER",
+                "NOSUCHSITE_NUM",
+                "NOSUCHSITE"
             ]
         },
         "DBMS_REDEFINITION": {
@@ -4160,6 +6426,15 @@
                 "START_REDEF_TABLE",
                 "SYNC_INTERIM_TABLE",
                 "UNREGISTER_DEPENDENT_OBJECT"
+            ],
+            "identifiers": [
+                "CONS_ORIG_PARAMS",
+                "CONS_MVLOG",
+                "CONS_TRIGGER",
+                "CONS_CONSTRAINT",
+                "CONS_INDEX",
+                "CONS_USE_ROWID",
+                "CONS_USE_PK"
             ]
         },
         "DBMS_REFRESH": {
@@ -4173,6 +6448,9 @@
                 "SUBTRACT",
                 "USER_EXPORT",
                 "USER_EXPORT_CHILD"
+            ],
+            "identifiers": [
+                "REPAPI_RGROUP"
             ]
         },
         "DBMS_REPAIR": {
@@ -4186,6 +6464,21 @@
                 "REBUILD_SHC_INDEX",
                 "SEGMENT_FIX_STATUS",
                 "SKIP_CORRUPT_BLOCKS"
+            ],
+            "identifiers": [
+                "LOCK_WAIT",
+                "LOCK_NOWAIT",
+                "ALL_INDEX_ID",
+                "ORPHAN_TABLE",
+                "REPAIR_TABLE",
+                "DROP_ACTION",
+                "PURGE_ACTION",
+                "CREATE_ACTION",
+                "NOSKIP_FLAG",
+                "SKIP_FLAG",
+                "CLUSTER_OBJECT",
+                "INDEX_OBJECT",
+                "TABLE_OBJECT"
             ]
         },
         "DBMS_REPCAT": {
@@ -4318,6 +6611,230 @@
                 "VALIDATE_FLAVOR_DEFINITION",
                 "VALIDATE_FOR_LOCAL_FLAVOR",
                 "WAIT_MASTER_LOG"
+            ],
+            "identifiers": [
+                "FLAVORNOOBJECT",
+                "FLAVOROBJECT_NUM",
+                "FLAVOROBJECT",
+                "MISSINGFLAVOR_NUM",
+                "MISSINGFLAVOR",
+                "TOPFLAVOR_NUM",
+                "TOPFLAVOR",
+                "FLAVORPUBLISHED_NUM",
+                "FLAVORPUBLISHED",
+                "DUPLICATEFLAVOR_NUM",
+                "DUPLICATEFLAVOR",
+                "FLAVORDUPLICATEOBJ_NUM",
+                "FLAVORDUPLICATEOBJ",
+                "UPDLOBNOTSUPPORTED_NUM",
+                "UPDLOBNOTSUPPORTED",
+                "NOTALLGENERATED_NUM",
+                "NOTALLGENERATED",
+                "OPNOTSUPPORTED_NUM",
+                "OPNOTSUPPORTED",
+                "OBJECTNOTGENERATED_NUM",
+                "OBJECTNOTGENERATED",
+                "DBLINKUIDMISMATCH_NUM",
+                "DBLINKUIDMISMATCH",
+                "DBLINKMISMATCH_NUM",
+                "DBLINKMISMATCH",
+                "MISSINGDBLINK_NUM",
+                "MISSINGDBLINK",
+                "INCORRECTOBJTYPE_NUM",
+                "INCORRECTOBJTYPE",
+                "MISSMVIEW_NUM",
+                "MISSMVIEW",
+                "MISSSNA_NUM",
+                "MISSSNA",
+                "QRYTOOLONG_NUM",
+                "QRYTOOLONG",
+                "FAILREGGRPMV_NUM",
+                "FAILREGMVIEWREPGROUP",
+                "FAILREGGRP_NUM",
+                "FAILREGSNAPREPGROUP",
+                "UNREGGRPMV_NUM",
+                "UNREGMVIEWREPGROUP",
+                "UNREGGRP_NUM",
+                "UNREGSNAPREPGROUP",
+                "REPCOMPAT_NUM",
+                "REPNOTCOMPATIBLE",
+                "NOTCOMPAT_NUM",
+                "DBNOTCOMPATIBLE",
+                "DUPLREPGRP_NUM",
+                "DUPLICATEREPGROUP",
+                "MISSREPGRP_NUM",
+                "MISSINGREPGROUP",
+                "NOREPOPTION_NUM",
+                "NOREPOPTION",
+                "ONLYONECOL_NUM",
+                "ONLYONECOL",
+                "KEYSENDCOMP_NUM",
+                "KEYSENDCOMP",
+                "ONLYONEMVIEW_NUM",
+                "ONLYONEMVIEW",
+                "ONLYONESNAP_NUM",
+                "ONLYONESNAP",
+                "STATNOTREG_NUM",
+                "STATNOTREG",
+                "MISSCONST_NUM",
+                "MISSINGCONSTRAINT",
+                "MISSRES_NUM",
+                "MISSINGRESOLUTION",
+                "BADPARAM_NUM",
+                "INVALIDPARAMETER",
+                "MISSFUNC_NUM",
+                "MISSINGFUNCTION",
+                "BADMETH_NUM",
+                "INVALIDMETHOD",
+                "DUPRES_NUM",
+                "DUPLICATERESOLUTION",
+                "DUPVAL_NUM",
+                "DUPLICATEVALUE",
+                "MISSVAL_NUM",
+                "MISSINGVALUE",
+                "MISSPRIORGRP_NUM",
+                "MISSINGPRIORITYGROUP",
+                "DUPPRIORGRP_NUM",
+                "DUPLICATEPRIORITYGROUP",
+                "MISSCOL_NUM",
+                "MISSINGCOLUMN",
+                "DUPCOL_NUM",
+                "DUPLICATECOLUMN",
+                "REF_NUM",
+                "REFERENCED",
+                "MISSGRP_NUM",
+                "MISSINGGROUP",
+                "DUPGRP_NUM",
+                "DUPLICATEGROUP",
+                "PARAMTYPE_NUM",
+                "PARAMTYPE",
+                "ALREADYMASTERED_NUM",
+                "ALREADYMASTERED",
+                "FAILALTERMVIEWROP_NUM",
+                "FAILALTERMVIEWROP",
+                "FAILALTERSNAPROP_NUM",
+                "FAILALTERSNAPROP",
+                "ADDREPDDLERROR_NUM",
+                "ADDREPDDLERROR",
+                "INVALIDREMOTEUSER_NUM",
+                "INVALIDREMOTEUSER",
+                "MISSRMTOBJ_NUM",
+                "MISSINGREMOTEOBJECT",
+                "INVLDPMODE_NUM",
+                "INVALIDPROPMODE",
+                "QUALTOOLONG_NUM",
+                "QUALIFIERTOOLONG",
+                "INVLDQUAL_NUM",
+                "INVALIDQUALIFIER",
+                "MSTRNTRMVD_NUM",
+                "MASTERNOTREMOVED",
+                "MISSMVIEWOBJ_NUM",
+                "MISSMVIEWOBJECT",
+                "MISSSNAPOBJ_NUM",
+                "MISSSNAPOBJECT",
+                "FULLQUEUE_NUM",
+                "FULLQUEUE",
+                "BADMVIEWDDL_NUM",
+                "BADMVIEWDDL",
+                "BADSNAPDDL_NUM",
+                "BADSNAPDDL",
+                "BADMVIEWNAME_NUM",
+                "BADMVIEWNAME",
+                "BADSNAPNAME_NUM",
+                "BADSNAPNAME",
+                "CORRUPT_NUM",
+                "CORRUPT",
+                "TYPEFAIL_NUM",
+                "TYPEFAILURE",
+                "DDLFAIL_NUM",
+                "DDLFAILURE",
+                "COMMFAIL_NUM",
+                "COMMFAILURE",
+                "RECONFIG_NUM",
+                "RECONFIGERROR",
+                "VERSION_NUM",
+                "VERSION",
+                "NONMVIEW_NUM",
+                "NONMVIEW",
+                "NONSNAPSHOT_NUM",
+                "NONSNAPSHOT",
+                "NONMASTER_NUM",
+                "NONMASTER",
+                "NONMASTERDEF_NUM",
+                "NONMASTERDEF",
+                "NOTNORMAL_NUM",
+                "NOTNORMAL",
+                "NOTQUIESCED_NUM",
+                "NOTQUIESCED",
+                "DUPLOBJ_NUM",
+                "DUPLICATEOBJECT",
+                "MISSOBJ_NUM",
+                "MISSINGOBJECT",
+                "DUPLSCHEMA_NUM",
+                "DUPLICATESCHEMA",
+                "MISSSCHEMA_NUM",
+                "MISSINGSCHEMA",
+                "RESOLVED_PROCEED",
+                "RESOLVED_IGNORE",
+                "RESOLVED_ERROR",
+                "RESOLVED_FALSE",
+                "REG_REPAPI_GROUP",
+                "REG_V8_GROUP",
+                "REG_V7_GROUP",
+                "REG_UNKNOWN",
+                "VALIDATE_ERR_TABLE",
+                "ERR_NUM",
+                "ERR_MSG",
+                "VALIDATE_ERR_RECORD",
+                "VARCHAR2S",
+                "ERR_TABLE",
+                "TOOMANYDES_NUM",
+                "TOOMANYDES",
+                "NOTANEWSITE_NUM",
+                "NOTANEWSITE",
+                "NONEWSITES_NUM",
+                "NONEWSITES",
+                "NOVALIDEXTREQ_NUM",
+                "NOVALIDEXTREQ",
+                "EXTSTINAPP_NUM",
+                "EXTSTINAPP",
+                "DUPENTRY_NUM",
+                "DUPENTRY",
+                "PROPMODENOTALLOWED_NUM",
+                "PROPMODENOTALLOWED",
+                "NOTSAMECQ_NUM",
+                "NOTSAMECQ",
+                "RQDUPLCOLUMN_NUM",
+                "RQDUPLCOLUMN",
+                "REFTMPLINVALIDCOMPAT_NUM",
+                "REFTMPLINVALIDCOMPAT",
+                "NONMASTERREPGRP_NUM",
+                "NONMASTERREPGRP",
+                "OBJECTNOTALLOWED_NUM",
+                "OBJECTNOTALLOWED",
+                "ADTCOLUMN_NUM",
+                "ADTCOLUMN",
+                "INVALIDNAMESTR_NUM",
+                "INVALIDNAMESTR",
+                "NOTTOPCOLUMN_NUM",
+                "NOTTOPCOLUMN",
+                "FLAVORMISSINGOBJ_NUM",
+                "FLAVORMISSINGOBJ",
+                "FLAVOROBJREQUIRED_NUM",
+                "FLAVOROBJREQUIRED",
+                "FLAVORDUPLICATECOL_NUM",
+                "FLAVORDUPLICATECOL",
+                "FLAVORMISSINGCOL_NUM",
+                "FLAVORMISSINGCOL",
+                "FLAVORBADSHAPE_NUM",
+                "FLAVORBADSHAPE",
+                "FLAVORINUSE_NUM",
+                "FLAVORINUSE",
+                "FLAVORCONTAINS_NUM",
+                "FLAVORCONTAINS",
+                "FLAVORBAD_NUM",
+                "FLAVORBAD",
+                "FLAVORNOOBJECT_NUM"
             ]
         },
         "DBMS_REPCAT_ADMIN": {
@@ -4342,6 +6859,8 @@
                 "REVOKE_ADMIN_SCHEMA",
                 "REVOKE_SNAPADMIN_PROXY",
                 "UNREGISTER_USER_REPGROUP"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_REPCAT_INSTANTIATE": {
@@ -4350,6 +6869,19 @@
                 "INSTANTIATE_OFFLINE",
                 "INSTANTIATE_OFFLINE_REPAPI",
                 "INSTANTIATE_ONLINE"
+            ],
+            "identifiers": [
+                "LOB_THRESHOLD",
+                "RESULTSET_THRESHOLD",
+                "NO_TRACE_DUMP",
+                "NOT_AUTHORIZED_NUM",
+                "NOT_AUTHORIZED",
+                "DUPL_TEMPLATE_SITE_NUM",
+                "DUPL_TEMPLATE_SITE",
+                "MISS_TEMPLATE_SITE_NUM",
+                "MISS_TEMPLATE_SITE",
+                "MISS_REFRESH_TEMPLATE_NUM",
+                "MISS_REFRESH_TEMPLATE"
             ]
         },
         "DBMS_REPCAT_RGT": {
@@ -4392,6 +6924,91 @@
                 "READ_CLOB",
                 "SUBSTITUTE_PARAMETERS",
                 "VC2_FROM_CLOB"
+            ],
+            "identifiers": [
+                "LOB_THRESHOLD",
+                "RESULTSET_THRESHOLD",
+                "NO_TRACE_DUMP",
+                "LOB_WRITE_SIZE",
+                "REFRESH_LINE",
+                "INSERT_LINE",
+                "INSTALLED_STATUS",
+                "INSTALLING_STATUS",
+                "OBJECT_TYPE_IAS_TEMPLATES",
+                "OBJECT_TYPE_RGT_TEMPLATES",
+                "TEMPLATE_TYPE_IAS_TEMPLATES",
+                "TEMPLATE_TYPE_RGT_TEMPLATES",
+                "TRIGGER_OCT_RGT",
+                "PACKAGE_BODY_OCT_RGT",
+                "PACKAGE_OCT_RGT",
+                "FUNCTION_OCT_RGT",
+                "PROCEDURE_OCT_RGT",
+                "SEQUENCE_OCT_RGT",
+                "SYNONYM_OCT_RGT",
+                "VIEW_OCT_RGT",
+                "TABLE_OCT_RGT",
+                "INDEX_OCT_RGT",
+                "SNAPSHOT_OCT_RGT",
+                "DBLINK_OCT_RGT",
+                "TRIGGER_RGT",
+                "PACKAGE_BODY_RGT",
+                "PACKAGE_RGT",
+                "FUNCTION_RGT",
+                "PROCEDURE_RGT",
+                "SEQUENCE_RGT",
+                "SYNONYM_RGT",
+                "VIEW_RGT",
+                "TABLE_RGT",
+                "INDEX_RGT",
+                "SNAPSHOT_RGT",
+                "DBLINK_RGT",
+                "NOT_CACHEABLE_OBJ_NUM",
+                "NOT_CACHEABLE_OBJ",
+                "DUPLICATED_SITEOWNER_NUM",
+                "DUPLICATED_SITEOWNER",
+                "MISSING_OFFLINE_DIRPATH_NUM",
+                "MISSING_OFFLINE_DIRPATH",
+                "BAD_DDL_NUM",
+                "BAD_DDL",
+                "NOT_AUTHORIZED_NUM",
+                "NOT_AUTHORIZED",
+                "DIFF_OBJECT_NUM",
+                "DIFF_OBJECT",
+                "MISS_OBJECT_NUM",
+                "MISS_OBJECT",
+                "MISS_USER_NUM",
+                "MISS_USER",
+                "DUPL_USER_PARM_VALUE_NUM",
+                "DUPL_USER_PARM_VALUE",
+                "MISS_USER_PARM_VALUE_NUM",
+                "MISS_USER_PARM_VALUE",
+                "BAD_STATUS_NUM",
+                "BAD_STATUS",
+                "DUPL_TEMPLATE_SITE_NUM",
+                "DUPL_TEMPLATE_SITE",
+                "MISS_TEMPLATE_SITE_NUM",
+                "MISS_TEMPLATE_SITE",
+                "DUPL_TEMPLATE_PARM_NUM",
+                "DUPL_TEMPLATE_PARM",
+                "MISS_TEMPLATE_PARM_NUM",
+                "MISS_TEMPLATE_PARM",
+                "BAD_OBJECT_TYPE_NUM",
+                "BAD_OBJECT_TYPE",
+                "DUPL_TEMPLATE_OBJECT_NUM",
+                "DUPL_TEMPLATE_OBJECT",
+                "MISS_TEMPLATE_OBJECT_NUM",
+                "MISS_TEMPLATE_OBJECT",
+                "BAD_PUBLIC_TEMPLATE_NUM",
+                "BAD_PUBLIC_TEMPLATE",
+                "DUPL_REFRESH_TEMPLATE_NUM",
+                "DUPL_REFRESH_TEMPLATE",
+                "MISS_REFRESH_TEMPLATE_NUM",
+                "MISS_REFRESH_TEMPLATE",
+                "DUPL_USER_AUTHORIZATION_NUM",
+                "DUPL_USER_AUTHORIZATION",
+                "MISS_USER_AUTHORIZATION_NUM",
+                "MISS_USER_AUTHORIZATION",
+                "OCTTYPE"
             ]
         },
         "DBMS_REPUTIL": {
@@ -4424,6 +7041,8 @@
                 "REP_END",
                 "SET_GLOBAL_NAME",
                 "SYNC_UP_REP"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_RESCONFIG": {
@@ -4438,6 +7057,12 @@
                 "GETREPOSITORYRESCONFIGPATHS",
                 "GETRESCONFIG",
                 "GETRESCONFIGPATHS"
+            ],
+            "identifiers": [
+                "APPEND_RECURSIVE",
+                "APPEND_RESOURCE",
+                "DELETE_RECURSIVE",
+                "DELETE_RESOURCE"
             ]
         },
         "DBMS_RESOURCE_MANAGER": {
@@ -4469,6 +7094,27 @@
                 "UPDATE_PLAN",
                 "UPDATE_PLAN_DIRECTIVE",
                 "VALIDATE_PENDING_AREA"
+            ],
+            "identifiers": [
+                "UNMANAGED_FILES",
+                "MANAGED_FILES",
+                "ASM_DISK_GROUP",
+                "RECOVERY_AREA",
+                "TEMP_FILES",
+                "LOG_FILES",
+                "DEDICATED_STORAGE",
+                "SHARED_STORAGE",
+                "PERFORMANCE_CLASS",
+                "SERVICE_MODULE_ACTION",
+                "SERVICE_MODULE",
+                "MODULE_NAME_ACTION",
+                "MODULE_NAME",
+                "CLIENT_MACHINE",
+                "CLIENT_PROGRAM",
+                "CLIENT_OS_USER",
+                "SERVICE_NAME",
+                "ORACLE_FUNCTION",
+                "ORACLE_USER"
             ]
         },
         "DBMS_RESOURCE_MANAGER_PRIVS": {
@@ -4477,6 +7123,8 @@
                 "GRANT_SYSTEM_PRIVILEGE",
                 "REVOKE_SWITCH_CONSUMER_GROUP",
                 "REVOKE_SYSTEM_PRIVILEGE"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_RESULT_CACHE": {
@@ -4488,6 +7136,13 @@
                 "INVALIDATE_OBJECT",
                 "MEMORY_REPORT",
                 "STATUS"
+            ],
+            "identifiers": [
+                "STATUS_CORR",
+                "STATUS_SYNC",
+                "STATUS_BYPS",
+                "STATUS_ENAB",
+                "STATUS_DISA"
             ]
         },
         "DBMS_RESUMABLE": {
@@ -4498,6 +7153,8 @@
                 "SET_SESSION_TIMEOUT",
                 "SET_TIMEOUT",
                 "SPACE_ERROR_INFO"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_RLS": {
@@ -4515,6 +7172,17 @@
                 "ENABLE_POLICY",
                 "REFRESH_GROUPED_POLICY",
                 "REFRESH_POLICY"
+            ],
+            "identifiers": [
+                "ALL_ROWS",
+                "XDS3",
+                "XDS2",
+                "XDS1",
+                "DYNAMIC",
+                "SHARED_CONTEXT_SENSITIVE",
+                "CONTEXT_SENSITIVE",
+                "SHARED_STATIC",
+                "STATIC"
             ]
         },
         "DBMS_ROWID": {
@@ -4530,6 +7198,17 @@
                 "ROWID_TO_RESTRICTED",
                 "ROWID_TYPE",
                 "ROWID_VERIFY"
+            ],
+            "identifiers": [
+                "ROWID_BAD_BLOCK",
+                "ROWID_INVALID",
+                "ROWID_CONVERT_EXTERNAL",
+                "ROWID_CONVERT_INTERNAL",
+                "ROWID_OBJECT_UNDEFINED",
+                "ROWID_IS_INVALID",
+                "ROWID_IS_VALID",
+                "ROWID_TYPE_EXTENDED",
+                "ROWID_TYPE_RESTRICTED"
             ]
         },
         "DBMS_RULE": {
@@ -4537,6 +7216,8 @@
                 "CLOSE_ITERATOR",
                 "EVALUATE",
                 "GET_NEXT_HIT"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_RULE_ADM": {
@@ -4555,6 +7236,36 @@
                 "REMOVE_RULE",
                 "REVOKE_OBJECT_PRIVILEGE",
                 "REVOKE_SYSTEM_PRIVILEGE"
+            ],
+            "identifiers": [
+                "INVALID_NV_NAME",
+                "EVALUATION_CONTINUE",
+                "EVALUATION_FAILURE",
+                "EVALUATION_SUCCESS",
+                "ALL_ON_RULE",
+                "ALTER_ON_RULE",
+                "EXECUTE_ON_RULE",
+                "ALL_ON_RULE_SET",
+                "ALTER_ON_RULE_SET",
+                "EXECUTE_ON_RULE_SET",
+                "ALL_ON_EVALUATION_CONTEXT",
+                "ALTER_ON_EVALUATION_CONTEXT",
+                "EXECUTE_ON_EVALUATION_CONTEXT",
+                "EXECUTE_ANY_RULE",
+                "DROP_ANY_RULE",
+                "ALTER_ANY_RULE",
+                "CREATE_ANY_RULE",
+                "CREATE_RULE_OBJ",
+                "EXECUTE_ANY_RULE_SET",
+                "DROP_ANY_RULE_SET",
+                "ALTER_ANY_RULE_SET",
+                "CREATE_ANY_RULE_SET",
+                "CREATE_RULE_SET_OBJ",
+                "EXECUTE_ANY_EVALUATION_CONTEXT",
+                "DROP_ANY_EVALUATION_CONTEXT",
+                "ALTER_ANY_EVALUATION_CONTEXT",
+                "CREATE_ANY_EVALUATION_CONTEXT",
+                "CREATE_EVALUATION_CONTEXT_OBJ"
             ]
         },
         "DBMS_SCHEDULER": {
@@ -4647,6 +7358,41 @@
                 "STIME",
                 "STOP_JOB",
                 "SUBMIT_REMOTE_EXTERNAL_JOB"
+            ],
+            "identifiers": [
+                "SUNDAY",
+                "SATURDAY",
+                "FRIDAY",
+                "THURSDAY",
+                "WEDNESDAY",
+                "TUESDAY",
+                "MONDAY",
+                "SECONDLY",
+                "MINUTELY",
+                "HOURLY",
+                "DAILY",
+                "WEEKLY",
+                "MONTHLY",
+                "YEARLY",
+                "BYLIST",
+                "JOB_RUN_COMPLETED",
+                "JOB_OVER_MAX_DUR",
+                "JOB_ALL_EVENTS",
+                "JOB_CHAIN_STALLED",
+                "JOB_DISABLED",
+                "JOB_SCH_LIM_REACHED",
+                "JOB_STOPPED",
+                "JOB_COMPLETED",
+                "JOB_BROKEN",
+                "JOB_FAILED",
+                "JOB_SUCCEEDED",
+                "JOB_STARTED",
+                "DEFAULT_NOTIFICATION_BODY",
+                "DEFAULT_NOTIFICATION_SUBJECT",
+                "LOGGING_FULL",
+                "LOGGING_FAILED_RUNS",
+                "LOGGING_RUNS",
+                "LOGGING_OFF"
             ]
         },
         "DBMS_SERVER_ALERT": {
@@ -4655,6 +7401,331 @@
                 "GET_THRESHOLD",
                 "SET_THRESHOLD",
                 "VIEW_THRESHOLDS"
+            ],
+            "identifiers": [
+                "TOTAL_TABLE_SCANS_SEC",
+                "LONG_TABLE_SCANS_TXN",
+                "LONG_TABLE_SCANS_SEC",
+                "REDO_WRITES_TXN",
+                "REDO_WRITES_SEC",
+                "BACKGROUND_CKPT_SEC",
+                "DBWR_CKPT_SEC",
+                "SESS_LOGICAL_READS_TXN",
+                "SESS_LOGICAL_READS_SEC",
+                "RECURSIVE_CALLS_TXN",
+                "RECURSIVE_CALLS_SEC",
+                "USER_CALLS_TXN",
+                "USER_CALLS_SEC",
+                "USER_ROLLBACKS_TXN",
+                "USER_ROLLBACKS_SEC",
+                "USER_COMMITS_TXN",
+                "USER_COMMITS_SEC",
+                "OPEN_CURSORS_TXN",
+                "OPEN_CURSORS_SEC",
+                "LOGONS_TXN",
+                "LOGONS_SEC",
+                "REDO_GENERATED_TXN",
+                "REDO_GENERATED_SEC",
+                "PHYSICAL_WRITES_LOB_TXN",
+                "PHYSICAL_WRITES_LOB_SEC",
+                "PHYSICAL_READS_LOB_TXN",
+                "PHYSICAL_READS_LOB_SEC",
+                "PHYSICAL_WRITES_DIR_TXN",
+                "PHYSICAL_WRITES_DIR_SEC",
+                "PHYSICAL_READS_DIR_TXN",
+                "PHYSICAL_READS_DIR_SEC",
+                "PHYSICAL_WRITES_TXN",
+                "PHYSICAL_WRITES_SEC",
+                "PHYSICAL_READS_TXN",
+                "PHYSICAL_READS_SEC",
+                "USER_TRANSACTIONS_SEC",
+                "REDO_ALLOCATION_HIT",
+                "MEMORY_SORTS_PCT",
+                "BUFFER_CACHE_HIT",
+                "DB_TIME_WAITING",
+                "AVG_USERS_WAITING",
+                "LEVEL_CLEAR",
+                "LEVEL_WARNING",
+                "LEVEL_CRITICAL",
+                "SEVERITY_LEVEL_T",
+                "OBJECT_TYPE_WRCLIENT",
+                "OBJECT_TYPE_SESSION",
+                "OBJECT_TYPE_TABLESPACE",
+                "OBJECT_TYPE_EVENT_CLASS",
+                "OBJECT_TYPE_SERVICE",
+                "OBJECT_TYPE_FILE",
+                "OBJECT_TYPE_SYSTEM",
+                "OPERATOR_DO_NOT_CHECK",
+                "OPERATOR_NE",
+                "OPERATOR_CONTAINS",
+                "OPERATOR_GE",
+                "OPERATOR_LE",
+                "OPERATOR_LT",
+                "OPERATOR_EQ",
+                "OPERATOR_GT",
+                "RSN_GG_SPLIT_MERGE",
+                "RSN_GG_ERROR_QUEUE",
+                "RSN_GG_PROPAGATION_ABORTED",
+                "RSN_GG_APPLY_ABORTED",
+                "RSN_GG_CAPTURE_ABORTED",
+                "RSN_XSTR_SPLIT_MERGE",
+                "RSN_XSTR_ERROR_QUEUE",
+                "RSN_XSTR_PROPAGATION_ABORTED",
+                "RSN_XSTR_APPLY_ABORTED",
+                "RSN_XSTR_CAPTURE_ABORTED",
+                "RSN_STR_SPLIT_MERGE",
+                "RSN_WRC_STATUS",
+                "RSN_WRC_THNTF",
+                "RSN_WCR_PIO",
+                "RSN_WCR_PCPU",
+                "RSN_WCR_IOLAT",
+                "RSN_SYS_IOREQ",
+                "RSN_SYS_IOMBS",
+                "RSN_SYS_SRLAT",
+                "RSN_SYS_ACTVS",
+                "RSN_LOG_ARCHIVE_LOG_GAP",
+                "RSN_STR_ERROR_QUEUE",
+                "RSN_STR_STREAMSPOOL_FREE_PCT",
+                "RSN_STR_PROPAGATION_ABORTED",
+                "RSN_STR_APPLY_ABORTED",
+                "RSN_STR_CAPTURE_ABORTED",
+                "RSN_SYS_XCNTR",
+                "RSN_SYS_DBTMR",
+                "RSN_FAN_DATABASE_DOWN",
+                "RSN_FAN_DATABASE_UP",
+                "RSN_FAN_ASM_INSTANCE_DOWN",
+                "RSN_FAN_ASM_INSTANCE_UP",
+                "RSN_FAN_NODE_DOWN",
+                "RSN_FAN_SVC_PRECONNECT_DOWN",
+                "RSN_FAN_SVC_PRECONNECT_UP",
+                "RSN_FAN_SERVICE_MEMBER_DOWN",
+                "RSN_FAN_SERVICE_MEMBER_UP",
+                "RSN_FAN_SERVICE_DOWN",
+                "RSN_FAN_SERVICE_UP",
+                "RSN_FAN_INSTANCE_DOWN",
+                "RSN_FAN_INSTANCE_UP",
+                "RSN_SYS_INQPR",
+                "RSN_SFBTS",
+                "RSN_SES_THNTF",
+                "RSN_SVC_CPUPC",
+                "RSN_TBS_THNTF",
+                "RSN_SVC_THNTF",
+                "RSN_EVC_THNTF",
+                "RSN_FIL_THNTF",
+                "RSN_SYS_THNTF",
+                "RSN_SYS_CRRAR",
+                "RSN_SYS_RDGNX",
+                "RSN_RADL",
+                "RSN_SYS_RCMSR",
+                "RSN_EVC_DTSW",
+                "RSN_FIL_AFWT",
+                "RSN_SYS_SESLP",
+                "RSN_SYS_PRCLP",
+                "RSN_SYS_PGCHR",
+                "RSN_SYS_SPFRP",
+                "RSN_SYS_LCMSR",
+                "RSN_SYS_LCHTR",
+                "RSN_SYS_RCHTR",
+                "RSN_SYS_RSPTX",
+                "RSN_SYS_DBCPT",
+                "RSN_SYS_DBWTT",
+                "RSN_SYS_SQSRT",
+                "RSN_SYS_USLMP",
+                "RSN_SYS_OPCSC",
+                "RSN_SYS_LGONC",
+                "RSN_SYS_GACUT",
+                "RSN_SYS_GACRT",
+                "RSN_SYS_PXSRR",
+                "RSN_SYS_PXDGR",
+                "RSN_SYS_PX75R",
+                "RSN_SYS_PX50R",
+                "RSN_SYS_PX25R",
+                "RSN_SYS_BNSPX",
+                "RSN_SYS_BNSPR",
+                "RSN_SYS_LNSPX",
+                "RSN_SYS_LNSPR",
+                "RSN_SYS_RBRAX",
+                "RSN_SYS_RBRAR",
+                "RSN_SYS_CRRAX",
+                "RSN_SYS_CRBCX",
+                "RSN_SYS_CRBCR",
+                "RSN_SYS_CPUUX",
+                "RSN_SYS_CPUUR",
+                "RSN_SYS_CRCHX",
+                "RSN_SYS_CRCHR",
+                "RSN_SYS_DBBCX",
+                "RSN_SYS_DBBCR",
+                "RSN_SYS_CRGTX",
+                "RSN_SYS_CRGTR",
+                "RSN_SYS_DBBGX",
+                "RSN_SYS_DBBGR",
+                "RSN_SYS_EQRQX",
+                "RSN_SYS_EQRQR",
+                "RSN_SYS_EQDLX",
+                "RSN_SYS_EQDLR",
+                "RSN_SYS_EQWTX",
+                "RSN_SYS_EQWTR",
+                "RSN_SYS_EQTOX",
+                "RSN_SYS_EQTOR",
+                "RSN_SYS_NTWBR",
+                "RSN_SYS_UCALP",
+                "RSN_SYS_SFPRP",
+                "RSN_SYS_XNPRS",
+                "RSN_SYS_RWPST",
+                "RSN_SYS_DSRTX",
+                "RSN_SYS_DSRTR",
+                "RSN_SYS_CCHTR",
+                "RSN_SYS_FPRSX",
+                "RSN_SYS_FPRSR",
+                "RSN_SYS_HPRSX",
+                "RSN_SYS_HPRSR",
+                "RSN_SYS_TPRSX",
+                "RSN_SYS_TPRSR",
+                "RSN_SYS_TISCX",
+                "RSN_SYS_TISCR",
+                "RSN_SYS_FISCX",
+                "RSN_SYS_FISCR",
+                "RSN_SYS_TTSCX",
+                "RSN_SYS_TTSCR",
+                "RSN_SYS_LTSCX",
+                "RSN_SYS_LTSCR",
+                "RSN_SYS_RDWRX",
+                "RSN_SYS_RDWRR",
+                "RSN_SYS_BGCPR",
+                "RSN_SYS_DWCPR",
+                "RSN_SYS_SLRDX",
+                "RSN_SYS_SLRDR",
+                "RSN_SYS_RCALX",
+                "RSN_SYS_RCALR",
+                "RSN_SYS_UCALX",
+                "RSN_SYS_UCALR",
+                "RSN_SYS_URBKP",
+                "RSN_SYS_URBKR",
+                "RSN_SYS_UCMTP",
+                "RSN_SYS_UCMTR",
+                "RSN_SYS_OCSTX",
+                "RSN_SYS_OCSTR",
+                "RSN_SYS_LGNTX",
+                "RSN_SYS_LGNTR",
+                "RSN_SYS_RDGNR",
+                "RSN_SYS_PWDLX",
+                "RSN_SYS_PWDLR",
+                "RSN_SYS_PRDLX",
+                "RSN_SYS_PRDLR",
+                "RSN_SYS_PWRDX",
+                "RSN_SYS_PWRDR",
+                "RSN_SYS_PRDDX",
+                "RSN_SYS_PRDDR",
+                "RSN_SYS_PHWRX",
+                "RSN_SYS_PHWRR",
+                "RSN_SYS_PHRDX",
+                "RSN_SYS_PHRDR",
+                "RSN_SYS_UTXNR",
+                "RSN_SYS_RDAHP",
+                "RSN_SYS_MSRTP",
+                "RSN_OSAQ",
+                "RSN_OSAD",
+                "RSN_OSAR",
+                "RSN_OSAT",
+                "RSN_LQWR",
+                "RSN_LQWT",
+                "RSN_SFTS",
+                "RSN_SYS_GBKLS",
+                "RSN_SYS_GBKCR",
+                "RSN_SES_BLUSC",
+                "RSN_EVC_AUWC",
+                "RSN_SVC_ELAPC",
+                "RSN_FIL_AFRT",
+                "RSN_SYS_BFCHP",
+                "RSN_SFTE",
+                "RSN_SLTE",
+                "REASON_ID_T",
+                "WCR_PIO",
+                "WCR_PCPU",
+                "WCR_AVG_IO_LAT",
+                "TABLESPACE_BYT_FREE",
+                "TABLESPACE_PCT_FULL",
+                "AVG_FILE_WRITE_TIME",
+                "AVG_FILE_READ_TIME",
+                "CPU_TIME_PER_CALL",
+                "ELAPSED_TIME_PER_CALL",
+                "BLOCKED_USERS",
+                "STREAMS_POOL_USED_PCT",
+                "DB_TIME_PER_SEC",
+                "EXECUTIONS_PER_SEC",
+                "SESSION_LIMIT_PCT",
+                "PROCESS_LIMIT_PCT",
+                "PGA_CACHE_HIT",
+                "SHARED_POOL_FREE_PCT",
+                "LIBARY_CACHE_MISS",
+                "LIBARY_CACHE_HIT",
+                "ROW_CACHE_MISS",
+                "ROW_CACHE_HIT",
+                "RESPONSE_TXN",
+                "DATABASE_CPU_TIME",
+                "DATABASE_WAIT_TIME",
+                "SQL_SRV_RESPONSE_TIME",
+                "USER_LIMIT_PCT",
+                "OPEN_CURSORS_CURRENT",
+                "LOGONS_CURRENT",
+                "GC_BLOCKS_LOST",
+                "GC_BLOCKS_CORRUPT",
+                "GC_AVG_CUR_GET_TIME",
+                "GC_AVG_CR_GET_TIME",
+                "PX_DOWNGRADED_SER_SEC",
+                "PX_DOWNGRADED_SEC",
+                "PX_DOWNGRADED_SER_SEC",
+                "PX_DOWNGRADED_SEC",
+                "PX_DOWNGRADED_75_SEC",
+                "PX_DOWNGRADED_50_SEC",
+                "PX_DOWNGRADED_25_SEC",
+                "BRANCH_NODE_SPLITS_TXN",
+                "BRANCH_NODE_SPLITS_SEC",
+                "LEAF_NODE_SPLITS_TXN",
+                "LEAF_NODE_SPLITS_SEC",
+                "RB_RECORDS_APPLIED_TXN",
+                "RB_RECORDS_APPLIED_SEC",
+                "CR_RECORDS_APPLIED_TXN",
+                "CR_RECORDS_APPLIED_SEC",
+                "CR_BLOCKS_CREATED_TXN",
+                "CR_BLOCKS_CREATED_SEC",
+                "SESSION_CPU_TXN",
+                "SESSION_CPU_SEC",
+                "CONSISTENT_CHANGES_TXN",
+                "CONSISTENT_CHANGES_SEC",
+                "DB_BLKCHANGES_TXN",
+                "DB_BLKCHANGES_SEC",
+                "CONSISTENT_GETS_TXN",
+                "CONSISTENT_GETS_SEC",
+                "DB_BLKGETS_TXN",
+                "DB_BLKGETS_SEC",
+                "ENQUEUE_REQUESTS_TXN",
+                "ENQUEUE_REQUESTS_SEC",
+                "ENQUEUE_DEADLOCKS_TXN",
+                "ENQUEUE_DEADLOCKS_SEC",
+                "ENQUEUE_WAITS_TXN",
+                "ENQUEUE_WAITS_SEC",
+                "ENQUEUE_TIMEOUTS_TXN",
+                "ENQUEUE_TIMEOUTS_SEC",
+                "NETWORK_BYTES_SEC",
+                "USER_CALLS_PCT",
+                "SOFT_PARSE_PCT",
+                "EXECUTE_WITHOUT_PARSE",
+                "ROWS_PER_SORT",
+                "DISK_SORT_TXN",
+                "DISK_SORT_SEC",
+                "CURSOR_CACHE_HIT",
+                "PARSE_FAILURES_TXN",
+                "PARSE_FAILURES_SEC",
+                "HARD_PARSES_TXN",
+                "HARD_PARSES_SEC",
+                "TOTAL_PARSES_TXN",
+                "TOTAL_PARSES_SEC",
+                "TOTAL_INDEX_SCANS_TXN",
+                "TOTAL_INDEX_SCANS_SEC",
+                "FULL_INDEX_SCANS_TXN",
+                "FULL_INDEX_SCANS_SEC",
+                "TOTAL_TABLE_SCANS_TXN"
             ]
         },
         "DBMS_SERVICE": {
@@ -4665,6 +7736,59 @@
                 "MODIFY_SERVICE",
                 "START_SERVICE",
                 "STOP_SERVICE"
+            ],
+            "identifiers": [
+                "AQ_SERVICE",
+                "MAX_SN_LENGTH",
+                "DATABASE_READONLY",
+                "INVALID_ARGUMENT",
+                "NULL_ATTRIBUTES",
+                "NETWORK_EXISTS",
+                "INVALID_INSTANCE",
+                "DATABASE_CLOSED",
+                "SERVICE_NOT_RUNNING",
+                "MAX_SERVICES_EXCEEDED",
+                "GENERAL_FAILURE",
+                "NOT_INITIALIZED",
+                "NETWORK_PREFIX_TOO_LONG",
+                "SERVICE_NAME_TOO_LONG",
+                "SERVICE_IN_USE",
+                "SERVICE_DOES_NOT_EXIST",
+                "SERVICE_EXISTS",
+                "NULL_NETWORK_NAME",
+                "NULL_SERVICE_NAME",
+                "ERR_AQ_SERVICE",
+                "ERR_MAX_SN_LENGTH",
+                "ERR_DATABASE_READONLY",
+                "ERR_INVALID_ARGUMENT",
+                "ERR_NULL_ATTRIBUTES",
+                "ERR_NETWORK_EXISTS",
+                "ERR_INVALID_INSTANCE",
+                "ERR_DATABASE_CLOSED",
+                "ERR_SERVICE_NOT_RUNNING",
+                "ERR_MAX_SERVICES_EXCEEDED",
+                "ERR_GENERAL_FAILURE",
+                "ERR_NOT_INITIALIZED",
+                "ERR_NETWORK_PREFIX_TOO_LONG",
+                "ERR_SERVICE_NAME_TOO_LONG",
+                "ERR_SERVICE_IN_USE",
+                "ERR_SERVICE_DOES_NOT_EXIST",
+                "ERR_SERVICE_EXISTS",
+                "ERR_NULL_NETWORK_NAME",
+                "ERR_NULL_SERVICE_NAME",
+                "FAILOVER_TYPE_SELECT",
+                "FAILOVER_TYPE_SESSION",
+                "FAILOVER_TYPE_NONE",
+                "FAILOVER_METHOD_BASIC",
+                "FAILOVER_METHOD_NONE",
+                "CLB_GOAL_LONG",
+                "CLB_GOAL_SHORT",
+                "ALL_INSTANCES",
+                "GOAL_THROUGHPUT",
+                "GOAL_SERVICE_TIME",
+                "GOAL_NONE",
+                "IMMEDIATE",
+                "POST_TRANSACTION"
             ]
         },
         "DBMS_SESSION": {
@@ -4691,6 +7815,17 @@
                 "SET_SQL_TRACE",
                 "SWITCH_CURRENT_CONSUMER_GROUP",
                 "UNIQUE_SESSION_ID"
+            ],
+            "identifiers": [
+                "INTEGER_ARRAY",
+                "LNAME_ARRAY",
+                "APPCTXTABTYP",
+                "VALUE",
+                "ATTRIBUTE",
+                "NAMESPACE",
+                "APPCTXRECTYP",
+                "REINITIALIZE",
+                "FREE_ALL_RESOURCES"
             ]
         },
         "DBMS_SHARED_POOL": {
@@ -4702,6 +7837,8 @@
                 "SIZES",
                 "UNKEEP",
                 "UNMARKHOT"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_SPACE": {
@@ -4727,6 +7864,77 @@
                 "UNUSED_SPACE",
                 "VERIFY_SHRINK_CANDIDATE",
                 "VERIFY_SHRINK_CANDIDATE_TBF"
+            ],
+            "identifiers": [
+                "OBJECT_SPACE_USAGE_TABLE",
+                "CHAIN_PCENT",
+                "SPACE_ALLOCATED",
+                "SPACE_USED",
+                "OBJECT_SPACE_USAGE_ROW",
+                "VERIFY_SHRINK_TABLE",
+                "STATUS",
+                "VERIFY_SHRINK_ROW",
+                "SPACEUSAGE_FAST",
+                "SPACEUSAGE_EXACT",
+                "OBJECT_TYPE_ROLLBACK_SEGMENT",
+                "OBJECT_TYPE_MVLOG",
+                "OBJECT_TYPE_MV",
+                "OBJECT_TYPE_LOB_SUBPARTITION",
+                "OBJECT_TYPE_LOB_PARTITION",
+                "OBJECT_TYPE_INDEX_SUBPARTITION",
+                "OBJECT_TYPE_TABLE_SUBPARTITION",
+                "OBJECT_TYPE_INDEX_PARTITION",
+                "OBJECT_TYPE_TABLE_PARTITION",
+                "OBJECT_TYPE_LOBSEGMENT",
+                "OBJECT_TYPE_LOB_INDEX",
+                "OBJECT_TYPE_CLUSTER",
+                "OBJECT_TYPE_INDEX",
+                "OBJECT_TYPE_NESTED_TABLE",
+                "OBJECT_TYPE_TABLE",
+                "OBJECT_GROWTH_SWRF_CURSOR",
+                "OBJECT_GROWTH_SWRF_TABLE",
+                "OBJN",
+                "INSTANCE_NUMBER",
+                "TOTAL_SPACE_ALLOC",
+                "TOTAL_SPACE_USAGE",
+                "DELTA_SPACE_ALLOC",
+                "DELTA_SPACE_USAGE",
+                "TIMEPOINT",
+                "OBJECT_GROWTH_SWRF_ROW",
+                "OBJECT_GROWTH_TREND_TABLE",
+                "QUALITY",
+                "SPACE_ALLOC",
+                "SPACE_USAGE",
+                "TIMEPOINT",
+                "OBJECT_GROWTH_TREND_ROW",
+                "DEPENDENT_SEGMENTS_TABLE",
+                "LOB_COLUMN_NAME",
+                "PARTITION_NAME",
+                "TABLESPACE_NAME",
+                "SEGMENT_TYPE",
+                "SEGMENT_NAME",
+                "SEGMENT_OWNER",
+                "OBJECT_DEPENDENT_SEGMENT",
+                "ASA_RECO_ROW_TB",
+                "MESG_ID",
+                "TASK_ID",
+                "C3",
+                "C2",
+                "C1",
+                "RECOMMENDATIONS",
+                "IOWAITPR",
+                "IOWAITPM",
+                "IOREQPM",
+                "CHAIN_ROWEXCESS",
+                "RECLAIMABLE_SPACE",
+                "USED_SPACE",
+                "ALLOCATED_SPACE",
+                "PARTITION_NAME",
+                "SEGMENT_TYPE",
+                "SEGMENT_NAME",
+                "SEGMENT_OWNER",
+                "TABLESPACE_NAME",
+                "ASA_RECO_ROW"
             ]
         },
         "DBMS_SPACE_ADMIN": {
@@ -4759,6 +7967,35 @@
                 "TABLESPACE_REBUILD_QUOTAS",
                 "TABLESPACE_RELOCATE_BITMAPS",
                 "TABLESPACE_VERIFY"
+            ],
+            "identifiers": [
+                "NGLOB_CFS_CHECK",
+                "NGLOB_PUA_CHECK",
+                "NGLOB_FSB_CHECK",
+                "NGLOB_HBB_CHECK",
+                "SEGMENT_DUMP_BITMAP_SUMMARY",
+                "TS_VERIFY_SEGMENTS",
+                "TS_VERIFY_DEEP",
+                "TS_VERIFY_BITMAPS",
+                "BITMAPS_CHECK",
+                "EXTENT_SEGMENT_BITMAP_CHECK",
+                "DB_BACKPOINTER_CHECK",
+                "EXTENT_TS_BITMAP_CHECK",
+                "SEG_DICT_CHECK",
+                "BMB_CHECK",
+                "HWM_CHECK",
+                "SEGMENT_VERIFY_SPECIFIC",
+                "SEGMENT_VERIFY_DEEP",
+                "SEGMENT_VERIFY_BASIC",
+                "TABLESPACE_EXTENT_MAKE_USED",
+                "TABLESPACE_EXTENT_MAKE_FREE",
+                "TABLESPACE_VERIFY_BITMAP",
+                "SEGMENT_DUMP_EXTENT_MAP",
+                "SEGMENT_MARK_VALID",
+                "SEGMENT_MARK_CORRUPT",
+                "SEGMENT_VERIFY_EXTENTS_GLOBAL",
+                "SEGMENT_VERIFY_EXTENTS",
+                "SEGMENT_REPAIR_METADATA"
             ]
         },
         "DBMS_SPM": {
@@ -4774,6 +8011,11 @@
                 "MIGRATE_STORED_OUTLINE",
                 "PACK_STGTAB_BASELINE",
                 "UNPACK_STGTAB_BASELINE"
+            ],
+            "identifiers": [
+                "NO_LIMIT",
+                "NAME_LIST",
+                "AUTO_LIMIT"
             ]
         },
         "DBMS_SQL": {
@@ -4814,6 +8056,93 @@
                 "VARIABLE_VALUE_CHAR",
                 "VARIABLE_VALUE_RAW",
                 "VARIABLE_VALUE_ROWID"
+            ],
+            "identifiers": [
+                "INCONSISTENT_TYPE",
+                "BINARY_DOUBLE_TABLE",
+                "BINARY_FLOAT_TABLE",
+                "INTERVAL_DAY_TO_SECOND_TABLE",
+                "INTERVAL_YEAR_TO_MONTH_TABLE",
+                "TIMESTAMP_WITH_LTZ_TABLE",
+                "TIMESTAMP_WITH_TIME_ZONE_TABLE",
+                "TIME_WITH_TIME_ZONE_TABLE",
+                "TIMESTAMP_TABLE",
+                "TIME_TABLE",
+                "UROWID_TABLE",
+                "BFILE_TABLE",
+                "TIMESTAMP_WITH_LOCAL_TZ_TYPE",
+                "UROWID_TYPE",
+                "INTERVAL_DAY_TO_SECOND_TYPE",
+                "INTERVAL_YEAR_TO_MONTH_TYPE",
+                "TIMESTAMP_WITH_TZ_TYPE",
+                "TIMESTAMP_TYPE",
+                "BFILE_TYPE",
+                "BLOB_TYPE",
+                "CLOB_TYPE",
+                "REF_TYPE",
+                "USER_DEFINED_TYPE",
+                "MLSLABEL_TYPE",
+                "BINARY_BOUBLE_TYPE",
+                "BINARY_FLOAT_TYPE",
+                "CHAR_TYPE",
+                "LONG_RAW_TYPE",
+                "RAW_TYPE",
+                "DATE_TYPE",
+                "ROWID_TYPE",
+                "LONG_TYPE",
+                "NUMBER_TYPE",
+                "VARCHAR2_TYPE",
+                "CLOB_TABLE",
+                "COL_MAX_LEN",
+                "COL_TYPE",
+                "DESC_REC",
+                "VARCHAR2S",
+                "VARCHAR2A",
+                "V7",
+                "NATIVE",
+                "V6",
+                "BLOB_TABLE",
+                "DATE_TABLE",
+                "VARCHAR2_TABLE",
+                "NUMBER_TABLE",
+                "DESC_TAB3",
+                "COL_TYPE_NAME_LEN",
+                "COL_TYPE_NAME",
+                "COL_NULL_OK",
+                "COL_CHARSETFORM",
+                "COL_CHARSETID",
+                "COL_SCALE",
+                "COL_PRECISION",
+                "COL_SCHEMA_NAME_LEN",
+                "COL_SCHEMA_NAME",
+                "COL_NAME_LEN",
+                "COL_NAME",
+                "COL_MAX_LEN",
+                "COL_TYPE",
+                "DESC_REC3",
+                "DESC_TAB2",
+                "COL_NULL_OK",
+                "COL_CHARSETFORM",
+                "COL_CHARSETID",
+                "COL_SCALE",
+                "COL_PRECISION",
+                "COL_SCHEMA_NAME_LEN",
+                "COL_SCHEMA_NAME",
+                "COL_NAME_LEN",
+                "COL_NAME",
+                "COL_MAX_LEN",
+                "COL_TYPE",
+                "DESC_REC2",
+                "DESC_TAB",
+                "COL_NULL_OK",
+                "COL_CHARSETFORM",
+                "COL_CHARSETID",
+                "COL_SCALE",
+                "COL_PRECISION",
+                "COL_SCHEMA_NAME_LEN",
+                "COL_SCHEMA_NAME",
+                "COL_NAME_LEN",
+                "COL_NAME"
             ]
         },
         "DBMS_SQLDIAG": {
@@ -4844,6 +8173,45 @@
                 "SET_DIAGNOSIS_TASK_PARAMETER",
                 "SET_TCB_TRACING",
                 "UNPACK_STGTAB_SQLPATCH"
+            ],
+            "identifiers": [
+                "SQLDIAG_MASK_COST",
+                "SQLDIAG_MASK_NONE",
+                "SQLDIAG_FINDINGS_BASIC_INFO",
+                "SQLDIAG_FINDINGS_OBJ_FEATURES",
+                "SQLDIAG_FINDINGS_MASK_VARIANT",
+                "SQLDIAG_FINDINGS_CR_DIFF",
+                "SQLDIAG_FINDINGS_FILTER_PLANS",
+                "SQLDIAG_FINDINGS_FEATURES",
+                "SQLDIAG_FINDINGS_VALIDATION",
+                "SQLDIAG_FINDINGS_ALL",
+                "PROBLEM_TYPE_ALT_PLAN_GEN",
+                "PROBLEM_TYPE_EXECUTION_ERROR",
+                "PROBLEM_TYPE_COMPILATION_ERROR",
+                "PROBLEM_TYPE_WRONG_RESULTS",
+                "PROBLEM_TYPE_PERFORMANCE",
+                "MODE_ACCUMULATE_STATS",
+                "MODE_REPLACE_OLD_STATS",
+                "REC_TYPE_INDEXES",
+                "REC_TYPE_STATS",
+                "REC_TYPE_SQL_PROFILES",
+                "REC_TYPE_ALL",
+                "SECTION_ALL",
+                "SECTION_ERRORS",
+                "SECTION_INFORMATION",
+                "SECTION_PLANS",
+                "SECTION_FINDINGS",
+                "SECTION_SUMMARY",
+                "LEVEL_ALL",
+                "LEVEL_BASIC",
+                "LEVEL_TYPICAL",
+                "TYPE_HTML",
+                "TYPE_XML",
+                "TYPE_TEXT",
+                "TIME_LIMIT_DEFAULT",
+                "SCOPE_COMPREHENSIVE",
+                "SCOPE_LIMITED",
+                "ADV_SQL_DIAG_NAME"
             ]
         },
         "DBMS_SQLPA": {
@@ -4860,6 +8228,11 @@
                 "RESUME_ANALYSIS_TASK",
                 "SET_ANALYSIS_DEFAULT_PARAMETER",
                 "SET_ANALYSIS_TASK_PARAMETER"
+            ],
+            "identifiers": [
+                "ERR_INV_EXEC_NAME",
+                "ERR_NO_COMPARE_EXEC",
+                "ERR_NO_EXEC2"
             ]
         },
         "DBMS_SQLTUNE": {
@@ -4921,6 +8294,49 @@
                 "UNPACK_STGTAB_SQLPROF",
                 "UNPACK_STGTAB_SQLSET",
                 "UPDATE_SQLSET"
+            ],
+            "identifiers": [
+                "FLAG_PREPAWR_INCLBID",
+                "FLAG_PREPAWR_NOCKBINDS",
+                "FLAG_PREPAWR_WRAPCTOR",
+                "SQLSET_CURSOR",
+                "HAS_RECURSIVE_SQL",
+                "NO_RECURSIVE_SQL",
+                "STS_STGTAB_11_202_VERSION",
+                "STS_STGTAB_11_2_VERSION",
+                "STS_STGTAB_11_1_VERSION",
+                "STS_STGTAB_10_2_VERSION",
+                "PX_PROFILE",
+                "REGULAR_PROFILE",
+                "ALL_COMMAND_TYPE",
+                "LIMITED_COMMAND_TYPE",
+                "ALL_EXECUTIONS",
+                "SINGLE_EXECUTION",
+                "MODE_ACCUMULATE_STATS",
+                "MODE_REPLACE_OLD_STATS",
+                "REC_TYPE_ALTER_PLANS",
+                "REC_TYPE_PX",
+                "REC_TYPE_INDEXES",
+                "REC_TYPE_STATS",
+                "REC_TYPE_SQL_PROFILES",
+                "REC_TYPE_ALL",
+                "DATE_FMT",
+                "SECTION_SUMMARY",
+                "SECTION_ALL",
+                "SECTION_ERRORS",
+                "SECTION_INFORMATION",
+                "SECTION_PLANS",
+                "SECTION_FINDINGS",
+                "LEVEL_ALL",
+                "LEVEL_BASIC",
+                "LEVEL_TYPICAL",
+                "TYPE_HTML",
+                "TYPE_XML",
+                "TYPE_TEXT",
+                "TIME_LIMIT_DEFAULT",
+                "SCOPE_COMPREHENSIVE",
+                "SCOPE_LIMITED",
+                "ADV_SQLTUNE_NAME"
             ]
         },
         "DBMS_STATS": {
@@ -5034,6 +8450,50 @@
                 "UNLOCK_SCHEMA_STATS",
                 "UNLOCK_TABLE_STATS",
                 "UPGRADE_STAT_TABLE"
+            ],
+            "identifiers": [
+                "DEFAULT_STAT_CATEGORY",
+                "DEFAULT_AUTOSTATS_TARGET",
+                "DEFAULT_STALE_PERCENT",
+                "DEFAULT_INCREMENTAL",
+                "DEFAULT_PUBLISH",
+                "DEFAULT_GRANULARITY",
+                "DEFAULT_NO_INVALIDATE",
+                "DEFAULT_METHOD_OPT",
+                "DEFAULT_ESTIMATE_PERCENT",
+                "DEFAULT_DEGREE_VALUE",
+                "DEFAULT_CASCADE",
+                "AUTO_DEGREE",
+                "DEFAULT_DEGREE",
+                "AUTO_SAMPLE_SIZE",
+                "AUTO_INVALIDATE",
+                "AUTO_CASCADE",
+                "CCONTEXT",
+                "DIFFREPTAB",
+                "MAXDIFFPCT",
+                "REPORT",
+                "DIFFREPELEM",
+                "OBJECTTAB",
+                "SUBPARTNAME",
+                "PARTNAME",
+                "OBJNAME",
+                "OBJTYPE",
+                "OWNNAME",
+                "OBJECTELEM",
+                "EAVS",
+                "CHVALS",
+                "NOVALS",
+                "BKVALS",
+                "MAXVAL",
+                "MINVAL",
+                "EPC",
+                "STATREC",
+                "DBLARRAY",
+                "FLTARRAY",
+                "RAWARRAY",
+                "CHARARRAY",
+                "DATEARRAY",
+                "NUMARRAY"
             ]
         },
         "DBMS_STAT_FUNCS": {
@@ -5044,6 +8504,29 @@
                 "SUMMARY",
                 "UNIFORM_DIST_FIT",
                 "WEIBULL_DIST_FIT"
+            ],
+            "identifiers": [
+                "BOTTOM_5_VALUES",
+                "TOP_5_VALUES",
+                "EXTREME_VALUES",
+                "MINUS_X_SIGMA",
+                "PLUS_X_SIGMA",
+                "QUANTILE_95",
+                "QUANTILE_75",
+                "MEDIAN",
+                "QUANTILE_25",
+                "QUANTILE_5",
+                "STDDEV",
+                "VARIANCE",
+                "CMODE",
+                "MEAN",
+                "RANGE",
+                "MAX",
+                "MIN",
+                "COUNT",
+                "SUMMARYTYPE",
+                "NUM_TABLE",
+                "N_ARR"
             ]
         },
         "DBMS_STORAGE_MAP": {
@@ -5059,6 +8542,8 @@
                 "RESTORE",
                 "SAVE",
                 "UNLOCK_MAP"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_STREAMS": {
@@ -5078,6 +8563,8 @@
                 "GET_TAG",
                 "MAX_COMPATIBLE",
                 "SET_TAG"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_STREAMS_ADM": {
@@ -5125,11 +8612,56 @@
                 "SET_TAG",
                 "SET_UP_QUEUE",
                 "SPLIT_STREAMS"
+            ],
+            "identifiers": [
+                "INSTANTIATION_NONE",
+                "MULT_TRANS_SPECIFIED_NUM",
+                "MULT_TRANS_SPECIFIED",
+                "SET_USER_TO_SYS_NUM",
+                "SET_USER_TO_SYS",
+                "ROLE_REQUIRED_NUM",
+                "ROLE_REQUIRED",
+                "PROCESS_NOT_EXIST_NUM",
+                "PROCESS_NOT_EXIST",
+                "INVALID_PARAMETER_NUM",
+                "INVALID_PARAMETER",
+                "PROCESS_EXISTS_NUM",
+                "PROCESS_EXISTS",
+                "CANNOT_CREATE_PROCESS_NUM",
+                "CANNOT_CREATE_PROCESS",
+                "DEQUEUE_EXISTS_NUM",
+                "DEQUEUE_EXISTS",
+                "CLIENT_RULESET_NOT_EXIST_NUM",
+                "CLIENT_RULESET_NOT_EXIST",
+                "ACTION_MEMORY",
+                "ACTION_TRACE",
+                "EXCLUDE_FLAGS_DDL",
+                "EXCLUDE_FLAGS_DML",
+                "EXCLUDE_FLAGS_UNSUPPORTED",
+                "EXCLUDE_FLAGS_FULL",
+                "INSTANTIATION_TTS_NETWORK",
+                "INSTANTIATION_TTS",
+                "INSTANTIATION_FULL_NETWORK",
+                "INSTANTIATION_FULL",
+                "INSTANTIATION_SCHEMA_NETWORK",
+                "INSTANTIATION_SCHEMA",
+                "INSTANTIATION_TABLE_NETWORK",
+                "INSTANTIATION_TABLE"
             ]
         },
         "DBMS_STREAMS_ADVISOR_ADM": {
             "procedures": [
                 "ANALYZE_CURRENT_PERFORMANCE"
+            ],
+            "identifiers": [
+                "QUEUE_TYPE",
+                "APPLY_TYPE",
+                "PROPAGATION_RECEIVER_TYPE",
+                "PROPAGATION_SENDER_TYPE",
+                "CAPTURE_TYPE",
+                "BOTTLENECK_FLOWCTRL_THRESHOLD",
+                "BOTTLENECK_IDLE_THRESHOLD",
+                "RETENTION_TIME"
             ]
         },
         "DBMS_STREAMS_AUTH": {
@@ -5138,6 +8670,8 @@
                 "GRANT_REMOTE_ADMIN_ACCESS",
                 "REVOKE_ADMIN_PRIVILEGE",
                 "REVOKE_REMOTE_ADMIN_ACCESS"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_STREAMS_HANDLER_ADM": {
@@ -5146,12 +8680,20 @@
                 "CREATE_STMT_HANDLER",
                 "DROP_STMT_HANDLER",
                 "REMOVE_STMT_FROM_HANDLER"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_STREAMS_MESSAGING": {
             "procedures": [
                 "DEQUEUE",
                 "ENQUEUE"
+            ],
+            "identifiers": [
+                "NOMOREMSGS",
+                "ENDOFCURTRANS",
+                "NO_WAIT",
+                "FOREVER"
             ]
         },
         "DBMS_STREAMS_TABLESPACE_ADM": {
@@ -5164,6 +8706,31 @@
                 "DETACH_TABLESPACES",
                 "PULL_SIMPLE_TABLESPACE",
                 "PULL_TABLESPACES"
+            ],
+            "identifiers": [
+                "_trace_level",
+                "NO_PERMISSIONS_ERROR_NUM",
+                "NO_PERMISSIONS_ERROR",
+                "INVALID_TABLESPACE_NAMES_NUM",
+                "INVALID_TABLESPACE_NAMES",
+                "TABLESPACES_IN_TARGET_DB_NUM",
+                "TABLESPACES_IN_TARGET_DB",
+                "TABLESPACE_NOT_FOUND_NUM",
+                "TABLESPACE_NOT_FOUND",
+                "NOT_SIMPLE_TABLESPACE_NUM",
+                "NOT_SIMPLE_TABLESPACE",
+                "INTERNAL_ERROR_NUM",
+                "INTERNAL_ERROR",
+                "FILE_CONVERTED_TO_EXISTS_NUM",
+                "FILE_CONVERTED_TO_EXISTS",
+                "DIR_OBJ_NOT_FOUND_NUM",
+                "DIRECTORY_OBJECT_NOT_FOUND",
+                "FILE_SET",
+                "FILE_NAME",
+                "DIRECTORY_OBJECT",
+                "FILE",
+                "DIRECTORY_OBJECT_SET",
+                "TABLESPACE_SET"
             ]
         },
         "DBMS_TDB": {
@@ -5171,6 +8738,12 @@
                 "CHECK_DB",
                 "CHECK_EXTERNAL",
                 "EXIT_TRANSPORT_SCRIPT"
+            ],
+            "identifiers": [
+                "SKIP_READONLY",
+                "SKIP_OFFLINE",
+                "SKIP_INACCESSIBLE",
+                "SKIP_NONE"
             ]
         },
         "DBMS_TRACE": {
@@ -5185,6 +8758,45 @@
                 "PLSQL_TRACE_VERSION",
                 "RESUME_PLSQL_TRACE",
                 "SET_PLSQL_TRACE"
+            ],
+            "identifiers": [
+                "PLSQL_TRACE_EXCP_UNHANDLED",
+                "PLSQL_TRACE_NODEBUG",
+                "PLSQL_TRACE_USER",
+                "PLSQL_TRACE_BIND",
+                "PLSQL_TRACE_SQL",
+                "PLSQL_TRACE_EXCP_HANDLED",
+                "PLSQL_TRACE_EXCP_RAISED",
+                "PLSQL_TRACE_NEW_LINE",
+                "PLSQL_TRACE_END_CALL",
+                "PLSQL_TRACE_RPC",
+                "PLSQL_TRACE_ICD",
+                "PLSQL_TRACE_ELAB_BODY",
+                "PLSQL_TRACE_ELAB_SPEC",
+                "PLSQL_TRACE_BEGIN_CALL",
+                "PLSQL_TRACE_EXIT_VM",
+                "PLSQL_TRACE_ENTER_VM",
+                "PLSQL_TRACE_RESUME",
+                "PLSQL_TRACE_PAUSE",
+                "PLSQL_TRACE_SET_FLAGS",
+                "PLSQL_TRACE_STOP",
+                "PLSQL_TRACE_START",
+                "TRACE_MINOR_VERSION",
+                "TRACE_MAJOR_VERSION",
+                "NO_TRACE_HANDLED_EXCEPTIONS",
+                "NO_TRACE_ADMINISTRATIVE",
+                "TRACE_LIMIT",
+                "TRACE_RESUME",
+                "TRACE_PAUSE",
+                "TRACE_STOP",
+                "TRACE_ENABLED_LINES",
+                "TRACE_ALL_LINES",
+                "TRACE_ENABLED_SQL",
+                "TRACE_ALL_SQL",
+                "TRACE_ENABLED_EXCEPTIONS",
+                "TRACE_ALL_EXCEPTIONS",
+                "TRACE_ENABLED_CALLS",
+                "TRACE_ALL_CALLS"
             ]
         },
         "DBMS_TRANSACTION": {
@@ -5207,6 +8819,10 @@
                 "SAVEPOINT",
                 "STEP_ID",
                 "USE_ROLLBACK_SEGMENT"
+            ],
+            "identifiers": [
+                "CONSISTENT_READ_FAILURE",
+                "DISCRETE_TRANSACTION_FAILED"
             ]
         },
         "DBMS_TRANSFORM": {
@@ -5215,6 +8831,8 @@
                 "CREATE_TRANSFORMATION",
                 "DROP_TRANSFORMATION",
                 "MODIFY_TRANSFORMATION"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_TTS": {
@@ -5226,6 +8844,15 @@
                 "TRANSPORT_CHAR_SET_CHECK",
                 "TRANSPORT_CHAR_SET_CHECK_MSG",
                 "TRANSPORT_SET_CHECK"
+            ],
+            "identifiers": [
+                "SYS_OR_TMP_TS_NUM",
+                "SYS_OR_TMP_TS",
+                "INVALID_TS_LIST_NUM",
+                "INVALID_TS_LIST",
+                "TS_NOT_FOUND_NUM",
+                "TS_NOT_FOUND",
+                "TABLESPACE_NAMES"
             ]
         },
         "DBMS_UTILITY": {
@@ -5267,6 +8894,25 @@
                 "TABLE_TO_COMMA",
                 "VALIDATE",
                 "WAIT_ON_PENDING_DML"
+            ],
+            "identifiers": [
+                "INV_ERROR_ON_RESTRICTIONS",
+                "INV_RESTRICTED_OBJECT",
+                "INV_MALFORMED_SETTINGS",
+                "INV_NOT_EXIST_OR_NO_PRIV",
+                "MAXRAW",
+                "ANYDATA_ARRAY",
+                "INSTANCE_TABLE",
+                "INST_NAME",
+                "INST_NUMBER",
+                "INSTANCE_RECORD",
+                "NUMBER_ARRAY",
+                "INDEX_TABLE_TYPE",
+                "DBLINK_ARRAY",
+                "MAXNAME_ARRAY",
+                "LNAME_ARRAY",
+                "NAME_ARRAY",
+                "UNCL_ARRAY"
             ]
         },
         "DBMS_WARNING": {
@@ -5278,6 +8924,8 @@
                 "GET_WARNING_SETTING_NUM",
                 "GET_WARNING_SETTING_STRING",
                 "SET_WARNING_SETTING_STRING"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_WORKLOAD_CAPTURE": {
@@ -5298,6 +8946,15 @@
                 "REPORT",
                 "START_CAPTURE",
                 "USER_CALLS_GRAPH"
+            ],
+            "identifiers": [
+                "UC_GRAPH_TABLE",
+                "FLAGS",
+                "USER_CALLS",
+                "TIME",
+                "UC_GRAPH_RECORD",
+                "TYPE_HTML",
+                "TYPE_TEXT"
             ]
         },
         "DBMS_WORKLOAD_REPLAY": {
@@ -5355,6 +9012,25 @@
                 "SYNC_ATTRIBUTES_FROM_FILE",
                 "USER_CALLS_GRAPH",
                 "USE_FILTER_SET"
+            ],
+            "identifiers": [
+                "UC_GRAPH_TABLE",
+                "FLAGS",
+                "USER_CALLS",
+                "TIME",
+                "UC_GRAPH_RECORD",
+                "KECP_CMD_REPLAY_CANCELLED",
+                "KECP_CMD_END_OF_REPLAY",
+                "KECP_CLIENT_CONNECT_CHK_VSN",
+                "KECP_CLIENT_CONNECT_CLOCK_TICK",
+                "KECP_CLIENT_CONNECT_CHKPPID",
+                "KECP_CLIENT_CONNECT_THRDFAIL",
+                "KECP_CLIENT_CONNECT_GOODBYE",
+                "KECP_CLIENT_CONNECT_ADMIN",
+                "KECP_CLIENT_CONNECT_LOGIN",
+                "TYPE_TEXT",
+                "TYPE_HTML",
+                "TYPE_XML"
             ]
         },
         "DBMS_WORKLOAD_REPOSITORY": {
@@ -5390,6 +9066,12 @@
                 "SELECT_BASELINE_DETAILS",
                 "SELECT_BASELINE_METRIC",
                 "UPDATE_OBJECT_INFO"
+            ],
+            "identifiers": [
+                "MAX_RETENTION",
+                "MIN_RETENTION",
+                "MAX_INTERVAL",
+                "MIN_INTERVAL"
             ]
         },
         "DBMS_XA": {
@@ -5404,6 +9086,39 @@
                 "XA_ROLLBACK",
                 "XA_SETTIMEOUT",
                 "XA_START"
+            ],
+            "identifiers": [
+                "XAER_OUTSIDE",
+                "XAER_DUPID",
+                "XAER_RMFAIL",
+                "XAER_PROTO",
+                "XAER_INVAL",
+                "XAER_NOTA",
+                "XAER_RMERR",
+                "XAER_ASYNC",
+                "XA_OK",
+                "XA_RDONLY",
+                "XA_RETRY",
+                "XA_HEURMIX",
+                "XA_HEURRB",
+                "XA_HEURCOM",
+                "XA_HEURHAZ",
+                "XA_NOMIGRATE",
+                "XA_RBEND",
+                "XA_RBTRANSIENT",
+                "XA_RBTIMEOUT",
+                "XA_RBPROTO",
+                "XA_RBOTHER",
+                "XA_RBINTEGRITY",
+                "XA_RBDEADLOCK",
+                "XA_RBCOMMFAIL",
+                "XA_RBROLLBACK",
+                "XA_RBBASE",
+                "TMRESUME",
+                "TMSUSPEND",
+                "TMJOIN",
+                "TMSUCCESS",
+                "TMNOFLAGS"
             ]
         },
         "DBMS_XDB": {
@@ -5492,6 +9207,24 @@
                 "TOUCHRESOURCE",
                 "UNLOCKRESOURCE",
                 "UPDATERESOURCEMETADATA"
+            ],
+            "identifiers": [
+                "ON_DENY_BASIC",
+                "ON_DENY_NEXT_CUSTOM",
+                "LINK_TYPE_SYMBOLIC",
+                "LINK_TYPE_WEAK",
+                "LINK_TYPE_HARD",
+                "DEFAULT_LOCK_TIMEOUT",
+                "XDB_PROTOCOL_TCPS",
+                "XDB_PROTOCOL_TCP",
+                "XDB_ENDPOINT_HTTP2",
+                "XDB_ENDPOINT_HTTP",
+                "DELETE_RES_METADATA_NOCASCADE",
+                "DELETE_RES_METADATA_CASCADE",
+                "DELETE_RECURSIVE_FORCE",
+                "DELETE_FORCE",
+                "DELETE_RECURSIVE",
+                "DELETE_RESOURCE"
             ]
         },
         "DBMS_XDBRESOURCE": {
@@ -5549,6 +9282,11 @@
                 "SETDISPLAYNAME",
                 "SETLANGUAGE",
                 "SETOWNER"
+            ],
+            "identifiers": [
+                "ID",
+                "XDBRESOURCE",
+                "XDBRESTYPE"
             ]
         },
         "DBMS_XDBT": {
@@ -5570,6 +9308,28 @@
                 "SETSYNCTIMEOUT",
                 "SYNCINDEX",
                 "XDB_DATASTORE_PROC"
+            ],
+            "identifiers": [
+                "SECTIONGROUP",
+                "USEMULTILEXER",
+                "STOPWORDS",
+                "NULLFILTER_TYPES",
+                "SKIPFILTER_TYPES",
+                "LOGFILE",
+                "CHECKPENDINGCOUNTINTERVAL",
+                "SYNCINTERVAL",
+                "MAXPENDINGCOUNT",
+                "AUTOSYNCPOLICY",
+                "INDEXMEMORY",
+                "INDEXNAME",
+                "SYNCTIMEOUT",
+                "SYNC_BY_PENDING_COUNT_AND_TIME",
+                "SYNC_BY_TIME",
+                "SYNC_BY_PENDING_COUNT",
+                "SKIP_DATA",
+                "USE_INSO_FILTER",
+                "USE_NULL_FILTER",
+                "VARCHARSET"
             ]
         },
         "DBMS_XDBZ": {
@@ -5589,6 +9349,27 @@
                 "SET_APPLICATION_PRINCIPAL",
                 "VALIDATEACL",
                 "VALIDATEFUSIONACL"
+            ],
+            "identifiers": [
+                "NAME_FORMAT_APPLICATION",
+                "NAME_FORMAT_DISTINGUISHED",
+                "NAME_FORMAT_SHORT",
+                "MODE_MEMBERSHIP_DELETE",
+                "MODE_MEMBERSHIP_ADD",
+                "DELETE_APP_FORCE",
+                "DELETE_APP_NOFORCE",
+                "APPLICATION_ROLE",
+                "APPLICATION_USER",
+                "SKIP_SYSCONSACL_FLG",
+                "DISABLE_ALL",
+                "DISABLE_VERSION",
+                "IS_ENABLED_VERSION",
+                "IS_ENABLED_RESMETADATA",
+                "IS_ENABLED_CONTENTS",
+                "ENABLE_LINKS",
+                "ENABLE_VERSION",
+                "ENABLE_RESMETADATA",
+                "ENABLE_CONTENTS"
             ]
         },
         "DBMS_XDB_ADMIN": {
@@ -5598,6 +9379,8 @@
                 "DROPREPOSITORYXMLINDEX",
                 "XMLINDEXADDPATH",
                 "XMLINDEXREMOVEPATH"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_XDB_VERSION": {
@@ -5632,6 +9415,10 @@
                 "UNPUBLISHWORKSPACE",
                 "UPDATEVCRVERSION",
                 "UPDATEWORKSPACE"
+            ],
+            "identifiers": [
+                "RESID_LIST_TYPE",
+                "RESID_TYPE"
             ]
         },
         "DBMS_XEVENT": {
@@ -5677,6 +9464,64 @@
                 "REMOVE",
                 "SETRENDERPATH",
                 "SETRENDERSTREAM"
+            ],
+            "identifiers": [
+                "TYPE_READ_WRITE",
+                "TYPE_WRITE",
+                "SCOPE_SHARED",
+                "SCOPE_EXCLUSIVE",
+                "ID",
+                "XDBLOCK",
+                "ID",
+                "XDBLINK",
+                "ID",
+                "XDBPATH",
+                "ID",
+                "XDBHANDLER",
+                "ID",
+                "XDBHANDLERLIST",
+                "ID",
+                "XDBEVENT",
+                "XDBREPOSITORYEVENT",
+                "EVENTTYPE",
+                "OPEN_DENY_READ_WRITE",
+                "OPEN_DENY_READ",
+                "OPEN_DENY_NONE",
+                "OPEN_ACCESS_READ_WRITE",
+                "OPEN_ACCESS_WRITE",
+                "OPEN_ACCESS_READ",
+                "XDBEVENTID",
+                "POST_INCONSISTENTUPDATE_EVENT",
+                "PRE_INCONSISTENTUPDATE_EVENT",
+                "POST_OPEN_EVENT",
+                "PRE_OPEN_EVENT",
+                "POST_VERSIONCONTROL_EVENT",
+                "PRE_VERSIONCONTROL_EVENT",
+                "POST_UNCHECKOUT_EVENT",
+                "PRE_UNCHECKOUT_EVENT",
+                "POST_CHECKOUT_EVENT",
+                "PRE_CHECKOUT_EVENT",
+                "POST_CHECKIN_EVENT",
+                "PRE_CHECKIN_EVENT",
+                "POST_UNLINKFROM_EVENT",
+                "PRE_UNLINKFROM_EVENT",
+                "POST_UNLINKIN_EVENT",
+                "PRE_UNLINKIN_EVENT",
+                "POST_LINKTO_EVENT",
+                "PRE_LINKTO_EVENT",
+                "POST_LINKIN_EVENT",
+                "PRE_LINKIN_EVENT",
+                "POST_UNLOCK_EVENT",
+                "PRE_UNLOCK_EVENT",
+                "POST_LOCK_EVENT",
+                "PRE_LOCK_EVENT",
+                "POST_UPDATE_EVENT",
+                "PRE_UPDATE_EVENT",
+                "POST_DELETE_EVENT",
+                "PRE_DELETE_EVENT",
+                "POST_CREATE_EVENT",
+                "PRE_CREATE_EVENT",
+                "RENDER_EVENT"
             ]
         },
         "DBMS_XMLDOM": {
@@ -5824,6 +9669,72 @@
                 "WRITETOCLOB",
                 "WRITETOFILE",
                 "XMLD_USEBINSTREAM"
+            ],
+            "identifiers": [
+                "ID",
+                "DOMSTREAMHANDLE",
+                "ID",
+                "DOMDOCUMENT",
+                "ID",
+                "DOMDOCUMENTTYPE",
+                "ID",
+                "DOMIMPLEMENTATION",
+                "ID",
+                "DOMTEXT",
+                "ID",
+                "DOMPROCESSINGINSTRUCTION",
+                "ID",
+                "DOMNOTATION",
+                "ID",
+                "DOMENTITYREFERENCE",
+                "ID",
+                "DOMENTITY",
+                "ID",
+                "DOMELEMENT",
+                "ID",
+                "DOMDOCUMENTFRAGMENT",
+                "ID",
+                "DOMCOMMENT",
+                "ID",
+                "DOMCHARACTERDATA",
+                "ID",
+                "DOMCDATASECTION",
+                "ID",
+                "DOMATTR",
+                "ID",
+                "DOMNODELIST",
+                "ID",
+                "DOMNAMEDNODEMAP",
+                "ID",
+                "DOMNODE",
+                "DOMTYPE",
+                "INVALID_ACCESS_ERR",
+                "NAMESPACE_ERR",
+                "INVALID_MODIFICATION_ERR",
+                "SYNTAX_ERR",
+                "INVALID_STATE_ERR",
+                "INUSE_ATTRIBUTE_ERR",
+                "NOT_SUPPORTED_ERR",
+                "NOT_FOUND_ERR",
+                "NO_MODIFICATION_ALLOWED_ERR",
+                "NO_DATA_ALLOWED_ERR",
+                "INVALID_CHARACTER_ERR",
+                "WRONG_DOCUMENT_ERR",
+                "HIERARCHY_REQUEST_ERR",
+                "DOMSTRING_SIZE_ERR",
+                "INDEX_SIZE_ERR",
+                "NOTATION_NODE",
+                "DOCUMENT_FRAGMENT_NODE",
+                "DOCUMENT_TYPE_NODE",
+                "DOCUMENT_NODE",
+                "COMMENT_NODE",
+                "PROCESSING_INSTRUCTION_NODE",
+                "ENTITY_NODE",
+                "ENTITY_REFERENCE_NODE",
+                "CDATA_SECTION_NODE",
+                "TEXT_NODE",
+                "ATTRIBUTE_NODE",
+                "ELEMENT_NODE"
             ]
         },
         "DBMS_XMLGEN": {
@@ -5852,6 +9763,20 @@
                 "SETXSLTPARAM",
                 "USEITEMTAGSFORCOLL",
                 "USENULLATTRIBUTEINDICATOR"
+            ],
+            "identifiers": [
+                "EMPTY_TAG",
+                "NULL_ATTR",
+                "DROP_NULLS",
+                "ENTITY_DECODE",
+                "ENTITY_ENCODE",
+                "SCHEMA",
+                "DTD",
+                "NONE",
+                "PARAM_HASH",
+                "CONVERSIONTYPE",
+                "CTXTYPE",
+                "CTXHANDLE"
             ]
         },
         "DBMS_XMLINDEX": {
@@ -5865,6 +9790,8 @@
                 "MODIFYPARAMETER",
                 "REGISTERPARAMETER",
                 "SYNCINDEX"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_XMLPARSER": {
@@ -5891,6 +9818,15 @@
                 "SETVALIDATIONMODE",
                 "SHOWWARNINGS",
                 "WRITEERRORS"
+            ],
+            "identifiers": [
+                "NULL_ERR",
+                "CONN_ERR",
+                "FILE_ERR",
+                "PARSE_ERR",
+                "INTERNAL_ERR",
+                "ID",
+                "PARSER"
             ]
         },
         "DBMS_XMLSCHEMA": {
@@ -5908,6 +9844,29 @@
                 "PURGESCHEMA",
                 "REGISTERSCHEMA",
                 "REGISTERURI"
+            ],
+            "identifiers": [
+                "UNAME_ARR",
+                "XMLARR",
+                "URLARR",
+                "PRESERVE_PROP_NUMBERS",
+                "INPLACE_TRACE",
+                "INPLACE_EVOLVE",
+                "COPYEVOLVE_BINARY_XML",
+                "REGISTER_CSID_NULL",
+                "REGISTER_NT_AS_IOT",
+                "REGISTER_BINARYXML",
+                "REGISTER_NODOCID",
+                "ENABLE_HIERARCHY_LINKS",
+                "ENABLE_HIERARCHY_VERSION",
+                "ENABLE_HIERARCHY_RESMETADATA",
+                "ENABLE_HIERARCHY_CONTENTS",
+                "ENABLE_HIERARCHY_NONE",
+                "DELETE_MIGRATE",
+                "DELETE_CASCADE_FORCE",
+                "DELETE_CASCADE",
+                "DELETE_INVALIDATE",
+                "DELETE_RESTRICT"
             ]
         },
         "DBMS_XMLSTORE": {
@@ -5922,6 +9881,11 @@
                 "SETROWTAG",
                 "SETUPDATECOLUMN",
                 "UPDATEXML"
+            ],
+            "identifiers": [
+                "CONVERSIONTYPE",
+                "CTXTYPE",
+                "CTXHANDLE"
             ]
         },
         "DBMS_XMLTRANSLATIONS": {
@@ -5934,6 +9898,8 @@
                 "SETSOURCELANG",
                 "TRANSLATEXML",
                 "UPDATETRANSLATION"
+            ],
+            "identifiers": [
             ]
         },
         "DBMS_XPLAN": {
@@ -5959,6 +9925,9 @@
                 "PREPARE_PLAN_XML_QUERY",
                 "PREPARE_RECORDS",
                 "VALIDATE_FORMAT"
+            ],
+            "identifiers": [
+                "UNKNOWN_DIFF_CLASS"
             ]
         },
         "DBMS_XSLPROCESSOR": {
@@ -5981,6 +9950,17 @@
                 "TRANSFORMNODE",
                 "URL2CLOB",
                 "VALUEOF"
+            ],
+            "identifiers": [
+                "NULL_ERR",
+                "CONN_ERR",
+                "FILE_ERR",
+                "PROCESSOR_ERR",
+                "INTERNAL_ERR",
+                "ID",
+                "STYLESHEET",
+                "ID",
+                "PROCESSOR"
             ]
         },
         "HTF": {
@@ -6075,6 +10055,39 @@
                 "ULISTOPEN",
                 "UNDERLINE",
                 "VARIABLE"
+            ],
+            "identifiers": [
+                "BODYCLOSE",
+                "HEADCLOSE",
+                "HEADOPEN",
+                "HTMLCLOSE",
+                "HTMLOPEN",
+                "FONTCLOSE",
+                "APPLETCLOSE",
+                "DIRLISTCLOSE",
+                "DIRLISTOPEN",
+                "MENULISTCLOSE",
+                "MENULISTOPEN",
+                "DLISTCLOSE",
+                "NOFRAMESCLOSE",
+                "NOFRAMESOPEN",
+                "FRAMESETCLOSE",
+                "TABLECLOSE",
+                "TABLEROWCLOSE",
+                "OLISTCLOSE",
+                "ULISTCLOSE",
+                "BLOCKQUOTECLOSE",
+                "CENTERCLOSE",
+                "CENTEROPEN",
+                "WBR",
+                "FORMCLOSE",
+                "FORMTEXTAREACLOSE",
+                "FORMSELECTCLOSE",
+                "LISTINGCLOSE",
+                "LISTINGOPEN",
+                "PRECLOSE",
+                "PARA",
+                "MAPCLOSE"
             ]
         },
         "HTP": {
@@ -6219,6 +10232,11 @@
                 "UNDERLINE",
                 "VARIABLE",
                 "WBR"
+            ],
+            "identifiers": [
+                "HTRAW_ARR",
+                "HTBUF_ARR",
+                "HTBUF_LEN"
             ]
         },
         "OWA_CACHE": {
@@ -6231,6 +10249,10 @@
                 "SET_EXPIRES",
                 "SET_NOT_MODIFIED",
                 "SET_SURROGATE_CONTROL"
+            ],
+            "identifiers": [
+                "USER_LEVEL",
+                "SYSTEM_LEVEL"
             ]
         },
         "OWA_COOKIE": {
@@ -6240,17 +10262,32 @@
                 "INIT",
                 "REMOVE",
                 "SEND"
+            ],
+            "identifiers": [
+                "NUM_VALS",
+                "VALS",
+                "NAME",
+                "COOKIE",
+                "VC_ARR"
             ]
         },
         "OWA_CUSTOM": {
             "procedures": [
                 "AUTHORIZE"
+            ],
+            "identifiers": [
+                "DBMS_SERVER_GMTDIFF",
+                "DBMS_SERVER_TIMEZONE"
             ]
         },
         "OWA_IMAGE": {
             "procedures": [
                 "GET_X",
                 "GET_Y"
+            ],
+            "identifiers": [
+                "NULL_POINT",
+                "POINT"
             ]
         },
         "OWA_OPT_LOCK": {
@@ -6259,6 +10296,9 @@
                 "GET_ROWID",
                 "STORE_VALUES",
                 "VERIFY_VALUES"
+            ],
+            "identifiers": [
+                "VCARRAY"
             ]
         },
         "OWA_PATTERN": {
@@ -6267,6 +10307,9 @@
                 "CHANGE",
                 "GETPAT",
                 "MATCH"
+            ],
+            "identifiers": [
+                "PATTERN"
             ]
         },
         "OWA_SEC": {
@@ -6277,6 +10320,12 @@
                 "GET_USER_ID",
                 "SET_AUTHORIZATION",
                 "SET_PROTECTION_REALM"
+            ],
+            "identifiers": [
+                "CUSTOM",
+                "PER_PACKAGE",
+                "GLOBAL",
+                "NO_CHECK"
             ]
         },
         "OWA_TEXT": {
@@ -6287,6 +10336,17 @@
                 "PRINT_MULTI",
                 "PRINT_ROW_LIST",
                 "STREAM2MULTI"
+            ],
+            "identifiers": [
+                "NUM_ROWS",
+                "ROWS",
+                "ROW_LIST",
+                "PARTIAL_ROW",
+                "NUM_ROWS",
+                "ROWS",
+                "MULTI_LINE",
+                "INT_ARR",
+                "VC_ARR"
             ]
         },
         "OWA_UTIL": {
@@ -6329,6 +10389,20 @@
                 "TABLEROWOPEN",
                 "TODATE",
                 "WHO_CALLED_ME"
+            ],
+            "identifiers": [
+                "RAW_ARR",
+                "NC_ARR",
+                "VC_ARR",
+                "IP_ADDRESS",
+                "NUM_ARR",
+                "IDENT_NARR",
+                "IDENT_ARR",
+                "EMPTY_DATE",
+                "DATETYPE",
+                "INVALID_QUERY",
+                "PRE_TABLE",
+                "HTML_TABLE"
             ]
         },
         "SDO_CS": {
@@ -6414,6 +10488,8 @@
                 "UPDATE_WKT_WITH_7_PARAMS",
                 "VALIDATE_WKT",
                 "VIEWPORT_TRANSFORM"
+            ],
+            "identifiers": [
             ]
         },
         "SDO_GEOM": {
@@ -6456,6 +10532,14 @@
                 "VALIDATE_LAYER",
                 "VALIDATE_LAYER_WITH_CONTEXT",
                 "WITHIN_DISTANCE"
+            ],
+            "identifiers": [
+                "MAX_ORD_PARAMS",
+                "SDO_OBJECT_STORAGE",
+                "SDO_NORMALIZED_STORAGE",
+                "POLYGON_TYPE",
+                "LINESTRING_TYPE",
+                "POINT_TYPE"
             ]
         },
         "SDO_LRS": {
@@ -6545,6 +10629,8 @@
                 "VALID_LRS_PT_3D",
                 "VALID_MEASURE",
                 "VALID_MEASURE_3D"
+            ],
+            "identifiers": [
             ]
         },
         "SDO_MIGRATE": {
@@ -6554,6 +10640,8 @@
                 "OGIS_METADATA_TO",
                 "TO_81X",
                 "TO_CURRENT"
+            ],
+            "identifiers": [
             ]
         },
         "SDO_TUNE": {
@@ -6565,6 +10653,8 @@
                 "MIX_INFO",
                 "QUALITY_DEGRADATION",
                 "RTREE_QUALITY"
+            ],
+            "identifiers": [
             ]
         },
         "SDO_UTIL": {
@@ -6617,11 +10707,18 @@
                 "TO_WKTGEOMETRY",
                 "TO_WKTGEOMETRY_VARCHAR",
                 "TRUNCATE_NUMBER"
+            ],
+            "identifiers": [
+                "SDO_GTYPE_COLLECTION",
+                "SDO_GTYPE_MULTIPOLYGON",
+                "SDO_GTYPE_POLYGON"
             ]
         },
         "UTL_COLL": {
             "procedures": [
                 "IS_LOCATOR"
+            ],
+            "identifiers": [
             ]
         },
         "UTL_COMPRESS": {
@@ -6635,6 +10732,19 @@
                 "LZ_UNCOMPRESS_CLOSE",
                 "LZ_UNCOMPRESS_EXTRACT",
                 "LZ_UNCOMPRESS_OPEN"
+            ],
+            "identifiers": [
+                "INVALID_HANDLE_ERRCODE",
+                "STREAM_ERROR_ERRCODE",
+                "DATA_ERROR_ERRCODE",
+                "BUFFER_TOO_SMALL_ERRCODE",
+                "INVALID_ARGUMENT_ERRCODE",
+                "STREAM_ERROR",
+                "DATA_ERROR",
+                "BUFFER_TOO_SMALL",
+                "INVALID_ARGUMENT",
+                "INVALID_HANDLE",
+                "UTLCOMP_MAX_HANDLE"
             ]
         },
         "UTL_ENCODE": {
@@ -6649,6 +10759,14 @@
                 "TEXT_ENCODE",
                 "UUDECODE",
                 "UUENCODE"
+            ],
+            "identifiers": [
+                "QUOTED_PRINTABLE",
+                "BASE64",
+                "END_PIECE",
+                "MIDDLE_PIECE",
+                "HEADER_PIECE",
+                "COMPLETE"
             ]
         },
         "UTL_FILE": {
@@ -6676,6 +10794,41 @@
                 "PUT_LINE_NCHAR",
                 "PUT_NCHAR",
                 "PUT_RAW"
+            ],
+            "identifiers": [
+                "RENAME_FAILED_ERRCODE",
+                "DELETE_FAILED_ERRCODE",
+                "INVALID_OFFSET_ERRCODE",
+                "ACCESS_DENIED_ERRCODE",
+                "INVALID_FILENAME_ERRCODE",
+                "INVALID_MAXLINESIZE_ERRCODE",
+                "INTERNAL_ERROR_ERRCODE",
+                "WRITE_ERROR_ERRCODE",
+                "READ_ERROR_ERRCODE",
+                "INVALID_OPERATION_ERRCODE",
+                "INVALID_FILEHANDLE_ERRCODE",
+                "INVALID_MODE_ERRCODE",
+                "INVALID_PATH_ERRCODE",
+                "CHARSETMISMATCH_ERRCODE",
+                "RENAME_FAILED",
+                "DELETE_FAILED",
+                "INVALID_OFFSET",
+                "ACCESS_DENIED",
+                "INVALID_FILENAME",
+                "INVALID_MAXLINESIZE",
+                "INTERNAL_ERROR",
+                "WRITE_ERROR",
+                "READ_ERROR",
+                "INVALID_OPERATION",
+                "INVALID_FILEHANDLE",
+                "INVALID_MODE",
+                "INVALID_PATH",
+                "CHARSETMISMATCH",
+                "FILE_OPEN",
+                "BYTE_MODE",
+                "DATATYPE",
+                "ID",
+                "FILE_TYPE"
             ]
         },
         "UTL_HTTP": {
@@ -6729,6 +10882,94 @@
                 "WRITE_LINE",
                 "WRITE_RAW",
                 "WRITE_TEXT"
+            ],
+            "identifiers": [
+                "NETWORK_ACCESS_DENIED",
+                "TRANSFER_TIMEOUT",
+                "PARTIAL_MULTIBYTE_CHAR",
+                "TOO_MANY_REQUESTS",
+                "HTTP_SERVER_ERROR",
+                "HTTP_CLIENT_ERROR",
+                "ILLEGAL_CALL",
+                "END_OF_BODY",
+                "HEADER_NOT_FOUND",
+                "UNKNOWN_SCHEME",
+                "PROTOCOL_ERROR",
+                "BAD_URL",
+                "BAD_ARGUMENT",
+                "REQUEST_FAILED",
+                "INIT_FAILED",
+                "HTTP_VERSION_NOT_SUPPORTED",
+                "HTTP_GATEWAY_TIME_OUT",
+                "HTTP_SERVICE_UNAVAILABLE",
+                "HTTP_BAD_GATEWAY",
+                "HTTP_NOT_IMPLEMENTED",
+                "HTTP_EXPECTATION_FAILED",
+                "HTTP_REQ_RANGE_NOT_SATISFIABLE",
+                "HTTP_UNSUPPORTED_MEDIA_TYPE",
+                "REQUEST_CONTEXT_KEY",
+                "CONNECTION_TABLE",
+                "SSL",
+                "PROXY_PORT",
+                "PROXY_HOST",
+                "PORT",
+                "HOST",
+                "CONNECTION",
+                "COOKIE_TABLE",
+                "COMMENT",
+                "VERSION",
+                "SECURE",
+                "PATH",
+                "EXPIRE",
+                "DOMAIN",
+                "VALUE",
+                "NAME",
+                "COOKIE",
+                "PRIVATE_HNDL",
+                "HTTP_VERSION",
+                "REASON_PHRASE",
+                "STATUS_CODE",
+                "RESP",
+                "PRIVATE_HNDL",
+                "HTTP_VERSION",
+                "METHOD",
+                "URL",
+                "REQ",
+                "HTML_PIECES",
+                "HTTP_REQUEST_URI_TOO_LARGE",
+                "HTTP_REQUEST_ENTITY_TOO_LARGE",
+                "HTTP_PRECONDITION_FAILED",
+                "HTTP_LENGTH_REQUIRED",
+                "HTTP_GONE",
+                "HTTP_CONFLICT",
+                "HTTP_REQUEST_TIME_OUT",
+                "HTTP_PROXY_AUTH_REQUIRED",
+                "HTTP_NOT_ACCEPTABLE",
+                "HTTP_NOT_FOUND",
+                "HTTP_FORBIDDEN",
+                "HTTP_PAYMENT_REQUIRED",
+                "HTTP_UNAUTHORIZED",
+                "HTTP_BAD_REQUEST",
+                "HTTP_TEMPORARY_REDIRECT",
+                "HTTP_USE_PROXY",
+                "HTTP_NOT_MODIFIED",
+                "HTTP_SEE_OTHER",
+                "HTTP_FOUND",
+                "HTTP_MOVED_PERMANENTLY",
+                "HTTP_MULTIPLE_CHOICES",
+                "HTTP_PARTIAL_CONTENT",
+                "HTTP_RESET_CONTENT",
+                "HTTP_NO_CONTENT",
+                "HTTP_NON_AUTHORITATIVE_INFO",
+                "HTTP_ACCEPTED",
+                "HTTP_CREATED",
+                "HTTP_OK",
+                "HTTP_SWITCHING_PROTOCOLS",
+                "HTTP_CONTINUE",
+                "DEFAULT_HTTPS_PORT",
+                "DEFAULT_HTTP_PORT",
+                "HTTP_VERSION_1_1",
+                "HTTP_VERSION_1_0"
             ]
         },
         "UTL_I18N": {
@@ -6756,18 +10997,52 @@
                 "TRANSLITERATE",
                 "UNESCAPE_REFERENCE",
                 "VALIDATE_SQLNAME"
+            ],
+            "identifiers": [
+                "STRING_ARRAY",
+                "LANGUAGE_TERRITORY_TRANS",
+                "TERRITORY_TRANS",
+                "LANGUAGE_TRANS",
+                "UNSUPPORTED_TRANSLITERATION",
+                "HIRAGANA_HWKATAKANA",
+                "HIRAGANA_FWKATAKANA",
+                "HWKATAKANA_HIRAGANA",
+                "HWKATAKANA_FWKATAKANA",
+                "FWKATAKANA_HIRAGANA",
+                "FWKATAKANA_HWKATAKANA",
+                "KANA_HIRAGANA",
+                "KANA_HWKATAKANA",
+                "KANA_FWKATAKANA",
+                "SQLNAME_TO_XMLTAG",
+                "XMLTAG_TO_SQLNAME",
+                "MAIL_CONTEXT",
+                "GENERIC_CONTEXT",
+                "MAIL_WINDOWS",
+                "MAIL_GENERIC",
+                "IANA_TO_ORACLE",
+                "ORACLE_TO_IANA",
+                "SHIFT_OUT",
+                "SHIFT_IN"
             ]
         },
         "UTL_INADDR": {
             "procedures": [
                 "GET_HOST_ADDRESS",
                 "GET_HOST_NAME"
+            ],
+            "identifiers": [
+                "NETWORK_ACCESS_DENIED_ERRCODE",
+                "UNKNOWN_HOST_ERRCODE",
+                "NETWORK_ACCESS_DENIED",
+                "UNKNOWN_HOST"
             ]
         },
         "UTL_LMS": {
             "procedures": [
                 "FORMAT_MESSAGE",
                 "GET_MESSAGE"
+            ],
+            "identifiers": [
             ]
         },
         "UTL_MATCH": {
@@ -6776,6 +11051,8 @@
                 "EDIT_DISTANCE_SIMILARITY",
                 "JARO_WINKLER",
                 "JARO_WINKLER_SIMILARITY"
+            ],
+            "identifiers": [
             ]
         },
         "UTL_NLA": {
@@ -6836,6 +11113,11 @@
                 "LAPACK_SYSV",
                 "UNIT_TEST_BLAS",
                 "UNIT_TEST_LAPACK"
+            ],
+            "identifiers": [
+                "FLAG",
+                "SCALAR_FLOAT",
+                "SCALAR_DOUBLE"
             ]
         },
         "UTL_RAW": {
@@ -6866,6 +11148,11 @@
                 "TRANSLATE",
                 "TRANSLITERATE",
                 "XRANGE"
+            ],
+            "identifiers": [
+                "MACHINE_ENDIAN",
+                "LITTLE_ENDIAN",
+                "BIG_ENDIAN"
             ]
         },
         "UTL_RECOMP": {
@@ -6873,6 +11160,14 @@
                 "PARALLEL_SLAVE",
                 "RECOMP_PARALLEL",
                 "RECOMP_SERIAL"
+            ],
+            "identifiers": [
+                "TYPES_ONLY",
+                "SPECS_ONLY",
+                "REVERSE_ORDER",
+                "RANDOM_ORDER",
+                "NO_REUSE_SETTINGS",
+                "COMPILE_LOG"
             ]
         },
         "UTL_REF": {
@@ -6882,6 +11177,8 @@
                 "SELECT_OBJECT",
                 "SELECT_OBJECT_WITH_CR",
                 "UPDATE_OBJECT"
+            ],
+            "identifiers": [
             ]
         },
         "UTL_SMTP": {
@@ -6906,6 +11203,30 @@
                 "VRFY",
                 "WRITE_DATA",
                 "WRITE_RAW_DATA"
+            ],
+            "identifiers": [
+                "NON_CLEARTEXT_PASSWORD_SCHEMES",
+                "ALL_SCHEMES",
+                "NO_SUPPORTED_SCHEME_ERRCODE",
+                "UNSUPPORTED_SCHEME_ERRCODE",
+                "PERMANENT_ERROR_ERRCODE",
+                "TRANSIENT_ERROR_ERRCODE",
+                "INVALID_OPERATION_ERRCODE",
+                "NO_SUPPORTED_SCHEME",
+                "UNSUPPORTED_SCHEME",
+                "PERMANENT_ERROR",
+                "TRANSIENT_ERROR",
+                "INVALID_OPERATION",
+                "REPLIES",
+                "TEXT",
+                "CODE",
+                "REPLY",
+                "PRIVATE_STATE",
+                "PRIVATE_TCP_CON",
+                "TX_TIMEOUT",
+                "PORT",
+                "HOST",
+                "CONNECTION"
             ]
         },
         "UTL_TCP": {
@@ -6927,12 +11248,42 @@
                 "WRITE_LINE",
                 "WRITE_RAW",
                 "WRITE_TEXT"
+            ],
+            "identifiers": [
+                "NETWORK_ACCESS_DENIED_ERRCODE",
+                "TRANSFER_TIMEOUT_ERRCODE",
+                "PARTIAL_MULTIBYTE_CHAR_ERRCODE",
+                "BAD_ARGUMENT_ERRCODE",
+                "NETWORK_ERROR_ERRCODE",
+                "END_OF_INPUT_ERRCODE",
+                "BUFFER_TOO_SMALL_ERRCODE",
+                "NETWORK_ACCESS_DENIED",
+                "TRANSFER_TIMEOUT",
+                "PARTIAL_MULTIBYTE_CHAR",
+                "BAD_ARGUMENT",
+                "NETWORK_ERROR",
+                "END_OF_INPUT",
+                "BUFFER_TOO_SMALL",
+                "CRLF",
+                "PRIVATE_SD",
+                "TX_TIMEOUT",
+                "NEWLINE",
+                "CHARSET",
+                "LOCAL_PORT",
+                "LOCAL_HOST",
+                "REMOTE_PORT",
+                "REMOTE_HOST",
+                "CONNECTION"
             ]
         },
         "UTL_URL": {
             "procedures": [
                 "ESCAPE",
                 "UNESCAPE"
+            ],
+            "identifiers": [
+                "BAD_FIXED_WIDTH_CHARSET",
+                "BAD_URL"
             ]
         },
         "WPG_DOCLOAD": {
@@ -6943,6 +11294,12 @@
                 "GET_DOWNLOAD_BLOB",
                 "GET_DOWNLOAD_FILE",
                 "IS_FILE_DOWNLOAD"
+            ],
+            "identifiers": [
+                "MAX_DOCTABLE_NAME_LEN",
+                "MIMET_COL_LEN",
+                "NAME_COL_LEN",
+                "PARTS_TABLE"
             ]
         }
     }
