@@ -1,4 +1,4 @@
-create or replace PACKAGE BODY             PROVIDER_DATA
+create or replace PACKAGE BODY PROVIDER_DATA
 AS
 
     type t_keyword_list is table of varchar2(50)
@@ -9,6 +9,279 @@ AS
 
     type t_procedure_list is table of all_procedures.procedure_name%type
         index by PLS_INTEGER;
+
+    function get_packs return t_varchar2_table pipelined
+    as
+    begin
+        pipe row ('APEX_CUSTOM_AUTH');
+        pipe row ('APEX_APPLICATION');
+        pipe row ('APEX_ITEM');
+        pipe row ('APEX_UTIL');
+        pipe row ('CTX_ADM');
+        pipe row ('CTX_CLS');
+        pipe row ('CTX_DDL');
+        pipe row ('CTX_DOC');
+        pipe row ('CTX_ENTITY');
+        pipe row ('CTX_OUTPUT');
+        pipe row ('CTX_QUERY');
+        pipe row ('CTX_REPORT');
+        pipe row ('CTX_THES');
+        pipe row ('CTX_ULEXER');
+        pipe row ('DBMS_ADDM');
+        pipe row ('DBMS_ADVANCED_REWRITE');
+        pipe row ('DBMS_ADVISOR');
+        pipe row ('DBMS_ALERT');
+        pipe row ('DBMS_APPLICATION_INFO');
+        pipe row ('DBMS_APPLY_ADM');
+        pipe row ('DBMS_AQ');
+        pipe row ('DBMS_AQADM');
+        pipe row ('DBMS_AQELM');
+        pipe row ('DBMS_AQIN');
+        pipe row ('DBMS_ASSERT');
+        pipe row ('DBMS_AUDIT_MGMT');
+        pipe row ('DBMS_AUTO_SQLTUNE');
+        pipe row ('DBMS_AUTO_TASK_ADMIN');
+        pipe row ('DBMS_AUTO_TASK_IMMEDIATE');
+        pipe row ('DBMS_AW_STATS');
+        pipe row ('DBMS_CAPTURE_ADM');
+        pipe row ('DBMS_CDC_PUBLISH');
+        pipe row ('DBMS_CDC_SUBSCRIBE');
+        pipe row ('DBMS_COMPARISON');
+        pipe row ('DBMS_COMPRESSION');
+        pipe row ('DBMS_CONNECTION_POOL');
+        pipe row ('DBMS_CQ_NOTIFICATION');
+        pipe row ('DBMS_CRYPTO');
+        pipe row ('DBMS_CSX_ADMIN');
+        pipe row ('DBMS_CUBE');
+        pipe row ('DBMS_CUBE_ADVISE');
+        pipe row ('DBMS_CUBE_LOG');
+        pipe row ('DBMS_DATA_MINING');
+        pipe row ('DBMS_DATA_MINING_TRANSFORM');
+        pipe row ('DBMS_DATAPUMP');
+        pipe row ('DBMS_DBFS_CONTENT');
+        pipe row ('DBMS_DBFS_CONTENT_SPI');
+        pipe row ('DBMS_DBFS_HS');
+        pipe row ('DBMS_DBFS_SFS');
+        pipe row ('DBMS_DB_VERSION');
+        pipe row ('DBMS_DEBUG');
+        pipe row ('DBMS_DDL');
+        pipe row ('DBMS_DEFER');
+        pipe row ('DBMS_DEFER_QUERY');
+        pipe row ('DBMS_DEFER_SYS');
+        pipe row ('DBMS_DESCRIBE');
+        pipe row ('DBMS_DG');
+        pipe row ('DBMS_DIMENSION');
+        pipe row ('DBMS_DST');
+        pipe row ('DBMS_DISTRIBUTED_TRUST_ADMIN');
+        pipe row ('DBMS_EDITIONS_UTILITIES');
+        pipe row ('DBMS_EPG');
+        pipe row ('DBMS_ERRLOG');
+        pipe row ('DBMS_EXPFIL');
+        pipe row ('DBMS_FGA');
+        pipe row ('DBMS_FILE_GROUP');
+        pipe row ('DBMS_FILE_TRANSFER');
+        pipe row ('DBMS_FLASHBACK');
+        pipe row ('DBMS_FLASHBACK_ARCHIVE');
+        pipe row ('DBMS_FREQUENT_ITEMSET');
+        pipe row ('DBMS_HM');
+        pipe row ('DBMS_HPROF');
+        pipe row ('DBMS_HS_PARALLEL');
+        pipe row ('DBMS_HS_PASSTHROUGH');
+        pipe row ('DBMS_IOT');
+        pipe row ('DBMS_JAVA');
+        pipe row ('DBMS_JOB');
+        pipe row ('DBMS_LDAP');
+        pipe row ('DBMS_LDAP_UTL');
+        pipe row ('DBMS_LIBCACHE');
+        pipe row ('DBMS_LOB');
+        pipe row ('DBMS_LOCK');
+        pipe row ('DBMS_LOGMNR');
+        pipe row ('DBMS_LOGMNR_D');
+        pipe row ('DBMS_LOGSTDBY');
+        pipe row ('DBMS_METADATA');
+        pipe row ('DBMS_METADATA_DIFF');
+        pipe row ('DBMS_MGD_ID_UTL');
+        pipe row ('DBMS_MGWADM');
+        pipe row ('DBMS_MGWMSG');
+        pipe row ('DBMS_MONITOR');
+        pipe row ('DBMS_MVIEW');
+        pipe row ('DBMS_NETWORK_ACL_ADMIN');
+        pipe row ('DBMS_NETWORK_ACL_UTILITY');
+        pipe row ('DBMS_OBFUSCATION_TOOLKIT');
+        pipe row ('DBMS_ODCI');
+        pipe row ('DBMS_OFFLINE_OG');
+        pipe row ('DBMS_OUTLN');
+        pipe row ('DBMS_OUTPUT');
+        pipe row ('DBMS_PARALLEL_EXECUTE');
+        pipe row ('DBMS_PCLXUTIL');
+        pipe row ('DBMS_PIPE');
+        pipe row ('DBMS_PREDICTIVE_ANALYTICS');
+        pipe row ('DBMS_PREPROCESSOR');
+        pipe row ('DBMS_PROFILER');
+        pipe row ('DBMS_PROPAGATION_ADM');
+        pipe row ('DBMS_RANDOM');
+        pipe row ('DBMS_RECTIFIER_DIFF');
+        pipe row ('DBMS_REDEFINITION');
+        pipe row ('DBMS_REDACT');
+        pipe row ('DBMS_REFRESH');
+        pipe row ('DBMS_REPAIR');
+        pipe row ('DBMS_REPCAT');
+        pipe row ('DBMS_REPCAT_ADMIN');
+        pipe row ('DBMS_REPCAT_INSTANTIATE');
+        pipe row ('DBMS_REPCAT_RGT');
+        pipe row ('DBMS_REPUTIL');
+        pipe row ('DBMS_RESCONFIG');
+        pipe row ('DBMS_RESOURCE_MANAGER');
+        pipe row ('DBMS_RESOURCE_MANAGER_PRIVS');
+        pipe row ('DBMS_RESULT_CACHE');
+        pipe row ('DBMS_RESUMABLE');
+        pipe row ('DBMS_RLMGR');
+        pipe row ('DBMS_RLS');
+        pipe row ('DBMS_ROWID');
+        pipe row ('DBMS_RULE');
+        pipe row ('DBMS_RULE_ADM');
+        pipe row ('DBMS_SCHEDULER');
+        pipe row ('DBMS_SERVER_ALERT');
+        pipe row ('DBMS_SERVICE');
+        pipe row ('DBMS_SESSION');
+        pipe row ('DBMS_SHARED_POOL');
+        pipe row ('DBMS_SPACE');
+        pipe row ('DBMS_SPACE_ADMIN');
+        pipe row ('DBMS_SPM');
+        pipe row ('DBMS_SQL');
+        pipe row ('DBMS_SQLDIAG');
+        pipe row ('DBMS_SQLPA');
+        pipe row ('DBMS_SQLTUNE');
+        pipe row ('DBMS_STAT_FUNCS');
+        pipe row ('DBMS_STATS');
+        pipe row ('DBMS_STORAGE_MAP');
+        pipe row ('DBMS_STREAMS');
+        pipe row ('DBMS_STREAMS_ADM');
+        pipe row ('DBMS_STREAMS_ADVISOR_ADM');
+        pipe row ('DBMS_STREAMS_AUTH');
+        pipe row ('DBMS_STREAMS_HANDLER_ADM');
+        pipe row ('DBMS_STREAMS_MESSAGING');
+        pipe row ('DBMS_STREAMS_TABLESPACE_ADM');
+        pipe row ('DBMS_TDB');
+        pipe row ('DBMS_TRACE');
+        pipe row ('DBMS_TRANSACTION');
+        pipe row ('DBMS_TRANSFORM');
+        pipe row ('DBMS_TTS');
+        pipe row ('DBMS_TYPES');
+        pipe row ('DBMS_UTILITY');
+        pipe row ('DBMS_WARNING');
+        pipe row ('DBMS_WM');
+        pipe row ('DBMS_WORKLOAD_CAPTURE');
+        pipe row ('DBMS_WORKLOAD_REPLAY');
+        pipe row ('DBMS_WORKLOAD_REPOSITORY');
+        pipe row ('DBMS_XA');
+        pipe row ('DBMS_XDB');
+        pipe row ('DBMS_XDB_ADMIN');
+        pipe row ('DBMS_XDB_VERSION');
+        pipe row ('DBMS_XDBRESOURCE');
+        pipe row ('DBMS_XDBT');
+        pipe row ('DBMS_XDBZ');
+        pipe row ('DBMS_XEVENT');
+        pipe row ('DBMS_XMLDOM');
+        pipe row ('DBMS_XMLGEN');
+        pipe row ('DBMS_XMLINDEX');
+        pipe row ('DBMS_XMLPARSER');
+        pipe row ('DBMS_XMLQUERY');
+        pipe row ('DBMS_XMLSAVE');
+        pipe row ('DBMS_XMLSCHEMA');
+        pipe row ('DBMS_XMLSTORE');
+        pipe row ('DBMS_XMLTRANSLATIONS');
+        pipe row ('DBMS_XPLAN');
+        pipe row ('DBMS_XSLPROCESSOR');
+        pipe row ('DEBUG_EXTPROC');
+        pipe row ('HTF');
+        pipe row ('HTP');
+        pipe row ('ORD_DICOM');
+        pipe row ('ORD_DICOM_ADMIN');
+        pipe row ('OWA_CACHE');
+        pipe row ('OWA_COOKIE');
+        pipe row ('OWA_CUSTOM');
+        pipe row ('OWA_IMAGE');
+        pipe row ('OWA_OPT_LOCK');
+        pipe row ('OWA_PATTERN');
+        pipe row ('OWA_SEC');
+        pipe row ('OWA_TEXT');
+        pipe row ('OWA_UTIL');
+        pipe row ('SDO_CS');
+        pipe row ('SDO_CSW_PROCESS');
+        pipe row ('SDO_GCDR');
+        pipe row ('SDO_GEOM');
+        pipe row ('SDO_GEOR');
+        pipe row ('SDO_GEOR_ADMIN');
+        pipe row ('SDO_GEOR_UTL');
+        pipe row ('SDO_LRS');
+        pipe row ('SDO_MIGRATE');
+        pipe row ('SDO_NET');
+        pipe row ('SDO_NET_MEM');
+        pipe row ('SDO_OLS');
+        pipe row ('SDO_PC_PKG');
+        pipe row ('SDO_SAM');
+        pipe row ('SDO_TIN_PKG');
+        pipe row ('SDO_TOPO');
+        pipe row ('SDO_TOPO_MAP');
+        pipe row ('SDO_TUNE');
+        pipe row ('SDO_UTIL');
+        pipe row ('SDO_WFS_LOCK');
+        pipe row ('SDO_WFS_PROCESS');
+        pipe row ('SEM_APIS');
+        pipe row ('SEM_PERF');
+        pipe row ('SEM_RDFCTX');
+        pipe row ('SEM_RDFSA');
+        pipe row ('UTL_COLL');
+        pipe row ('UTL_COMPRESS');
+        pipe row ('UTL_ENCODE');
+        pipe row ('UTL_FILE');
+        pipe row ('UTL_HTTP');
+        pipe row ('UTL_I18N');
+        pipe row ('UTL_INADDR');
+        pipe row ('UTL_IDENT');
+        pipe row ('UTL_LMS');
+        pipe row ('UTL_MAIL');
+        pipe row ('UTL_MATCH');
+        pipe row ('UTL_NLA');
+        pipe row ('UTL_RAW');
+        pipe row ('UTL_RECOMP');
+        pipe row ('UTL_REF');
+        pipe row ('UTL_SMTP');
+        pipe row ('UTL_SPADV');
+        pipe row ('UTL_TCP');
+        pipe row ('UTL_URL');
+        pipe row ('WPG_DOCLOAD');
+        pipe row (--from synonyms; package names extracted from published documentation
+        'APEX_APPLICATION');
+        pipe row ('APEX_APPLICATION_INSTALL');
+        pipe row ('APEX_AUTHENTICATION');
+        pipe row ('APEX_AUTHORIZATION');
+        pipe row ('APEX_COLLECTION');
+        pipe row ('APEX_CSS');
+        pipe row ('APEX_CUSTOM_AUTH');
+        pipe row ('APEX_DEBUG');
+        pipe row ('APEX_ERROR');
+        pipe row ('APEX_ESCAPE');
+        pipe row ('APEX_INSTANCE_ADMIN');
+        pipe row ('APEX_IR');
+        pipe row ('APEX_ITEM');
+        pipe row ('APEX_JAVASCRIPT');
+        pipe row ('APEX_JSON');
+        pipe row ('APEX_LANG');
+        pipe row ('APEX_LDAP');
+        pipe row ('APEX_MAIL');
+        pipe row ('APEX_PAGE');
+        pipe row ('APEX_PLSQL_JOB');
+        pipe row ('APEX_PLUGIN');
+        pipe row ('APEX_PLUGIN_UTIL');
+        pipe row ('APEX_REGION');
+        pipe row ('APEX_SPATIAL');
+        pipe row ('APEX_UI_DEFAULT_UPDATE');
+        pipe row ('APEX_UTIL');
+        pipe row ('APEX_WEB_SERVICE');
+        pipe row ('APEX_ZIP');
+    end get_packs;
 
     function get_tab_chars(
         p_num_tabs in NUMBER,
@@ -105,278 +378,11 @@ AS
                  )
             where procedure_name is not null
         )
-        select object_name
+        select unique_package_names.object_name
         bulk collect into l_pkg_list
         from unique_package_names
-        where object_name in (
-            'APEX_CUSTOM_AUTH',
-            'APEX_APPLICATION',
-            'APEX_ITEM',
-            'APEX_UTIL',
-            'CTX_ADM',
-            'CTX_CLS',
-            'CTX_DDL',
-            'CTX_DOC',
-            'CTX_ENTITY',
-            'CTX_OUTPUT',
-            'CTX_QUERY',
-            'CTX_REPORT',
-            'CTX_THES',
-            'CTX_ULEXER',
-            'DBMS_ADDM',
-            'DBMS_ADVANCED_REWRITE',
-            'DBMS_ADVISOR',
-            'DBMS_ALERT',
-            'DBMS_APPLICATION_INFO',
-            'DBMS_APPLY_ADM',
-            'DBMS_AQ',
-            'DBMS_AQADM',
-            'DBMS_AQELM',
-            'DBMS_AQIN',
-            'DBMS_ASSERT',
-            'DBMS_AUDIT_MGMT',
-            'DBMS_AUTO_SQLTUNE',
-            'DBMS_AUTO_TASK_ADMIN',
-            'DBMS_AUTO_TASK_IMMEDIATE',
-            'DBMS_AW_STATS',
-            'DBMS_CAPTURE_ADM',
-            'DBMS_CDC_PUBLISH',
-            'DBMS_CDC_SUBSCRIBE',
-            'DBMS_COMPARISON',
-            'DBMS_COMPRESSION',
-            'DBMS_CONNECTION_POOL',
-            'DBMS_CQ_NOTIFICATION',
-            'DBMS_CRYPTO',
-            'DBMS_CSX_ADMIN',
-            'DBMS_CUBE',
-            'DBMS_CUBE_ADVISE',
-            'DBMS_CUBE_LOG',
-            'DBMS_DATA_MINING',
-            'DBMS_DATA_MINING_TRANSFORM',
-            'DBMS_DATAPUMP',
-            'DBMS_DBFS_CONTENT',
-            'DBMS_DBFS_CONTENT_SPI',
-            'DBMS_DBFS_HS',
-            'DBMS_DBFS_SFS',
-            'DBMS_DB_VERSION',
-            'DBMS_DEBUG',
-            'DBMS_DDL',
-            'DBMS_DEFER',
-            'DBMS_DEFER_QUERY',
-            'DBMS_DEFER_SYS',
-            'DBMS_DESCRIBE',
-            'DBMS_DG',
-            'DBMS_DIMENSION',
-            'DBMS_DST',
-            'DBMS_DISTRIBUTED_TRUST_ADMIN',
-            'DBMS_EDITIONS_UTILITIES',
-            'DBMS_EPG',
-            'DBMS_ERRLOG',
-            'DBMS_EXPFIL',
-            'DBMS_FGA',
-            'DBMS_FILE_GROUP',
-            'DBMS_FILE_TRANSFER',
-            'DBMS_FLASHBACK',
-            'DBMS_FLASHBACK_ARCHIVE',
-            'DBMS_FREQUENT_ITEMSET',
-            'DBMS_HM',
-            'DBMS_HPROF',
-            'DBMS_HS_PARALLEL',
-            'DBMS_HS_PASSTHROUGH',
-            'DBMS_IOT',
-            'DBMS_JAVA',
-            'DBMS_JOB',
-            'DBMS_LDAP',
-            'DBMS_LDAP_UTL',
-            'DBMS_LIBCACHE',
-            'DBMS_LOB',
-            'DBMS_LOCK',
-            'DBMS_LOGMNR',
-            'DBMS_LOGMNR_D',
-            'DBMS_LOGSTDBY',
-            'DBMS_METADATA',
-            'DBMS_METADATA_DIFF',
-            'DBMS_MGD_ID_UTL',
-            'DBMS_MGWADM',
-            'DBMS_MGWMSG',
-            'DBMS_MONITOR',
-            'DBMS_MVIEW',
-            'DBMS_NETWORK_ACL_ADMIN',
-            'DBMS_NETWORK_ACL_UTILITY',
-            'DBMS_OBFUSCATION_TOOLKIT',
-            'DBMS_ODCI',
-            'DBMS_OFFLINE_OG',
-            'DBMS_OUTLN',
-            'DBMS_OUTPUT',
-            'DBMS_PARALLEL_EXECUTE',
-            'DBMS_PCLXUTIL',
-            'DBMS_PIPE',
-            'DBMS_PREDICTIVE_ANALYTICS',
-            'DBMS_PREPROCESSOR',
-            'DBMS_PROFILER',
-            'DBMS_PROPAGATION_ADM',
-            'DBMS_RANDOM',
-            'DBMS_RECTIFIER_DIFF',
-            'DBMS_REDEFINITION',
-            'DBMS_REDACT',
-            'DBMS_REFRESH',
-            'DBMS_REPAIR',
-            'DBMS_REPCAT',
-            'DBMS_REPCAT_ADMIN',
-            'DBMS_REPCAT_INSTANTIATE',
-            'DBMS_REPCAT_RGT',
-            'DBMS_REPUTIL',
-            'DBMS_RESCONFIG',
-            'DBMS_RESOURCE_MANAGER',
-            'DBMS_RESOURCE_MANAGER_PRIVS',
-            'DBMS_RESULT_CACHE',
-            'DBMS_RESUMABLE',
-            'DBMS_RLMGR',
-            'DBMS_RLS',
-            'DBMS_ROWID',
-            'DBMS_RULE',
-            'DBMS_RULE_ADM',
-            'DBMS_SCHEDULER',
-            'DBMS_SERVER_ALERT',
-            'DBMS_SERVICE',
-            'DBMS_SESSION',
-            'DBMS_SHARED_POOL',
-            'DBMS_SPACE',
-            'DBMS_SPACE_ADMIN',
-            'DBMS_SPM',
-            'DBMS_SQL',
-            'DBMS_SQLDIAG',
-            'DBMS_SQLPA',
-            'DBMS_SQLTUNE',
-            'DBMS_STAT_FUNCS',
-            'DBMS_STATS',
-            'DBMS_STORAGE_MAP',
-            'DBMS_STREAMS',
-            'DBMS_STREAMS_ADM',
-            'DBMS_STREAMS_ADVISOR_ADM',
-            'DBMS_STREAMS_AUTH',
-            'DBMS_STREAMS_HANDLER_ADM',
-            'DBMS_STREAMS_MESSAGING',
-            'DBMS_STREAMS_TABLESPACE_ADM',
-            'DBMS_TDB',
-            'DBMS_TRACE',
-            'DBMS_TRANSACTION',
-            'DBMS_TRANSFORM',
-            'DBMS_TTS',
-            'DBMS_TYPES',
-            'DBMS_UTILITY',
-            'DBMS_WARNING',
-            'DBMS_WM',
-            'DBMS_WORKLOAD_CAPTURE',
-            'DBMS_WORKLOAD_REPLAY',
-            'DBMS_WORKLOAD_REPOSITORY',
-            'DBMS_XA',
-            'DBMS_XDB',
-            'DBMS_XDB_ADMIN',
-            'DBMS_XDB_VERSION',
-            'DBMS_XDBRESOURCE',
-            'DBMS_XDBT',
-            'DBMS_XDBZ',
-            'DBMS_XEVENT',
-            'DBMS_XMLDOM',
-            'DBMS_XMLGEN',
-            'DBMS_XMLINDEX',
-            'DBMS_XMLPARSER',
-            'DBMS_XMLQUERY',
-            'DBMS_XMLSAVE',
-            'DBMS_XMLSCHEMA',
-            'DBMS_XMLSTORE',
-            'DBMS_XMLTRANSLATIONS',
-            'DBMS_XPLAN',
-            'DBMS_XSLPROCESSOR',
-            'DEBUG_EXTPROC',
-            'HTF',
-            'HTP',
-            'ORD_DICOM',
-            'ORD_DICOM_ADMIN',
-            'OWA_CACHE',
-            'OWA_COOKIE',
-            'OWA_CUSTOM',
-            'OWA_IMAGE',
-            'OWA_OPT_LOCK',
-            'OWA_PATTERN',
-            'OWA_SEC',
-            'OWA_TEXT',
-            'OWA_UTIL',
-            'SDO_CS',
-            'SDO_CSW_PROCESS',
-            'SDO_GCDR',
-            'SDO_GEOM',
-            'SDO_GEOR',
-            'SDO_GEOR_ADMIN',
-            'SDO_GEOR_UTL',
-            'SDO_LRS',
-            'SDO_MIGRATE',
-            'SDO_NET',
-            'SDO_NET_MEM',
-            'SDO_OLS',
-            'SDO_PC_PKG',
-            'SDO_SAM',
-            'SDO_TIN_PKG',
-            'SDO_TOPO',
-            'SDO_TOPO_MAP',
-            'SDO_TUNE',
-            'SDO_UTIL',
-            'SDO_WFS_LOCK',
-            'SDO_WFS_PROCESS',
-            'SEM_APIS',
-            'SEM_PERF',
-            'SEM_RDFCTX',
-            'SEM_RDFSA',
-            'UTL_COLL',
-            'UTL_COMPRESS',
-            'UTL_ENCODE',
-            'UTL_FILE',
-            'UTL_HTTP',
-            'UTL_I18N',
-            'UTL_INADDR',
-            'UTL_IDENT',
-            'UTL_LMS',
-            'UTL_MAIL',
-            'UTL_MATCH',
-            'UTL_NLA',
-            'UTL_RAW',
-            'UTL_RECOMP',
-            'UTL_REF',
-            'UTL_SMTP',
-            'UTL_SPADV',
-            'UTL_TCP',
-            'UTL_URL',
-            'WPG_DOCLOAD',
-            --from synonyms; package names extracted from published documentation
-            'APEX_APPLICATION',
-            'APEX_APPLICATION_INSTALL',
-            'APEX_AUTHENTICATION',
-            'APEX_AUTHORIZATION',
-            'APEX_COLLECTION',
-            'APEX_CSS',
-            'APEX_CUSTOM_AUTH',
-            'APEX_DEBUG',
-            'APEX_ERROR',
-            'APEX_ESCAPE',
-            'APEX_INSTANCE_ADMIN',
-            'APEX_IR',
-            'APEX_ITEM',
-            'APEX_JAVASCRIPT',
-            'APEX_JSON',
-            'APEX_LANG',
-            'APEX_LDAP',
-            'APEX_MAIL',
-            'APEX_PAGE',
-            'APEX_PLSQL_JOB',
-            'APEX_PLUGIN',
-            'APEX_PLUGIN_UTIL',
-            'APEX_REGION',
-            'APEX_SPATIAL',
-            'APEX_UI_DEFAULT_UPDATE',
-            'APEX_UTIL',
-            'APEX_WEB_SERVICE',
-            'APEX_ZIP'
+        join table(provider_data.get_packs()) documented_packs on (
+            documented_packs.column_value = unique_package_names.object_name
         )
         order by  1 asc;
 
