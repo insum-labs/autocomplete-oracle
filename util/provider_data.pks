@@ -21,4 +21,6 @@ as
 
     function get_packs return t_varchar2_table pipelined;
 
+    procedure nonDocumentedProcsDataBuilder;
+
 end provider_data;

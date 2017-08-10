@@ -1,0 +1,1383 @@
+'.source.js':
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-da-namespace.htm
+		'apex.da.resume':
+				'prefix': 'apex.da.resume'
+				'body': """apex.da.resume($1pCallback, $2pErrorOccurred);$3"""
+				'description': 'This function resumes execution of a Dynamic Action. Execution of a Dynamic Action can be paused, if the action\'s Wait for Result attribute is checked. The Wait for Result is a Dynamic Action plug-in standard attribute designed for use with Ajax based Dynamic Actions. If a plug-in exposes this attribute, it needs to resume execution by calling this function in the relevant place in the plug-in JavaScript code, otherwise, your action breaks execution of Dynamic Actions.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-da-namespace.htm'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477
+		'apex.debug.LOG_LEVEL.OFF':
+				'prefix': 'apex.debug.LOG_LEVEL.OFF'
+				'body': """apex.debug.LOG_LEVEL.OFF;"""
+				'description': 'Log an error message. The error function always writes the error regardless of the log level from the server or set with apex.debug.setLevel. Messages are written using the browsers built-in console logging if available. If supported console.trace is called. Older browsers may not support the console object or all of its features.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477
+		'apex.debug.LOG_LEVEL.ERROR':
+				'prefix': 'apex.debug.LOG_LEVEL.ERROR'
+				'body': """apex.debug.LOG_LEVEL.ERROR;"""
+				'description': 'Log an error message. The error function always writes the error regardless of the log level from the server or set with apex.debug.setLevel. Messages are written using the browsers built-in console logging if available. If supported console.trace is called. Older browsers may not support the console object or all of its features.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477
+		'apex.debug.LOG_LEVEL.WARN':
+				'prefix': 'apex.debug.LOG_LEVEL.WARN'
+				'body': """apex.debug.LOG_LEVEL.WARN;"""
+				'description': 'Log an error message. The error function always writes the error regardless of the log level from the server or set with apex.debug.setLevel. Messages are written using the browsers built-in console logging if available. If supported console.trace is called. Older browsers may not support the console object or all of its features.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477
+		'apex.debug.LOG_LEVEL.INFO':
+				'prefix': 'apex.debug.LOG_LEVEL.INFO'
+				'body': """apex.debug.LOG_LEVEL.INFO;"""
+				'description': 'Log an error message. The error function always writes the error regardless of the log level from the server or set with apex.debug.setLevel. Messages are written using the browsers built-in console logging if available. If supported console.trace is called. Older browsers may not support the console object or all of its features.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477
+		'apex.debug.LOG_LEVEL.APP_TRACE':
+				'prefix': 'apex.debug.LOG_LEVEL.APP_TRACE'
+				'body': """apex.debug.LOG_LEVEL.APP_TRACE;"""
+				'description': 'Log an error message. The error function always writes the error regardless of the log level from the server or set with apex.debug.setLevel. Messages are written using the browsers built-in console logging if available. If supported console.trace is called. Older browsers may not support the console object or all of its features.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477
+		'apex.debug.LOG_LEVEL.ENGINE_TRACE':
+				'prefix': 'apex.debug.LOG_LEVEL.ENGINE_TRACE'
+				'body': """apex.debug.LOG_LEVEL.ENGINE_TRACE;"""
+				'description': 'Log an error message. The error function always writes the error regardless of the log level from the server or set with apex.debug.setLevel. Messages are written using the browsers built-in console logging if available. If supported console.trace is called. Older browsers may not support the console object or all of its features.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-31325203-C3F5-4967-8968-5271F0118477'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-E2BE4157-D63C-435F-82B1-3717E78C8965
+		'apex.debug.error':
+				'prefix': 'apex.debug.error'
+				'body': """apex.debug.error($1);$2"""
+				'description': 'Log an error message. The error function always writes the error regardless of the log level from the server or set with apex.debug.setLevel. Messages are written using the browsers built-in console logging if available. If supported console.trace is called. Older browsers may not support the console object or all of its features.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-E2BE4157-D63C-435F-82B1-3717E78C8965'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-E2BE4157-D63C-435F-82B1-3717E78C8965
+		'apex.debug.getLevel':
+				'prefix': 'apex.debug.getLevel'
+				'body': """apex.debug.getLevel();"""
+				'description': 'Method that returns the debug log level. The debug log level is synchronized with hidden item "#pdebug".'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-E2BE4157-D63C-435F-82B1-3717E78C8965'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-77CF19B7-2BDC-45D2-A806-3898D64F289E
+		'apex.debug.info':
+				'prefix': 'apex.debug.info'
+				'body': """apex.debug.info($1);$2"""
+				'description': 'Log an informational message. Similar toapex.debug.message with the level set to INFO.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-77CF19B7-2BDC-45D2-A806-3898D64F289E'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-A4E377A5-E982-493F-8E8B-13645853A987
+		'apex.debug.message':
+				'prefix': 'apex.debug.message'
+				'body': """apex.debug.message($1pLevel, $2pMessage);$3"""
+				'description': 'Log a message at the given debug log level. The log level set from the server or with apex.debug.setLevel controls if the message is actually written. If the set log level is >= pLevel then the message is written. Messages are written using the browsers built-in console logging if available. Older browsers may not support the console object or all of its features.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-A4E377A5-E982-493F-8E8B-13645853A987'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-00616B0A-9C7E-4BF2-84EC-D5D539333C70
+		'apex.debug.setLevel':
+				'prefix': 'apex.debug.setLevel'
+				'body': """apex.debug.setLevel($1pLevel);$2"""
+				'description': 'Method that sets the debug log level. Log messages at or below the specified level are written to the console log. It is rarely necessary to call this function because the debug log level is synchronized with the hidden item #pdebug that comes from the server.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-00616B0A-9C7E-4BF2-84EC-D5D539333C70'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-7F022DFA-CCC4-441E-85F9-F8C99AF054B8
+		'apex.debug.trace':
+				'prefix': 'apex.debug.trace'
+				'body': """apex.debug.trace($1);$2"""
+				'description': 'Log a trace message. Similar to apex.debug.message with the level set to APP_TRACE.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-7F022DFA-CCC4-441E-85F9-F8C99AF054B8'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-FE7EFFF7-8A47-4B2B-98AD-E937E0A01DF1
+		'apex.debug.warn':
+				'prefix': 'apex.debug.warn'
+				'body': """apex.debug.warn($1);$2"""
+				'description': 'Log a trace message. Similar to apex.debug.message with the level set to APP_TRACE.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-debug-namespace.htm#GUID-FE7EFFF7-8A47-4B2B-98AD-E937E0A01DF1'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-event-namespace.htm
+		'apex.event.trigger':
+				'prefix': 'apex.event.trigger'
+				'body': """apex.event.trigger($1pSelector, $2pEvent, $3pData);$4"""
+				'description': 'The apex.event namespace stores all event related functions of Oracle Application Express.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-event-namespace.htm'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-7C6D4091-A830-4163-BC62-14A9D0502C1F
+		'apex.item':
+				'prefix': 'apex.item'
+				'body': """apex.item"""
+				'description': 'The apex.event namespace stores all event related functions of Oracle Application Express.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-7C6D4091-A830-4163-BC62-14A9D0502C1F'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-60752BEE-6041-4C6C-AC8F-16CCE01D501C
+		'apex.item(1).addValue':
+				'prefix': 'apex.item(1).addValue'
+				'body': """apex.item($1).addValue($2pValue);$2"""
+				'description': 'Adds a value to an Application Express item that supports multiple values.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-60752BEE-6041-4C6C-AC8F-16CCE01D501C'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-0165EFE6-1B5E-45CE-9FDE-545DAB355F24
+		'apex.item(1).disable':
+				'prefix': 'apex.item(1).disable'
+				'body': """apex.item($1).disable();$2"""
+				'description': 'Disables the Application Express item value, taking into account the item type, making it unavailable for edit.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-0165EFE6-1B5E-45CE-9FDE-545DAB355F24'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-90194EEA-CB0F-4D1E-BF95-EBD10E43C356
+		'apex.item(1).displayValueFor':
+				'prefix': 'apex.item(1).displayValueFor'
+				'body': """apex.item($1).displayValueFor($2pValue);$3"""
+				'description': 'Returns the display value corresponding to the value given by pValue for the Application Express item. If the item type does not have a display value distinct from the value then pValue is returned; meaning that the value is the display value. For item types that have a display value but don\'t have access to all possible values and display values then this function only works when pValue is the current value of the item. For the native items this only applies to item type Popup LOV, with the attribute Input Field" = "Not Enterable, Show Display Value and Store Return Value. For item types such as select lists that have access to all their values, if pValue is not a valid value then pValue is returned.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-90194EEA-CB0F-4D1E-BF95-EBD10E43C356'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-E712ECEF-EF86-4BE0-A152-3C271424D8A8
+		'apex.item(1).enable':
+				'prefix': 'apex.item(1).enable'
+				'body': """apex.item($1).enable();$2"""
+				'description': 'Enables the Application Express item value, taking into account the item type, making it available for edit.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-E712ECEF-EF86-4BE0-A152-3C271424D8A8'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-E25CC0F3-E3D7-48C8-91EA-2EE33956E900
+		'apex.item(1).getValidity':
+				'prefix': 'apex.item(1).getValidity'
+				'body': """apex.item($1).getValidity();$2"""
+				'description': 'Return a ValidityState object as defined by the HTML5 constraint validation API for the Application Express item. If a plug-in item implements its own validation then the object may not contain all the fields defined by HTML5. At a minimum it must have the valid property. If the item doesn\'t support HTML5 validation then it is assumed to be valid.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-E25CC0F3-E3D7-48C8-91EA-2EE33956E900'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-F818ECE0-A697-4EA7-B1BB-BFB25D62CC04
+		'apex.item(1).getValidationMessage':
+				'prefix': 'apex.item(1).getValidationMessage'
+				'body': """apex.item($1).getValidationMessage();$2"""
+				'description': 'Return a validation message if the Application Express item is not valid and empty string otherwise.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-F818ECE0-A697-4EA7-B1BB-BFB25D62CC04'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-912DB984-D813-4E8B-8641-64D643FDF795
+		'apex.item(1).getValue':
+				'prefix': 'apex.item(1).getValue'
+				'body': """apex.item($1).getValue();$2"""
+				'description': 'Returns the current value of an Application Express item on a page, taking into account the current item type. This does not return the item\'s current value from session state (although that could be the same), rather it will return the value as it is on the current page.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-912DB984-D813-4E8B-8641-64D643FDF795'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-BBB78D64-BB2C-450C-8C64-9B891C1EFE1A
+		'apex.item(1).hide':
+				'prefix': 'apex.item(1).hide'
+				'body': """apex.item($1).hide();$2"""
+				'description': 'Hides the Application Express item value, taking into account the item type. When using the .hide() function, it is important to understand the following:'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-BBB78D64-BB2C-450C-8C64-9B891C1EFE1A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-077493AE-CBC8-44F1-B1F0-A3B6BD3B0369
+		'apex.item(1).isChanged':
+				'prefix': 'apex.item(1).isChanged'
+				'body': """apex.item($1).isChanged();$2"""
+				'description': 'Return true if the current value of the Application Express item has changed and false otherwise. Developers rarely have a need to call this function. It is used internally by the Warn on Unsaved Changes feature. Item Plug-in developers should ensure this function works so that the Warn on Unsaved Changes feature can support their plug-in.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-077493AE-CBC8-44F1-B1F0-A3B6BD3B0369'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-2F110B8D-18E6-4A50-A3BC-C61B38A0DA08
+		'apex.item(1).isEmpty':
+				'prefix': 'apex.item(1).isEmpty'
+				'body': """apex.item($1).isEmpty();$2"""
+				'description': 'Returns true or false if an Application Express item is empty and considers any item value consisting of only whitespace including space, tab, or form-feed, as empty. This also respects if the item type uses a List of Values, and a \'Null Return Value\' has defined in the List of Values. In that case, the \'Null Return Value\' is used to assert if the item is empty.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-2F110B8D-18E6-4A50-A3BC-C61B38A0DA08'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-B43624A8-0F6C-4DFE-B2CF-80C73319F281
+		'apex.item':
+				'prefix': 'apex.item'
+				'body': """apex.item($1).id;$2"""
+				'description': 'An item object returned from apex.item has the properties given in the following table.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-B43624A8-0F6C-4DFE-B2CF-80C73319F281'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-B43624A8-0F6C-4DFE-B2CF-80C73319F281
+		'apex.item':
+				'prefix': 'apex.item'
+				'body': """apex.item($1).node;$2"""
+				'description': 'An item object returned from apex.item has the properties given in the following table.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-B43624A8-0F6C-4DFE-B2CF-80C73319F281'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-CC98C8A3-4666-4B4A-8B09-2B5E5ADDEEA5
+		'apex.item(1).setFocus':
+				'prefix': 'apex.item(1).setFocus'
+				'body': """apex.item($1).setFocus();$2"""
+				'description': 'Places user focus on the Application Express item, taking into account how specific items are designed to receive focus.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-CC98C8A3-4666-4B4A-8B09-2B5E5ADDEEA5'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-08A2B123-8F01-4946-8031-D1B882E6576C
+		'apex.item(1).setStyle':
+				'prefix': 'apex.item(1).setStyle'
+				'body': """apex.item($1).setStyle($2pPropertyName, $2pPropertyValue);$3"""
+				'description': 'Sets a style for the Application Express item, taking into account how specific items are designed to be styled.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-08A2B123-8F01-4946-8031-D1B882E6576C'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-4ED30237-2C25-4CEC-9C20-FF325389E094
+		'apex.item(1).setValue':
+				'prefix': 'apex.item(1).setValue'
+				'body': """apex.item($1).setValue($2pValue, $3pDisplayValue, $4pSuppressChangeEvent);$5"""
+				'description': 'Sets the Application Express item value, taking into account the item type. This function sets the current value of an Application Express item on the page, not the item\'s current value in session state. It also allows for the caller to suppress the \'change\' event for the item being set, if desired.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-4ED30237-2C25-4CEC-9C20-FF325389E094'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-D71169E8-3F11-4E27-AFE9-56356E490FEF
+		'apex.item(1).show':
+				'prefix': 'apex.item(1).show'
+				'body': """apex.item($1).show();$2"""
+				'description': 'Shows the Application Express item value, taking into account the item type.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-D71169E8-3F11-4E27-AFE9-56356E490FEF'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-74651791-DCD6-4D77-A74A-0EB6CAF1EEFC
+		'apex.item.create':
+				'prefix': 'apex.item.create'
+				'body': """apex.item.create( $1pItemId, {
+		displayValueFor: function( pValue ) {
+			var lDisplayValue;
+			// code to determine the display value for pValue
+			return lDisplayValue;
+		},
+		enable: function() {
+			 // code that enables the item type
+		},
+		getPopupSelector: function() {
+			 return "<some CSS selector>";
+		},
+		getValidity: function() {
+			 var lValidity = { valid: true };
+			 if ( /* item is not valid */ ) {
+					 lValidity.valid = false;
+			 }
+			 return lValidity;
+		},
+		getValue: function() {
+			 var lValue;
+			 // code to determine lValue based on the item type.
+			 return lValue;
+		},
+		setValue: function( pValue, pDisplayValue ) {
+			// code that sets pValue and pDisplayValue (if required), for the item type
+		},
+		disable: function() {
+			// code that disables the item type
+		},
+		show: function() {
+			 // code that shows the item type
+		},
+		hide: function() {
+			 // code that hides the item type
+		},
+		isChanged: function() {
+			 var lChanged;
+			 // code to determine if the value has changed
+			 return lChanged;
+		},
+		addValue: function( pValue ) {
+			 // code that adds pValue to the values already in the item type
+		},
+		nullValue: "<null return value for the item>",
+		setFocusTo: $( "<some jQuery selector>" ),
+		setStyleTo: $( "<some jQuery selector>" ),
+		afterModify: function(){
+			 // code to always fire after the item has been modified (value set, enabled, etc.)
+		},
+		loadingIndicator: function( pLoadingIndicator$ ){
+			 // code to add the loading indicator in the best place for the item
+			 return pLoadingIndicator$;
+		}
+	});"""
+				'description': 'This function is only for item plug-in developers. It provides a plug-in specific implementation for the item. This is necessary to seamlessly integrate a plug-in item type with the built-in item related client-side functionality of Application Express.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-item.htm#GUID-74651791-DCD6-4D77-A74A-0EB6CAF1EEFC'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-95851814-D546-4D9A-A6CC-600D033F255F
+		'apex.lang.addMessages':
+				'prefix': 'apex.lang.addMessages'
+				'body': """apex.lang.addMessages($1pMessages);$2"""
+				'description': 'Add messages for use by getMessage and the format functions. Can be called multiple times. Additional messages are merged. It is generally not necessary to call this function, because it is automatically called with all the application text messages that have Used in JavaScript set to Yes.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-95851814-D546-4D9A-A6CC-600D033F255F'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-8B0D10BE-04FC-43A2-AC34-E95E96A60D77
+		'apex.lang.clearMessages':
+				'prefix': 'apex.lang.clearMessages'
+				'body': """apex.lang.clearMessages();"""
+				'description': 'Remove all messages.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-8B0D10BE-04FC-43A2-AC34-E95E96A60D77'
+				'rightLabelHTML': ''
+		#URL:
+		'apex.lang.format':
+				'prefix': 'apex.lang.format'
+				'body': """apex.lang.format("Total cost: $%0", orderTotal);"""
+				'description': 'Same as formatMessage except the message pattern is given directly (already localized or isn\'t supposed to be). It is not a key. The replacement arguments are HTML escaped.'
+				'descriptionMoreUrl': ''
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-F16830F6-D5C3-4EF7-A9F9-3CD93E04FB3E
+		'apex.lang.formatMessage':
+				'prefix': 'apex.lang.formatMessage'
+				'body': """apex.lang.formatMessage($1pKey, $2pOptionalReplacementValues);$3"""
+				'description': 'http:////docs.oracle.com//database//apex-5.1//AEAPI//apex-lang-namespace.htm#GUID-F16830F6-D5C3-4EF7-A9F9-3CD93E04FB3E'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-F16830F6-D5C3-4EF7-A9F9-3CD93E04FB3E'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-8AC59642-3D8F-4094-A475-00F246BEA7E9
+		'apex.lang.formatNoEscape':
+				'prefix': 'apex.lang.formatNoEscape'
+				'body': """apex.lang.formatNoEscape($1pPattern, $2pOptionalReplacementValues);$3"""
+				'description': 'Same as formatMessage except the replacement arguments are not HTML escaped. They must be known to be safe or are used in a context that is safe.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-8AC59642-3D8F-4094-A475-00F246BEA7E9'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-65D49ADE-6662-4C10-A033-04E46D5A89FD
+		'apex.lang.getMessage':
+				'prefix': 'apex.lang.getMessage'
+				'body': """apex.lang.getMessage($1pKey);$2"""
+				'description': 'The localized and formatted message text string. If the key is not found then the key is returned.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-lang-namespace.htm#GUID-65D49ADE-6662-4C10-A033-04E46D5A89FD'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm
+		'apex.message':
+				'prefix': 'apex.message'
+				'body': """apex.message;"""
+				'description': 'The apex.message namespace is used to handle client-side display and management of messages in Oracle Application Express.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-17B3BAE0-441F-4412-BC85-95BCDC0AB4C7
+		'apex.message.addVisibilityCheck':
+				'prefix': 'apex.message.addVisibilityCheck'
+				'body': """apex.message.addVisibilityCheck(
+	function(id){
+			$2
+		}
+	);$3"""
+				'description': 'This function is for APEX region plug-in developers. In order to navigate to items (page items or column items) that have an error (or anything else that can be in an error state), the error item must be visible before it is focused. Any region type that can possibly hide its contents should add a visibility check function using this method. Each function added is called for any region or item that needs to be made visible.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-17B3BAE0-441F-4412-BC85-95BCDC0AB4C7'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-55AFECC0-6C0B-4276-A1A5-C8FE02D136D3
+		'apex.message.alert':
+				'prefix': 'apex.message.alert'
+				'body': """apex.message.alert($1pMessage,
+		function() {
+			$2
+		}
+	);$3"""
+				'description': 'This function displays an alert dialog with the given message and OK button. The callback function passed as the pCallback parameter is called when the dialog is closed. The dialog displays using the jQuery UI Dialog widget.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-55AFECC0-6C0B-4276-A1A5-C8FE02D136D3'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-0460DC10-FBBE-404B-9783-EC97DC1BB2D4
+		'apex.message.clearErrors':
+				'prefix': 'apex.message.clearErrors'
+				'body': """apex.message.clearErrors();"""
+				'description': 'This function clears all the errors currently displayed on the page.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-0460DC10-FBBE-404B-9783-EC97DC1BB2D4'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-7085E9E0-BCF0-4FB5-9136-45A5C064FEAC
+		'apex.message.confirm':
+				'prefix': 'apex.message.confirm'
+				'body': """apex.message.confirm($1pMessage,
+		function(okPressed) {
+			$2
+		}
+	);$3"""
+				'description': 'This function displays a confirmation dialog with the given message and OK and Cancel buttons. The callback function passed as the pCallback parameter is called when the dialog is closed, and passes true if OK is pressed and false otherwise. The dialog displays using the jQuery UI Dialog widget.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-7085E9E0-BCF0-4FB5-9136-45A5C064FEAC'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-0A5906E7-49E3-4703-B4A7-9FF3A056ECC8
+		'apex.message.hidePageSuccess':
+				'prefix': 'apex.message.hidePageSuccess'
+				'body': """apex.message.hidePageSuccess();"""
+				'description': 'This function hides the page-level success message.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-0A5906E7-49E3-4703-B4A7-9FF3A056ECC8'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-35AF8B30-48DF-44CC-9329-90C054C3D666
+		'apex.message.setThemeHooks':
+				'prefix': 'apex.message.setThemeHooks'
+				'body': """apex.message.setThemeHooks({
+		beforeShow: function() {
+			$1
+		},
+		beforeHide: function() {
+			$2
+		},
+		$3closeNotificationSelector
+	});$4"""
+				'description': 'This function allows a theme to influence some behavior offered by the apex.message API. You can call this function from theme page initialization code.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-35AF8B30-48DF-44CC-9329-90C054C3D666'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-230C2CC1-B721-4037-8384-7B5369F35A2F
+		'apex.message.showErrors':
+				'prefix': 'apex.message.showErrors'
+				'body': """apex.message.showErrors([
+		{
+			type:       "error",
+			location:   [ "page", "inline" ],
+			pageItem:   "P1_ENAME",
+			message:    "Name is required!",
+			unsafe:     false
+		},
+		{
+			type:       "error",
+			location:   "page",
+			message:    "Page error has occurred!",
+			unsafe:     false
+		}
+	]);"""
+				'description': 'This function displays all errors on the apex.message error stack. If you do not want to add to the stack, you must first call clearErrors(). Errors display using the current app’s theme’s templates. For page level messages (where location = page), error messages use markup from the page template’s Subtemplate > Notification attribute. For item level messages (where location = inline), error messages use markup from the item’s label template’s Error Display > Error Template attribute.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-230C2CC1-B721-4037-8384-7B5369F35A2F'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-B896DF40-8145-426A-889B-657CBC288769
+		'apex.message.showPageSuccess':
+				'prefix': 'apex.message.showPageSuccess'
+				'body': """apex.message.showPageSuccess($1pMessage);$2"""
+				'description': 'This function displays a page-level success message. This clears any previous success messages displayed, and also assumes there are no errors and clears any errors previously displayed. Success messages display using the current app’s theme’s template. Specifically for page success messages, the markup from the page template’s Subtemplate > Success Message attribute is used.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-B896DF40-8145-426A-889B-657CBC288769'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-95451F4F-71A2-4CE3-8D11-B825038F8551
+		'apex.message.TYPE':
+				'prefix': 'apex.message.TYPE'
+				'body': """apex.message.TYPE;"""
+				'description': 'The TYPE property is an object that contains properties (constants) that can be useful when calling some apex.message APIs. For example setThemeHooks.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-95451F4F-71A2-4CE3-8D11-B825038F8551'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-95451F4F-71A2-4CE3-8D11-B825038F8551
+		'apex.message.TYPE.SUCCESS':
+				'prefix': 'apex.message.TYPE.SUCCESS'
+				'body': """apex.message.TYPE.SUCCESS;"""
+				'description': 'The TYPE property is an object that contains properties (constants) that can be useful when calling some apex.message APIs. For example setThemeHooks.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-95451F4F-71A2-4CE3-8D11-B825038F8551'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-95451F4F-71A2-4CE3-8D11-B825038F8551
+		'apex.message.TYPE.ERROR':
+				'prefix': 'apex.message.TYPE.ERROR'
+				'body': """apex.message.TYPE.ERROR;"""
+				'description': 'The TYPE property is an object that contains properties (constants) that can be useful when calling some apex.message APIs. For example setThemeHooks.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-message-namespace.htm#GUID-95451F4F-71A2-4CE3-8D11-B825038F8551'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-497C1062-81EF-40F6-BB96-C00AE015D717
+		'apex.navigation.dialog':
+				'prefix': 'apex.navigation.dialog'
+				'body': """apex.navigation.dialog(url, {
+		title:'About',
+		height:'480',
+		width:'800',
+		maxWidth:'1200',
+		modal:true,
+		resizable:false
+	},
+	'a-Dialog--uiDialog',
+	'#myregion_static_id');"""
+				'description': 'Opens the specified page in a dialog. For mobile UI, the page is loaded using a role \'dialog\' in a mobile.changePage call. For desktop UI, a modal page is loaded in an iframe using jQuery UI dialog widget. For desktop UI, a non-modal page is loaded in a popup browser window. The names _self, _parent, and _top should not be used. The window name is made unique so that it cannot be shared with other apps. Every effort is made to then focus the window.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-497C1062-81EF-40F6-BB96-C00AE015D717'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-497C1062-81EF-40F6-BB96-C00AE015D717
+		'apex.navigation.dialog.cancel':
+				'prefix': 'apex.navigation.dialog.cancel'
+				'body': """apex.navigation.dialog.cancel($1pIsModal);$2"""
+				'description': 'Closes the dialog window.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-497C1062-81EF-40F6-BB96-C00AE015D717'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-33319824-53F9-43E7-9238-2019D4907647
+		'apex.navigation.dialog.close':
+				'prefix': 'apex.navigation.dialog.close'
+				'body': """apex.navigation.dialog.close(true,
+		function( pDialog ) {
+			apex.navigation.dialog(url, {
+					title:'About',
+					height:'480',
+					width:'800',
+					maxWidth:'1200',
+					modal:true,
+					dialog:pDialog,
+					resizable:false
+				},
+				'a-Dialog--uiDialog',
+				'#myregion_static_id');
+		}
+	);"""
+				'description': 'Executes an action and then closes the dialog window.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-33319824-53F9-43E7-9238-2019D4907647'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-37036CE3-51DD-4656-A9B9-EAD94B844C50
+		'apex.navigation.dialog.fireCloseHandler':
+				'prefix': 'apex.navigation.dialog.fireCloseHandler'
+				'body': """apex.navigation.dialog.fireCloseHandler({
+		"handler$": $1,//jQuery object where the event will be registered
+		"dialog": $2,
+		"closeFunction": function() {
+			$3
+		}
+	});%4"""
+				'description': 'Fires the internal close event of a dialog which was registered with the registerCloseHandler when the dialog was opened.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-37036CE3-51DD-4656-A9B9-EAD94B844C50'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-7CF6378B-9983-40A7-A6D5-BC429E94527B
+		'apex.navigation.dialog.registerCloseHandler':
+				'prefix': 'apex.navigation.dialog.registerCloseHandler'
+				'body': """apex.navigation.dialog.registerCloseHandler({
+		"handler$": $1,//jQuery object where the event will be registered
+		"dialog": $2,
+		"closeFunction": function() {
+			$3
+		}
+	);$4"""
+				'description': 'Registers the internal "close" event of a dialog. The event will be triggered by fireCloseEvent and depending on the passed in pAction.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-7CF6378B-9983-40A7-A6D5-BC429E94527B'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-BD152481-5EC7-4BBD-A7A0-98BA043D3AB0
+		'apex.navigation.openInNewWindow':
+				'prefix': 'apex.navigation.openInNewWindow'
+				'body': """apex.navigation.openInNewWindow(url, "OptionalWindowName");"""
+				'description': 'Opens the given url in a new named window or tab (the browser // browser user preference settings may control if a window or tab is used). If a window with that name already exists it is reused. The names _self, _parent and _top should not be used. The window name is made unique so that it cannot be shared with other apps. Every effort is made to then focus the window.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-BD152481-5EC7-4BBD-A7A0-98BA043D3AB0'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-E50BFE69-EB60-43F3-883A-11FC76BB1996
+		'apex.navigation.popup':
+				'prefix': 'apex.navigation.popup'
+				'body': """apex.navigation.popup ({
+		url: "about:blank",
+		name: "_blank",
+		width: 400,
+		height: 400,
+		scroll: "no",
+		resizable: "no",
+		toolbar: "yes"
+		}
+	);"""
+				'description': 'Opens the given url in a new named window or tab (the browser // browser user preference settings may control if a window or tab is used). If a window with that name already exists it is reused. The names _self, _parent and _top should not be used. The window name is made unique so that it cannot be shared with other apps. Every effort is made to then focus the window.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-E50BFE69-EB60-43F3-883A-11FC76BB1996'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-135956B4-B948-44F3-852D-711A4285E93E
+		'apex.navigation.popup.close':
+				'prefix': 'apex.navigation.popup.close'
+				'body': """apex.navigation.popup.close($1pItem,$2pValue);$3"""
+				'description': 'Sets the value of the item (pItem) in the parent window, with (pValue) and then closes the popup window.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-135956B4-B948-44F3-852D-711A4285E93E'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-7F48ACCC-7A6F-48C6-9119-2350859BE46A
+		'apex.navigation.redirect':
+				'prefix': 'apex.navigation.redirect'
+				'body': """apex.navigation.redirect($1pWhere);$2"""
+				'description': 'Opens the specified page (pWhere) in the current window.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-navigation-namespace.htm#GUID-7F48ACCC-7A6F-48C6-9119-2350859BE46A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-7B567AB4-2C75-4AB5-8EC9-4F8854B1401A
+		'apex.page.cancelWarnOnUnsavedChanges':
+				'prefix': 'apex.page.cancelWarnOnUnsavedChanges'
+				'body': """apex.page.cancelWarnOnUnsavedChanges();"""
+				'description': 'Call to remove the handler that checks for unsaved changes. This is useful to do before any kind of cancel operation where the user is intentionally choosing to loose the changes. It is not normally necessary to call this function because the declarative attribute Warn on Unsaved Changes with value Do Not Check will do it automatically. Adding the class js-ignoreChange to a link (anchor element) or button will cause this function to be called before the link or button action.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-7B567AB4-2C75-4AB5-8EC9-4F8854B1401A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-F388EA05-5196-4BCB-9A96-7E3953A477D6
+		'apex.confirm':
+				'prefix': 'apex.confirm'
+				'body': """apex.confirm($1pMessage, $2pRequest);$3"""
+				'description': 'Displays a confirmation dialog showing a message, pMessage, and depending on user\'s choice, submits the page setting the request value to pRequest, or does not submit the page. Once the user chooses to submit the page the behavior is the same as for the apex.page.submit function. The shorter alias for this function apex.confirm with the same parameters can also be used.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-F388EA05-5196-4BCB-9A96-7E3953A477D6'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-62E9D157-E1BC-4A79-8203-85E2B2014A32
+		'apex.page.confirm':
+				'prefix': 'apex.page.confirm'
+				'body': """apex.page.confirm($1pMessage, $2pRequest);$3"""
+				'description': 'Displays a confirmation dialog showing a message,pMessage, and depending on user\'s choice, submits the page according to the options in pRequest, or does not submit the page. Once the user chooses to submit the page the behavior is the same as for the apex.page.submit function. The shorter alias for this function apex.confirm with the same parameters can also be used.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-62E9D157-E1BC-4A79-8203-85E2B2014A32'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-0356D013-D8B2-4D48-BE83-0E423117C594
+		'apex.page.submit':
+				'prefix': 'apex.page.submit'
+				'body': """apex.page.submit({
+		request:"DELETE",
+		set:{"P1_DEPTNO":10, "P1_EMPNO":5433},
+		showWait: true
+	});"""
+				'description': 'This function submits the page with the Application Express REQUEST value set to pRequest. The shorter alias for this function apex.submit with the same parameters can also be used. Depending on the value of the page\'s Reload on Submit attribute the page is submitted using ajax or with a normal form submission post request.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-0356D013-D8B2-4D48-BE83-0E423117C594'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-3CBA46DF-88B5-4EF3-A43A-C31565E4BF1E
+		'apex.submit':
+				'prefix': 'apex.submit'
+				'body': """apex.submit({
+		request:"DELETE",
+		set:{"P1_DEPTNO":10, "P1_EMPNO":5433},
+		showWait: true
+	});"""
+				'description': 'This function submits the page using the options specified in pOptions. The shorter alias for this function apex.submit with the same parameters can also be used. Depending on the value of the page\'s Reload on Submit attribute the page is submitted using ajax or with a normal form submission post request.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-3CBA46DF-88B5-4EF3-A43A-C31565E4BF1E'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-8733662F-CBC5-458F-B616-8941F963CC74
+		'apex.page.validate':
+				'prefix': 'apex.page.validate'
+				'body': """apex.page.validate();"""
+				'description': 'Check if page items and submittable Application Express models on the page are valid. Any errors are shown inline using apex.message.showErrors function.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-8733662F-CBC5-458F-B616-8941F963CC74'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-4D886ED0-D019-48B2-A5C4-1C4FBDF8E2AC
+		'apex.page.isChanged':
+				'prefix': 'apex.page.isChanged'
+				'body': """apex.page.isChanged();"""
+				'description': 'Return true if any page items or Application Express models on this page have changed since last being sent to the server. This will call the pExtraIsChanged function set in apex.page.warnOnUnsavedChanges if one was supplied and only if no other changes are found first.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-4D886ED0-D019-48B2-A5C4-1C4FBDF8E2AC'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-8F4E69DE-2DF6-4F2F-A27F-CC0F09E4961C
+		'apex.page.warnOnUnsavedChanges':
+				'prefix': 'apex.page.warnOnUnsavedChanges'
+				'body': """apex.page.warnOnUnsavedChanges($1pMessage);$2"""
+				'description': 'Initialize a handler that checks for unsaved changes anytime the page is about to unload. This is safe to call multiple times. The pMessage and pExtraIsChanged override any previous values. This function is called automatically when the page attribute Warn on Unsaved Changes is set to yes. The main reason to call this manually is to customize the parameters.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-page-namespace.htm#GUID-8F4E69DE-2DF6-4F2F-A27F-CC0F09E4961C'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-D892654A-7BF3-4C6E-B47C-114E4F784392
+		'apex.region':
+				'prefix': 'apex.region'
+				'body': """apex.region($1pRegionId);$2"""
+				'description': 'This API returns an Application Express region object for the given region id. The returned region object can then be used to access region related functions and properties.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-D892654A-7BF3-4C6E-B47C-114E4F784392'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-D892654A-7BF3-4C6E-B47C-114E4F784392
+		'apex.region(1).focus':
+				'prefix': 'apex.region(1).focus'
+				'body': """apex.region($1).focus();$2"""
+				'description': 'This region object function causes the Application Express region to take focus. Not all native or plug-in regions support taking focus. It is up to the specific region to determine where focus will go. The default behavior is to set focus to the first element in the region that is capable of being tabbed to. Some regions manage focus such that there is a single tab stop (or limited number of tab stops) and they may put focus to where the user last had focus within the region'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-D892654A-7BF3-4C6E-B47C-114E4F784392'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-D892654A-7BF3-4C6E-B47C-114E4F784392
+		'apex.region(1).refresh':
+				'prefix': 'apex.region(1).refresh'
+				'body': """apex.region($1).refresh();$2"""
+				'description': 'This region object function refreshes the Application Express region. Typically this involves getting updated content or data from the server. Not all native or plug-in regions support refresh.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-D892654A-7BF3-4C6E-B47C-114E4F784392'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-D892654A-7BF3-4C6E-B47C-114E4F784392
+		'apex.region(1).widget':
+				'prefix': 'apex.region(1).widget'
+				'body': """apex.region($1).widget();$2"""
+				'description': 'This region object function returns the widget associated with the Application Express region or null if the region isn\'t implemented with a widget. Some advanced region types such as Calendar, Interactive Grid, or Tree are implemented using a widget. This function provides access to the widget typically by returning a jQuery object for the widget element. You can then call widget methods on the jQuery object.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-D892654A-7BF3-4C6E-B47C-114E4F784392'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-E876693A-3F77-4218-B5D5-94AE49C05537
+		'apex.region.create':
+				'prefix': 'apex.region.create'
+				'body': """apex.region.create( pRegionId, {
+		type: "FancyList",
+		focus: function() {
+			/* code to focus region */
+		},
+		refresh: function() {
+			/* code to refresh region */
+		}
+	});"""
+				'description': 'This function is only for region plug-in developers. It provides a plug-in specific implementation for the region.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-E876693A-3F77-4218-B5D5-94AE49C05537'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-0AD5B67E-B36C-4A4C-95B3-8511D6120651
+		'apex.region.destroy':
+				'prefix': 'apex.region.destroy'
+				'body': """apex.region.destroy($1pRegionId);$2"""
+				'description': 'This function is only for region plug-in developers. It will destroy and remove the behaviors associated with a region element. It does not remove the region element from the DOM. It is not necessary to call this function if the region will exist for the lifetime of the page. If the region is implemented by a widget that has a destroy method then this function can be called when the widget is destroyed.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-0AD5B67E-B36C-4A4C-95B3-8511D6120651'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-EDB75630-84BD-453B-BDF6-15A446841DB5
+		'apex.region.isRegion':
+				'prefix': 'apex.region.isRegion'
+				'body': """apex.region.isRegion($1);$2"""
+				'description': 'This function returns true if and only if there is a DOM element with id equal to pRegionId that has had a region created for it with apex.region.create. To support older regions that don\'t implement a region interface (by calling apex.region.create) the default implementation of apex.region will attempt to treat any DOM element with an id as if it were an Application Express region. This function allows you to distinguish true Application Express regions from arbitrary DOM elements.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-EDB75630-84BD-453B-BDF6-15A446841DB5'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-54168497-8F00-4244-96EA-191FAFC46E29
+		'apex.region.findClosest':
+				'prefix': 'apex.region.findClosest'
+				'body': """apex.region.findClosest($1pTarget);$2"""
+				'description': 'Returns the region that contains the pTarget element. Returns null if there is no pTarget element or if it is not in a region that has been initialized with a call to apex.region.create.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-region.htm#GUID-54168497-8F00-4244-96EA-191FAFC46E29'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-BE3207FA-E766-4F0D-9665-7CF6631E7430
+		'apex.server.loadScript':
+				'prefix': 'apex.server.loadScript'
+				'body': """apex.server.loadScript ({
+			"path": "./library_all.js",
+			"requirejs": true
+		},
+		function() {
+			console.log( myModule_1, myModule_2 ... );
+	});"""
+				'description': 'This API is used to asynchronously load other JavaScript libraries that has Asynchronous Module Definition (AMD), and if RequireJS library is already loaded on the page.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-BE3207FA-E766-4F0D-9665-7CF6631E7430'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-3D3C6215-079F-487B-A0D2-6B4F179EA90B
+		'apex.server.plugin':
+				'prefix': 'apex.server.plugin'
+				'body': """apex.server.plugin ( $1pAjaxIdentifier, {
+			x01: $2,
+			pageItems: $3
+		},
+		{
+			refreshObject: $4,
+			loadingIndicator: $5,
+			success: function( $6pData ) {
+				// do something here
+			}
+		}
+	);$7"""
+				'description': 'This function calls the PL//SQL Ajax function that has been defined for a plug-in. This function is a wrapper of the jQuery.ajax function that supports a subset of the jQuery.ajax options plus additional Application Express specific options.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-3D3C6215-079F-487B-A0D2-6B4F179EA90B'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-EAE1168B-D072-42BC-ACDC-FF11F276F971
+		'apex.server.pluginUrl':
+				'prefix': 'apex.server.pluginUrl'
+				'body': """apex.server.pluginUrl ( $1lAjaxIdentifier, {
+		x01: $2,
+		pageItems: $3
+	});$4"""
+				'description': 'Returns the URL to issue a GET request to the PL//SQL Ajax function which has been defined for a plug-in.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-EAE1168B-D072-42BC-ACDC-FF11F276F971'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-45B43DB1-9601-4BD6-9B7C-6C41C35BEE49
+		'apex.server.process':
+				'prefix': 'apex.server.process'
+				'body': """apex.server.process ( $1pProcess, {
+			x01: $2,
+			pageItems: $3
+		},
+		{
+			success: function( $4pData )
+				// do something here
+		}
+	);$5"""
+				'description': 'This function calls a PL//SQL on-demand (Ajax callback) process defined on page or application level. This function is a wrapper of the jQuery.ajax function that supports a subset of the jQuery.ajax options plus additional Application Express specific options.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-45B43DB1-9601-4BD6-9B7C-6C41C35BEE49'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-BB4896FA-3546-4DBB-8FB3-E28717E90B87
+		'apex.server.url':
+				'prefix': 'apex.server.url'
+				'body': """apex.server.url ({
+			p_request: $1,
+			x01: $2,
+			pageItems: $3
+		}
+	);$4"""
+				'description': 'This function returns the URL to issue a GET request to the current page.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-server-namespace.htm#GUID-BB4896FA-3546-4DBB-8FB3-E28717E90B87'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-130FB537-0735-47B0-B183-A45826AD980D
+		'apex.storage.getCookie':
+				'prefix': 'apex.storage.getCookie'
+				'body': """apex.storage.getCookie($1pName);"""
+				'description': 'Returns the value of cookie name (pName).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-130FB537-0735-47B0-B183-A45826AD980D'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-B2A8293F-A7CA-4DF8-B9C3-B082928FE00D
+		'apex.storage.hasLocalStorageSupport':
+				'prefix': 'apex.storage.hasLocalStorageSupport'
+				'body': """apex.storage.hasLocalStorageSupport();"""
+				'description': 'Returns true if the browser supports the local storage API and false otherwise. Most modern browsers support this feature but some allow the user to turn it off.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-B2A8293F-A7CA-4DF8-B9C3-B082928FE00D'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-3E906D02-3088-403C-9A8A-1C3398D22B5A
+		'apex.storage.getScopedLocalStorage':
+				'prefix': 'apex.storage.getScopedLocalStorage'
+				'body': """apex.storage.getScopedLocalStorage( {
+			prefix: $1,
+			useAppId: $2
+		}
+	);$3"""
+				'description': 'Returns a thin wrapper around the localStorage object that scopes all keys to a prefix defined by the pOptions parameter. If localStorage is not supported the returned object can be used but has no effect so it is not necessary test for support using apex.storage.hasLocalStorageSupport before calling this function.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-3E906D02-3088-403C-9A8A-1C3398D22B5A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-58C57C6F-C28B-4692-B3C6-77F5CA3C5E82
+		'apex.storage.getScopedSessionStorage':
+				'prefix': 'apex.storage.getScopedSessionStorage'
+				'body': """apex.storage.getScopedSessionStorage( {
+			prefix: $1,
+			useAppId: $2
+		}
+	);$3"""
+				'description': 'Returns a thin wrapper around the sessionStorage object that scopes all keys to a prefix defined by the pOptions parameter. If sessionStorage is not supported the returned object can be used but has no effect so it is not necessary test for support using apex.storage.hasSessionStorageSupport before calling this function.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-58C57C6F-C28B-4692-B3C6-77F5CA3C5E82'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-0C59FFB1-9BAD-49EC-8DFE-601CF8682040
+		'apex.storage.hasSessionStorageSupport':
+				'prefix': 'apex.storage.hasSessionStorageSupport'
+				'body': """apex.storage.hasSessionStorageSupport();"""
+				'description': 'Returns true if the browser supports the session storage API and false otherwise. Most modern browsers support this feature but some allow the user to turn it off.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-0C59FFB1-9BAD-49EC-8DFE-601CF8682040'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-A1921041-7A7A-4421-96BA-380AFD2E4E9F
+		'apex.storage.setCookie':
+				'prefix': 'apex.storage.setCookie'
+				'body': """apex.storage.setCookie($1pName,$2pValue);$3"""
+				'description': 'Sets a cookie (pName) to a specified value (pValue).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-storage-namespace.htm#GUID-A1921041-7A7A-4421-96BA-380AFD2E4E9F'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-03C24732-2547-438C-9E95-F1F18E411522
+		'apex.util.escapeCSS':
+				'prefix': 'apex.util.escapeCSS'
+				'body': """apex.util.escapeCSS($1pValue);$2"""
+				'description': 'Returns string pValue with any CSS meta-characters are escaped. Use this function when the value is used as in a CSS selector. Whenever possible constrain the value so that it cannot contain CSS meta-characters making it unnecessary to use this function.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-03C24732-2547-438C-9E95-F1F18E411522'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-19A2CC20-8859-4D5F-947F-E4CCC2C6AEFF
+		'apex.util.escapeHTML':
+				'prefix': 'apex.util.escapeHTML'
+				'body': """apex.util.escapeHTML($1pValue);$2"""
+				'description': 'Returns string pValue with any special HTML characters (&<>"\'//) escaped to prevent cross site scripting (XSS) attacks.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-19A2CC20-8859-4D5F-947F-E4CCC2C6AEFF'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-3D56A73A-9793-4683-940C-CF378ABE783C
+		'apex.util.showSpinner':
+				'prefix': 'apex.util.showSpinner'
+				'body': """apex.util.showSpinner($1pContainer, $2pOptions);$3"""
+				'description': 'Function that renders a spinning alert to show the user processing is taking place. Note that the alert is defined as an ARIA alert so that assistive technologies such as screen readers are alerted to the processing status.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-3D56A73A-9793-4683-940C-CF378ABE783C'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-9B0C1AAD-763E-4749-ABA4-18ABDAB39375
+		'apex.util.stripHTML':
+				'prefix': 'apex.util.stripHTML'
+				'body': """apex.util.stripHTML($1pText);$2"""
+				'description': 'Return string pText with all HTML tags removed.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-9B0C1AAD-763E-4749-ABA4-18ABDAB39375'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-F428DA06-3014-4F99-A879-C33C95891A8B
+		'apex.util.applyTemplate':
+				'prefix': 'apex.util.applyTemplate'
+				'body': """apex.util.applyTemplate($1pTemplate, {
+			placeholders: $2,
+			defaultEscapeFilter: $3,
+			includePageItems: $4,
+			model: $4,
+			record: $5,
+			extraSubstitutions: $6,
+			includeBuiltinSubstitutions: $7
+		}
+	);$8"""
+				'description': 'This function applies data to a template. It processes the template string given in pTemplate by substituting values according to the options in pOptions. The template supports Application Express server style placeholder and item substitution syntax.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-F428DA06-3014-4F99-A879-C33C95891A8B'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-C0F3A60A-8997-4633-BE55-12DFFCAC746B
+		'util.delayLinger.start':
+				'prefix': 'util.delayLinger.start'
+				'body': """util.delayLinger.start( $1,
+		function() {
+			$2
+		}
+	);$3"""
+				'description': 'Call this function when a potentially long running async process starts. For each call to start with a given pScopeName, you must make a corresponding call to finish with the same pScopeName. Calls with different pScopeName arguments will not interfere with each other.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-C0F3A60A-8997-4633-BE55-12DFFCAC746B'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-D3AC42D6-A661-4910-AD49-EF5587D03047
+		'util.delayLinger.finish':
+				'prefix': 'util.delayLinger.finish'
+				'body': """util.delayLinger.finish( $1,
+		function() {
+			$2
+		}
+	);$3"""
+				'description': 'Call this function when a potentially long running async process finishes. For each call to start with a given pScopeName, you must make a corresponding call to finish with the same pScopeName. The pAction is called exactly once if and only if the corresponding start pAction was called. If there are multiple calls to finish, the pAction from the last one is called.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/apex-util-namespace.htm#GUID-D3AC42D6-A661-4910-AD49-EF5587D03047'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm
+		'apexafterclosedialog':
+				'prefix': 'apexafterclosedialog'
+				'body': """apexafterclosedialog"""
+				'description': ''
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-C41B72AD-63D1-488D-8086-54F0AA468F55
+		'apexbeforerefresh':
+				'prefix': 'apexbeforerefresh'
+				'body': """apexbeforerefresh"""
+				'description': 'This event is triggered when an Application Express modal dialog page is closed by either the Dynamic Action Close Dialog action or the Close Dialog process. This is equivalent to the Dialog Closed Dynamic Action event. This event is triggered on the element that opened the dialog.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-C41B72AD-63D1-488D-8086-54F0AA468F55'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-0B070738-804D-4CCD-9EEF-64AB09E78FE0
+		'apexafterrefresh':
+				'prefix': 'apexafterrefresh'
+				'body': """apexafterrefresh"""
+				'description': 'This event is triggered by a number of page or column items just after they are refreshed with new content or data from the server. It is equivalent to the Dynamic Action event After Refresh. Specifically any item that supports the Cascading LOV Parent Item(s) attribute should trigger this event. This event can also be triggered by the apex.server.plugin and apex.server.process APIs if the refreshObject option is provided. The event is triggered on the item element or the element given by the refreshObject. The event handler receives the data given in refreshObjectData if any.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-0B070738-804D-4CCD-9EEF-64AB09E78FE0'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-0D29E720-3C33-43FB-B5FD-A8E164D5E7D4
+		'apexbeforepagesubmit':
+				'prefix': 'apexbeforepagesubmit'
+				'body': """apexbeforepagesubmit"""
+				'description': 'This event is triggered when the page is submitted with apex.submit or apex.confirm. This includes buttons with action Submit Page and Dynamic Action Submit Page action. It is equivalent to the Dynamic Action event Before Page Submit. It is triggered before the page is validated. It is triggered on apex.gPageContext$, which is the document for Desktop UI pages and the page div for jQuery Mobile UI pages. This event can be canceled by a Dynamic Action Confirm or Cancel Event action so you cannot rely on the page actually being submitted. If you need code to run just before the page is actually submitted see the apexpagesubmit event.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-0D29E720-3C33-43FB-B5FD-A8E164D5E7D4'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-59D25349-12C4-4B0E-958C-AE502036DAF9
+		'apexbeginrecordedit':
+				'prefix': 'apexbeginrecordedit'
+				'body': """apexbeginrecordedit"""
+				'description': 'This example performs an extra validation on page item P1_CHECK_ME. For this to work the Submit button Execute Validations attribute must be Yes and the application compatibility mode must be greater than or equal to 5.1 or the validate option to apex.submit or apex.confirm must be true.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-59D25349-12C4-4B0E-958C-AE502036DAF9'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-14E1899B-2A19-42E7-BAA4-C78469674E85
+		'apexendrecordedit':
+				'prefix': 'apexendrecordedit'
+				'body': """apexendrecordedit"""
+				'description': 'This event is triggered when a region that supports column items such as Interactive Grid begins editing a record. In general it is simpler to use a Dynamic Action on a column item and set attribute Fire on Initialization to Yes. This is equivalent to the Interactive Grid Row Initialization Dynamic Action event.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-14E1899B-2A19-42E7-BAA4-C78469674E85'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-50D7179A-203D-4EBA-B5C3-5E0A15A3EF31
+		'apexpagesubmit':
+				'prefix': 'apexpagesubmit'
+				'body': """apexpagesubmit"""
+				'description': 'This event is triggered when the page is submitted with apex.submit or apex.confirm. This includes buttons with action Submit Page and Dynamic Action Submit Page action. It is triggered after the page is validated. It is triggered on apex.gPageContext$, which is the document for Desktop UI pages and the page div for jQuery Mobile UI pages. This event is the last chance to set or modify page items before the page is submitted.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-50D7179A-203D-4EBA-B5C3-5E0A15A3EF31'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-952C5304-EC39-4EEF-9860-1D27C0D24BC9
+		'apexwindowresized':
+				'prefix': 'apexwindowresized'
+				'body': """apexwindowresized"""
+				'description': 'This event is triggered on the window a couple hundred milliseconds after the window stops resizing. Listen for this event to adjust or resize page content after the window is done resizing. In some cases this is a better alternative to the window resize event, which is triggered many times as the window is being resized, because it is triggered just once after the window stops resizing.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Events.htm#GUID-952C5304-EC39-4EEF-9860-1D27C0D24BC9'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-A6018024-D6E6-4924-9354-9D088C9936A2
+		'x(1pNd)2':
+				'prefix': 'x(1pNd)2'
+				'body': """$x($1pNd)$2"""
+				'description': 'Given a DOM node or string ID (pNd), this function returns a DOM node if the element is on the page, or returns false if it is not.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-A6018024-D6E6-4924-9354-9D088C9936A2'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-25B63449-7756-4B12-8CE5-392EDC692891
+		'v(1pNd)2':
+				'prefix': 'v(1pNd)2'
+				'body': """$v($1pNd)$2"""
+				'description': 'Given a DOM node or string ID (pNd), this function returns the value of an Application Express item in the same format as it would be posted.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-25B63449-7756-4B12-8CE5-392EDC692891'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-DEF1383A-C2A6-4B5D-826D-36D78E85F5F8
+		'v2(1pNd)2':
+				'prefix': 'v2(1pNd)2'
+				'body': """$v2($1pNd)$2"""
+				'description': 'Given a DOM node or string ID (pNd), this function returns the value of an Application Express item as a string or an array. If the page item type can contain multiple values like a shuttle, checkboxes or a multi select list an array is returned, otherwise a string.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-DEF1383A-C2A6-4B5D-826D-36D78E85F5F8'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-9583FF36-694A-46B4-8297-EBB510A1E92A
+		's(1pNd,2pValue,3pDisplayValue,4pSuppressChangeEvent)5':
+				'prefix': 's(1pNd,2pValue,3pDisplayValue,4pSuppressChangeEvent)5'
+				'body': """$s($1pNd,$2pValue,$3pDisplayValue,$4pSuppressChangeEvent)$5"""
+				'description': 'Given a DOM node or string ID (pNd), this function sets the Application Express item value taking into account the item type. The pDisplayValue is optional. If used for a page item of type Popup LOV where the attribute "Input Field" = "Not Enterable, Show Display Value and Store Return Value", it sets the "Input Field". The value of pValue is stored in the hidden return field. The pSuppressChangeEvent parameter is optional. Passing either false or not passing this parameter value results in a change event firing for the item being set. Pass true to prevent the change event from firing for the item being set.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-9583FF36-694A-46B4-8297-EBB510A1E92A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-BD6B654C-A3FC-41A5-8D50-8F00EDE20D6A
+		'u_Narrayundefined':
+				'prefix': 'u_Narrayundefined'
+				'body': """$u_Narrayundefined"""
+				'description': 'Given a DOM node or string ID or an array (pNd), this function returns a single value, if an pNd is an array but only has one element the value of that element is returned otherwise the array is returned. Used for creating DOM based functionality that can accept a single or multiple DOM nodes.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-BD6B654C-A3FC-41A5-8D50-8F00EDE20D6A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-128B6A96-81A0-4FC7-9FFF-F9EECB3FB7E9
+		'u_Carray(1Array)2':
+				'prefix': 'u_Carray(1Array)2'
+				'body': """$u_Carray($1Array)$2"""
+				'description': 'Given a DOM node or string ID or an array (pNd), this function returns an array. Used for creating DOM based functionality that can accept a single or multiple DOM nodes.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-128B6A96-81A0-4FC7-9FFF-F9EECB3FB7E9'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-837DF2A5-71D2-460C-9292-3CFF08A9F28D
+		'nvl(1pTest,2pDefault)3':
+				'prefix': 'nvl(1pTest,2pDefault)3'
+				'body': """$nvl($1pTest,$2pDefault)$3"""
+				'description': 'If pTest is empty or false return pDefault otherwise return pTest.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-837DF2A5-71D2-460C-9292-3CFF08A9F28D'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-8884CF58-1FF4-4B6A-AF23-D32B0A0F888E
+		'x_Style(1pNd,2pStyle,3pString)4':
+				'prefix': 'x_Style(1pNd,2pStyle,3pString)4'
+				'body': """$x_Style($1pNd,$2pStyle,$3pString)$4"""
+				'description': 'Sets a specific style property (pStyle) to given value (pString) of a DOM node or DOM node Array (pNd).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-8884CF58-1FF4-4B6A-AF23-D32B0A0F888E'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-C1C47676-B6EC-463C-932C-A682F02FD707
+		'x_Hide(1pNd)2':
+				'prefix': 'x_Hide(1pNd)2'
+				'body': """$x_Hide($1pNd)$2"""
+				'description': 'Hides a DOM node or array of DOM nodes (pNd). This also takes into consideration which type of Application Express item is being hidden.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-C1C47676-B6EC-463C-932C-A682F02FD707'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-464EC395-C8B2-4B2C-A9A2-01D1E3964D41
+		'x_Show(1pNd)2':
+				'prefix': 'x_Show(1pNd)2'
+				'body': """$x_Show($1pNd)$2"""
+				'description': 'Shows a DOM node or array of DOM nodes (pNd). This also takes into consideration which type of Application Express item is being hidden.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-464EC395-C8B2-4B2C-A9A2-01D1E3964D41'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-3155CCA9-4FDB-4820-BB40-EA54D2489B70
+		'x_Toggle(1pNd)2':
+				'prefix': 'x_Toggle(1pNd)2'
+				'body': """$x_Toggle($1pNd)$2"""
+				'description': 'Toggles a DOM node or array of DOM nodes (pNd).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-3155CCA9-4FDB-4820-BB40-EA54D2489B70'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-89FC2894-DD45-43FB-B7A1-130F0B5065A1
+		'x_Remove(1pNd)2':
+				'prefix': 'x_Remove(1pNd)2'
+				'body': """$x_Remove($1pNd)$2"""
+				'description': 'Removes a DOM node or array of DOM nodes.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-89FC2894-DD45-43FB-B7A1-130F0B5065A1'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-3C868ED0-7F41-420B-9A8F-407D53456FB2
+		'x_Value(1pNd,2pValue)3':
+				'prefix': 'x_Value(1pNd,2pValue)3'
+				'body': """$x_Value($1pNd,$2pValue)$3"""
+				'description': 'Sets the value (pValue) of a DOM node or array of DOM nodes (pNd).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-3C868ED0-7F41-420B-9A8F-407D53456FB2'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-35AC3375-36AC-49B7-8911-2CB43EF94C24
+		'x_UpTill(1pNd,2String,3String)4':
+				'prefix': 'x_UpTill(1pNd,2String,3String)4'
+				'body': """$x_UpTill($1pNd,$2String,$3String)$4"""
+				'description': 'Starting from a DOM node (pNd), this function cascades up the DOM tree until the tag of node name (pToTag) is found. If the optional pToClass is present, the ancestor node must have a node name that equals pToTag and the class must equal pToClass.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-35AC3375-36AC-49B7-8911-2CB43EF94C24'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-6D460540-671F-477A-9FA4-7472F6EAEB0A
+		'x_ItemRow(1pNd,2pFunc)3':
+				'prefix': 'x_ItemRow(1pNd,2pFunc)3'
+				'body': """$x_ItemRow($1pNd,$2pFunc)$3"""
+				'description': 'Given DOM node or array of DOM nodes, this function (shows, hides, or toggles) the entire row that contains the DOM node or array of DOM nodes. This is most useful when using Page Items. This function only works in table layouts since it explicitly looks for a containing tr element.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-6D460540-671F-477A-9FA4-7472F6EAEB0A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-E36074B8-FADE-48BB-BAB8-D0F7C0184AB1
+		'x_HideItemRow(1pNd)2':
+				'prefix': 'x_HideItemRow(1pNd)2'
+				'body': """$x_HideItemRow($1pNd)$2"""
+				'description': 'Given a page item name, this function hides the entire row that holds the item. In most cases, this is the item and its label. This function only works in table layouts since it explicitly looks for a containing tr element.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-E36074B8-FADE-48BB-BAB8-D0F7C0184AB1'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-162B1E2F-42CC-410A-A1B6-3D593871B0FD
+		'x_ShowItemRow(1pNd)2':
+				'prefix': 'x_ShowItemRow(1pNd)2'
+				'body': """$x_ShowItemRow($1pNd)$2"""
+				'description': 'Given a page item name, this function shows the entire row that holds the item. In most cases, this is the item and its label. This function only works in table layouts since it explicitly looks for a containing tr element.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-162B1E2F-42CC-410A-A1B6-3D593871B0FD'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-B84789FF-4792-49E4-B185-857F2827DD67
+		'x_ToggleItemRow(1pNd)2':
+				'prefix': 'x_ToggleItemRow(1pNd)2'
+				'body': """$x_ToggleItemRow($1pNd)$2"""
+				'description': 'Given a page item name (pNd), this function toggles the entire row that holds the item. In most cases, this is the item and its label. This function only works in table layouts since it explicitly looks for a containing tr element.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-B84789FF-4792-49E4-B185-857F2827DD67'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-8A2D534E-7F67-4620-9B30-E0DD3B483709
+		'x_HideAllExcept(1pNd,2pNdArray)3':
+				'prefix': 'x_HideAllExcept(1pNd,2pNdArray)3'
+				'body': """$x_HideAllExcept($1pNd,$2pNdArray)$3"""
+				'description': 'Hides all DOM nodes referenced in pNdArray and then shows the DOM node referenced by pNd. This is most useful when pNd is also a node in pNdArray.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-8A2D534E-7F67-4620-9B30-E0DD3B483709'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-187B0FB6-344A-486C-8A88-F39F6AD50AA8
+		'x_HideSiblings(1pNd)2':
+				'prefix': 'x_HideSiblings(1pNd)2'
+				'body': """$x_HideSiblings($1pNd)$2"""
+				'description': 'Hides all sibling nodes of given pNd.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-187B0FB6-344A-486C-8A88-F39F6AD50AA8'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-47E8069B-E23B-4870-8B0B-8DADF60D84CD
+		'x_ShowSiblings(1pNd)2':
+				'prefix': 'x_ShowSiblings(1pNd)2'
+				'body': """$x_ShowSiblings($1pNd)$2"""
+				'description': 'Shows all sibling DOM nodes of given DOM nodes (pNd).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-47E8069B-E23B-4870-8B0B-8DADF60D84CD'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-7DBF3818-7990-4C6D-8FAF-C0D3D86BEDE4
+		'x_Class(1pNd,2pClass)3':
+				'prefix': 'x_Class(1pNd,2pClass)3'
+				'body': """$x_Class($1pNd,$2pClass)$3"""
+				'description': 'Sets a DOM node or array of DOM nodes to a single class name.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-7DBF3818-7990-4C6D-8FAF-C0D3D86BEDE4'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-648E8D01-88AB-4ED1-A458-0DB8F1468B60
+		'x_SetSiblingsClass(1pNd,2pClass,3pThisClass)4':
+				'prefix': 'x_SetSiblingsClass(1pNd,2pClass,3pThisClass)4'
+				'body': """$x_SetSiblingsClass($1pNd,$2pClass,$3pThisClass)$4"""
+				'description': 'Sets the class (pClass) of all DOM node siblings of a node (pNd). If pNdClass is not null the class of pNd is set to pNdClass.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-648E8D01-88AB-4ED1-A458-0DB8F1468B60'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-51181F80-82BF-46EE-99F4-22CDF3C5DEE0
+		'x_ByClass(1pClass,2pNd,3pTag)4':
+				'prefix': 'x_ByClass(1pClass,2pNd,3pTag)4'
+				'body': """$x_ByClass($1pClass,$2pNd,$3pTag)$4"""
+				'description': 'Returns an array of DOM nodes by a given class name (pClass). If the pNd parameter is provided, then the returned elements are all children of that DOM node. Including the pTag parameter further narrows the list to just return nodes of that tag type.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-51181F80-82BF-46EE-99F4-22CDF3C5DEE0'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-B6BA5417-741E-48A6-AF68-B7D660A242E9
+		'x_ShowAllByClass(1pNd,2pClass,3pTag)4':
+				'prefix': 'x_ShowAllByClass(1pNd,2pClass,3pTag)4'
+				'body': """$x_ShowAllByClass($1pNd,$2pClass,$3pTag)$4"""
+				'description': 'Show all the DOM node children of a DOM node (pNd) that have a specific class (pClass) and tag (pTag).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-B6BA5417-741E-48A6-AF68-B7D660A242E9'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-C91FAE64-B02C-463D-AFCD-1400802A70F3
+		'x_ShowChildren(1pNd)2':
+				'prefix': 'x_ShowChildren(1pNd)2'
+				'body': """$x_ShowChildren($1pNd)$2"""
+				'description': 'Show all DOM node children of a DOM node (pNd).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-C91FAE64-B02C-463D-AFCD-1400802A70F3'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-60F663D0-1030-4806-BC68-A64D8317623B
+		'x_HideChildren(1pNd)2':
+				'prefix': 'x_HideChildren(1pNd)2'
+				'body': """$x_HideChildren($1pNd)$2"""
+				'description': 'Hide all DOM node children of a DOM node (pNd).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-60F663D0-1030-4806-BC68-A64D8317623B'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-B72D3429-E5E8-4A23-925D-34967C46704D
+		'x_disableItem(1pNd,2a)3':
+				'prefix': 'x_disableItem(1pNd,2a)3'
+				'body': """$x_disableItem($1pNd,$2a)$3"""
+				'description': 'Disables or enables an item or array of items based on (pTest).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-B72D3429-E5E8-4A23-925D-34967C46704D'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-FFD14342-7185-410C-BDBF-CDBF24CD7790
+		'f_get_emptys(1pNd,2Sting,3Sting)4':
+				'prefix': 'f_get_emptys(1pNd,2Sting,3Sting)4'
+				'body': """$f_get_emptys($1pNd,$2Sting,$3Sting)$4"""
+				'description': 'Checks an item or an array of items to see if any are empty, set the class of all items that are empty to pClassFail, set the class of all items that are not empty to pClass.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-FFD14342-7185-410C-BDBF-CDBF24CD7790'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-FC319A73-DA8C-41E2-81F5-1920C76EF21C
+		'v_Array(1pId)2':
+				'prefix': 'v_Array(1pId)2'
+				'body': """$v_Array($1pId)$2"""
+				'description': 'Returns an item value as an array. Useful for multiselects and checkboxes.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-FC319A73-DA8C-41E2-81F5-1920C76EF21C'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-5893F1FD-E68E-4FE5-8E91-AEF3A1BFFEBA
+		'f_ReturnChecked(1pId)2':
+				'prefix': 'f_ReturnChecked(1pId)2'
+				'body': """$f_ReturnChecked($1pId)$2"""
+				'description': 'Returns an item value as an array. Useful for radio items and check boxes.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-5893F1FD-E68E-4FE5-8E91-AEF3A1BFFEBA'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-2A34AD30-D3A4-434C-B709-5C0E61C7D1FB
+		'd_ClearAndHide(1pNd)2':
+				'prefix': 'd_ClearAndHide(1pNd)2'
+				'body': """$d_ClearAndHide($1pNd)$2"""
+				'description': 'Clears the content of an DOM node or array of DOM nodes and hides them.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-2A34AD30-D3A4-434C-B709-5C0E61C7D1FB'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-045E732B-FA15-4E1E-8CC5-AD8B1621F068
+		'f_SelectedOptions(1pNd)2':
+				'prefix': 'f_SelectedOptions(1pNd)2'
+				'body': """$f_SelectedOptions($1pNd)$2"""
+				'description': 'Returns the DOM nodes of the selected options of a select item (pNd).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-045E732B-FA15-4E1E-8CC5-AD8B1621F068'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-BCAAE5DA-F711-4FE5-BA01-CF9DC87B95D3
+		'f_SelectValue(1pNd)2':
+				'prefix': 'f_SelectValue(1pNd)2'
+				'body': """$f_SelectValue($1pNd)$2"""
+				'description': 'Returns the values of the selected options of a select item (pNd).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-BCAAE5DA-F711-4FE5-BA01-CF9DC87B95D3'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-85812E5F-9A43-4E30-8CCB-5F25CD701994
+		'u_ArrayToString(1pArray,2pDelim)3':
+				'prefix': 'u_ArrayToString(1pArray,2pDelim)3'
+				'body': """$u_ArrayToString($1pArray,$2pDelim)$3"""
+				'description': 'Given an array (pArray) return a string with the values of the array delimited with a given delimiter character (pDelim).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-85812E5F-9A43-4E30-8CCB-5F25CD701994'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-C79679AB-E1C5-41F7-981C-E5AB8D633BAC
+		'x_CheckImageSrc(1pId,2pSearch)3':
+				'prefix': 'x_CheckImageSrc(1pId,2pSearch)3'
+				'body': """$x_CheckImageSrc($1pId,$2pSearch)$3"""
+				'description': 'Checks an image (pId) source attribute for a substring (pSearch). The function returns true if a substring (pSearch) is found. It returns false if a substring (pSearch) is not found.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-C79679AB-E1C5-41F7-981C-E5AB8D633BAC'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-4D205B75-933A-436F-B845-F0EF47631233
+		'v_CheckValueAgainst(1pThis,2pValue)3':
+				'prefix': 'v_CheckValueAgainst(1pThis,2pValue)3'
+				'body': """$v_CheckValueAgainst($1pThis,$2pValue)$3"""
+				'description': 'Checks an page item\'s (pThis) value against a set of values (pValue). This function returns true if any value matches.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-4D205B75-933A-436F-B845-F0EF47631233'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-F0D4DA5E-B9C0-40D1-AA3F-D1E3997990DB
+		'f_Hide_On_Value_Item(1pThis,2pThat,3pValue)4':
+				'prefix': 'f_Hide_On_Value_Item(1pThis,2pThat,3pValue)4'
+				'body': """$f_Hide_On_Value_Item($1pThis,$2pThat,$3pValue)$4"""
+				'description': 'Checks page item\'s (pThis) value against a value (pValue). If it matches, a DOM node (pThat) is set to hidden. If it does not match, then the DOM node (pThat) is set to visible.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-F0D4DA5E-B9C0-40D1-AA3F-D1E3997990DB'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-DD3F2655-E86B-4E37-AE22-F9C040B3B8CF
+		'f_Show_On_Value_Item(1pThis,2pThat,3pValue)4':
+				'prefix': 'f_Show_On_Value_Item(1pThis,2pThat,3pValue)4'
+				'body': """$f_Show_On_Value_Item($1pThis,$2pThat,$3pValue)$4"""
+				'description': 'Checks page item\'s (pThis) value against a value (pValue). If it matches, a DOM node (pThat) is set to visible. If it does not match, then the DOM node (pThat) is set to hidden.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-DD3F2655-E86B-4E37-AE22-F9C040B3B8CF'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-93289724-56EA-47C0-ADE3-163EA679FD46
+		'f_Hide_On_Value_Item_Row(1pThis,2pThat,3pValue)4':
+				'prefix': 'f_Hide_On_Value_Item_Row(1pThis,2pThat,3pValue)4'
+				'body': """$f_Hide_On_Value_Item_Row($1pThis,$2pThat,$3pValue)$4"""
+				'description': 'Checks the value (pValue) of an item (pThis). If it matches, this function hides the table row that holds (pThat). If it does not match, then the table row is shown.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-93289724-56EA-47C0-ADE3-163EA679FD46'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-6744CA80-76C1-4C61-B6B7-06943B3194B7
+		'f_Show_On_Value_Item_Row(1pThis,2pThat,3pValue)4':
+				'prefix': 'f_Show_On_Value_Item_Row(1pThis,2pThat,3pValue)4'
+				'body': """$f_Show_On_Value_Item_Row($1pThis,$2pThat,$3pValue)$4"""
+				'description': 'Checks the value (pValue) of an item (pThis). If it matches, this function shows the table row that holds (pThat). If it does not match, then the table row is hidden.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-6744CA80-76C1-4C61-B6B7-06943B3194B7'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-6EBFAD64-2E64-4CAA-B44F-FF6FD212BAD0
+		'f_DisableOnValue(1pThis,2pValue,3pThat)4':
+				'prefix': 'f_DisableOnValue(1pThis,2pValue,3pThat)4'
+				'body': """$f_DisableOnValue($1pThis,$2pValue,$3pThat)$4"""
+				'description': 'Checks the value (pValue) of an item (pThis). If it matches, this function disables the item or array of items (pThat). If it does not match, then the item is enabled.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-6EBFAD64-2E64-4CAA-B44F-FF6FD212BAD0'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-DE9FD1C7-52BC-4608-89FE-9B5639C73E28
+		'x_ClassByClass(1pNd,2pClass,3pTag,4pClass2)5':
+				'prefix': 'x_ClassByClass(1pNd,2pClass,3pTag,4pClass2)5'
+				'body': """$x_ClassByClass($1pNd,$2pClass,$3pTag,$4pClass2)$5"""
+				'description': 'Sets a class attribute of an array of nodes that are selected by class.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-DE9FD1C7-52BC-4608-89FE-9B5639C73E28'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-90F7F754-D77C-4F9E-A704-8292DC7165EE
+		'f_ValuesToArray(1pThis,2pCLass,3pTag)4':
+				'prefix': 'f_ValuesToArray(1pThis,2pCLass,3pTag)4'
+				'body': """$f_ValuesToArray($1pThis,$2pCLass,$3pTag)$4"""
+				'description': 'Collects the values of form items contained within DOM node (pThis) of class attribute (pClass) and nodeName (pTag) and returns an array.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-90F7F754-D77C-4F9E-A704-8292DC7165EE'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-4A296EE7-2230-4F34-9282-69886B586CEE
+		'x_FormItems(1pNd,2pType)3':
+				'prefix': 'x_FormItems(1pNd,2pType)3'
+				'body': """$x_FormItems($1pNd,$2pType)$3"""
+				'description': 'Returns all form input items contained in a DOM node (pThis) of a certain type (pType).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-4A296EE7-2230-4F34-9282-69886B586CEE'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-CD4F3BBD-42EE-47BC-B447-C97A5C6EC95A
+		'f_CheckAll(1pThis,2pCheck,3pArray)4':
+				'prefix': 'f_CheckAll(1pThis,2pCheck,3pArray)4'
+				'body': """$f_CheckAll($1pThis,$2pCheck,$3pArray)$4"""
+				'description': 'Check or uncheck (pCheck) all check boxes contained within a DOM node (pThis). If an array of checkboxes DOM nodes (pArray) is provided, use that array for affected check boxes.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-CD4F3BBD-42EE-47BC-B447-C97A5C6EC95A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-97CD78E4-3904-4C03-95C5-BC9FF187D503
+		'f_CheckFirstColumn(1pNd)2':
+				'prefix': 'f_CheckFirstColumn(1pNd)2'
+				'body': """$f_CheckFirstColumn($1pNd)$2"""
+				'description': 'This function sets all checkboxes located in the first column of a table based on the checked state of the calling check box (pNd), useful for tabular forms.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-97CD78E4-3904-4C03-95C5-BC9FF187D503'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-1B8A2A29-83B4-4C2F-99AE-6BD1FE155EF3
+		'x_ToggleWithImage(1pThis,2pNd)3':
+				'prefix': 'x_ToggleWithImage(1pThis,2pNd)3'
+				'body': """$x_ToggleWithImage($1pThis,$2pNd)$3"""
+				'description': 'Given an image element (pThis) and a DOM node (pNd), this function toggles the display of the DOM node (pNd). The src attribute of the image element (pThis) is rewritten. The image src has any plus substrings replaced with minus substrings or minus substrings are replaced with plus substrings.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-1B8A2A29-83B4-4C2F-99AE-6BD1FE155EF3'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-B661A119-5E60-495C-B243-DDB4253F7F2D
+		'x_SwitchImageSrc(1pNd,2pSearch,3pReplace)4':
+				'prefix': 'x_SwitchImageSrc(1pNd,2pSearch,3pReplace)4'
+				'body': """$x_SwitchImageSrc($1pNd,$2pSearch,$3pReplace)$4"""
+				'description': 'Checks an image (pId) src attribute for a substring (pSearch). If a substring is found, this function replaces the image entire src attribute with (pReplace).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-B661A119-5E60-495C-B243-DDB4253F7F2D'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-FADF064D-9FE0-48F5-AD0B-FED67722683A
+		'x_CheckImageSrc(1pNd,2pSearch)3':
+				'prefix': 'x_CheckImageSrc(1pNd,2pSearch)3'
+				'body': """$x_CheckImageSrc($1pNd,$2pSearch)$3"""
+				'description': 'Checks an image (pNd) source attribute for a substring (pSearch). The function returns true if a substring (pSearch) is found. It returns false if a substring (pSearch) is not found.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-FADF064D-9FE0-48F5-AD0B-FED67722683A'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-387736D3-A53A-4930-8B19-90D6DD7C2293
+		'u_SubString(1pText,2pMatch)3':
+				'prefix': 'u_SubString(1pText,2pMatch)3'
+				'body': """$u_SubString($1pText,$2pMatch)$3"""
+				'description': 'Returns a true or false if a string (pText) contains a substring (pMatch).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-387736D3-A53A-4930-8B19-90D6DD7C2293'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-D5A1B3BF-7A9A-4545-87B0-82BF81313326
+		'html_RemoveAllChildren(1pNd)2':
+				'prefix': 'html_RemoveAllChildren(1pNd)2'
+				'body': """html_RemoveAllChildren($1pNd)$2"""
+				'description': 'Use DOM methods to remove all DOM children of DOM node (pND).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-D5A1B3BF-7A9A-4545-87B0-82BF81313326'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-57968D6C-4C08-4190-895B-071F58A13888
+		'html_SetSelectValue(1pId,2pValue)3':
+				'prefix': 'html_SetSelectValue(1pId,2pValue)3'
+				'body': """html_SetSelectValue($1pId,$2pValue)$3"""
+				'description': 'Sets the value (pValue) of a select item (pId). If the value is not found, this functions selects the first option (usually the NULL selection).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-57968D6C-4C08-4190-895B-071F58A13888'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-0DFBDE26-8DAF-4D94-A259-57689EE3BF93
+		'addLoadEvent(1pFunction)2':
+				'prefix': 'addLoadEvent(1pFunction)2'
+				'body': """addLoadEvent($1pFunction)$2"""
+				'description': 'Adds an onload function (func) without overwriting any previously specified onload functions.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-0DFBDE26-8DAF-4D94-A259-57689EE3BF93'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-A8D6AB8D-6A59-419D-B434-BFDBD66BB3C6
+		'f_Swap(1pThis,2pThat)3':
+				'prefix': 'f_Swap(1pThis,2pThat)3'
+				'body': """$f_Swap($1pThis,$2pThat)$3"""
+				'description': 'Swaps the form values of two form elements (pThis,pThat).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-A8D6AB8D-6A59-419D-B434-BFDBD66BB3C6'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-5F731B5D-2102-484B-862E-157BD58A062B
+		'f_SetValueSequence(1pArray,2pMultiple)3':
+				'prefix': 'f_SetValueSequence(1pArray,2pMultiple)3'
+				'body': """$f_SetValueSequence($1pArray,$2pMultiple)$3"""
+				'description': 'Sets array of form item (pArray) to sequential number in multiples of (pMultiple).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-5F731B5D-2102-484B-862E-157BD58A062B'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-DEFD4FE5-A976-4AA4-A553-73EBA855D70C
+		'dom_AddTag(1pThis,2pTag,3pText)4':
+				'prefix': 'dom_AddTag(1pThis,2pTag,3pText)4'
+				'body': """$dom_AddTag($1pThis,$2pTag,$3pText)$4"""
+				'description': 'Inserts the html element (pTag) as a child node of a DOM node (pThis) with the innerHTML set to (pText).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-DEFD4FE5-A976-4AA4-A553-73EBA855D70C'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-F8862B6C-79BF-4864-B113-FE9CF3088C85
+		'tr_AddTD(1pThis,2pText)3':
+				'prefix': 'tr_AddTD(1pThis,2pText)3'
+				'body': """$tr_AddTD($1pThis,$2pText)$3"""
+				'description': 'Appends a table cell to a table row (pThis). And sets the content to (pText).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-F8862B6C-79BF-4864-B113-FE9CF3088C85'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-8515B841-F365-458D-A7E6-4D612BFB01E7
+		'tr_AddTH(1pThis,2pTest)3':
+				'prefix': 'tr_AddTH(1pThis,2pTest)3'
+				'body': """$tr_AddTH($1pThis,$2pTest)$3"""
+				'description': 'Appends a table cell to a table row (pThis). And sets the content to (pText).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-8515B841-F365-458D-A7E6-4D612BFB01E7'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-AC4855B4-2344-40B2-BF02-664E42A46A3C
+		'dom_AddInput(1pThis,2pType,3pId,4pName,5pValue)6':
+				'prefix': 'dom_AddInput(1pThis,2pType,3pId,4pName,5pValue)6'
+				'body': """$dom_AddInput($1pThis,$2pType,$3pId,$4pName,$5pValue)$6"""
+				'description': 'Inserts the html form input element (pType) as a child node of a DOM node (pThis) with an id (pId) and name (pName) value set to pValue.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-AC4855B4-2344-40B2-BF02-664E42A46A3C'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-6F9EE7FB-AE13-4C18-831D-E9AA7957F947
+		'dom_MakeParent(1p_This,2p_Parent)3':
+				'prefix': 'dom_MakeParent(1p_This,2p_Parent)3'
+				'body': """$dom_MakeParent($1p_This,$2p_Parent)$3"""
+				'description': 'Takes a DOM node (p_Node) and makes it a child of DOM node (p_Parent) and then returns the DOM node (pNode).'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-6F9EE7FB-AE13-4C18-831D-E9AA7957F947'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-59FA6B51-497C-4BC5-9227-14E9DD75B331
+		'x_RowHighlight(1pThis,2pColor)3':
+				'prefix': 'x_RowHighlight(1pThis,2pColor)3'
+				'body': """$x_RowHighlight($1pThis,$2pColor)$3"""
+				'description': 'Give an table row DOM element (pThis), this function sets the background of all table cells to a color (pColor). A global variable gCurrentRow is set to pThis.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-59FA6B51-497C-4BC5-9227-14E9DD75B331'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-3F020D1A-03EB-456B-8007-19F7AA32DF2B
+		'x_RowHighlightOff(1pThis)2':
+				'prefix': 'x_RowHighlightOff(1pThis)2'
+				'body': """$x_RowHighlightOff($1pThis)$2"""
+				'description': 'Give an table row Dom node (pThis), this function sets the background of all table cells to NULL.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-3F020D1A-03EB-456B-8007-19F7AA32DF2B'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-CB33CFDD-B8C0-4F13-A98B-CC021F5FA5EA
+		'v_Upper(1pNd)2':
+				'prefix': 'v_Upper(1pNd)2'
+				'body': """$v_Upper($1pNd)$2"""
+				'description': 'Sets the value of a form item (pNd) to uppercase.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-CB33CFDD-B8C0-4F13-A98B-CC021F5FA5EA'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-19735682-382B-4914-97A3-15AA10808A5B
+		'd_Find(1pThis,2pString,3pTags,4pClass)5':
+				'prefix': 'd_Find(1pThis,2pString,3pTags,4pClass)5'
+				'body': """$d_Find($1pThis,$2pString,$3pTags,$4pClass)$5"""
+				'description': 'Hides child nodes of a Dom node (pThis) where the child node\'s inner HTML matches any instance of pString. To narrow the child nodes searched by specifying a tag name (pTag) or a class name (pClass). Note that the child node is set to a block level element when set to visible.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-19735682-382B-4914-97A3-15AA10808A5B'
+				'rightLabelHTML': ''
+		#URL: http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-3C84372F-5928-4551-8B07-7E13F2CF5852
+		'f_First_field(1pNd)2':
+				'prefix': 'f_First_field(1pNd)2'
+				'body': """$f_First_field($1pNd)$2"""
+				'description': 'Places the user focus on a form item (pNd). If pNd is not found then this function places focus on the first found user editable field.'
+				'descriptionMoreUrl': 'http://docs.oracle.com/database/apex-5.1/AEAPI/Non-namespace-Javascript-APIs.htm#GUID-3C84372F-5928-4551-8B07-7E13F2CF5852'
+				'rightLabelHTML': ''

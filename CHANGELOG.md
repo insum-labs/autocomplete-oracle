@@ -1,7 +1,3 @@
-## 0.5.0
-
-* Transfer ownership to `insum-labs`
-
 ## 0.4.0
 
 * Add package identifiers (package types)

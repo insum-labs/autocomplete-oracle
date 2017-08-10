@@ -1,0 +1,38 @@
+# # See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+# 'context-menu':
+#   'atom-text-editor': [
+#     {
+#       'label': 'Packages'
+#       'submenu': [
+#         'label': 'Apex Snippet Master Pack'
+#         'submenu': [
+#           {
+#             'label': 'comma before parameters'
+#             'command': 'apex-snippet-master-pack:preComma'
+#           }
+#           {
+#             'label': 'comma after parameters'
+#             'command': 'apex-snippet-master-pack:postComma'
+#           }
+#         ]
+#       ]
+#     }
+#   ]
+# 'menu': [
+#   {
+#     'label': 'Packages'
+#     'submenu': [
+#       'label': 'Apex Snippet Master Pack'
+#       'submenu': [
+#         {
+#           'label': 'comma before parameters'
+#           'command': 'apex-snippet-master-pack:preComma'
+#         }
+#         {
+#           'label': 'comma after parameters'
+#           'command': 'apex-snippet-master-pack:postComma'
+#         }
+#       ]
+#     ]
+#   }
+# ]
