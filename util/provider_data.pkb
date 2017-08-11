@@ -277,11 +277,14 @@ as
         pipe row ('APEX_PLUGIN_UTIL');
         pipe row ('APEX_REGION');
         pipe row ('APEX_SPATIAL');
+        pipe row ('APEX_STRING');
         pipe row ('APEX_UI_DEFAULT_UPDATE');
         pipe row ('APEX_UTIL');
         pipe row ('APEX_WEB_SERVICE');
         pipe row ('APEX_ZIP');
     end get_packs;
+
+
 
     function get_tab_chars(
         p_num_tabs in number,
@@ -389,18 +392,15 @@ as
         l_keys t_keyword_list;
         l_pks t_package_list;
         l_procs t_procedure_list;
+        l_output_clob clob;
     begin
-        dbms_output.enable(buffer_size => null);
-
-        --TODO: Remove
-        nondocumentedprocsdatabuilder;
-        return;
 
         l_keys := get_keywords();
         l_pks := get_packages();
 
-        dbms_output.put_line('{');
-        dbms_output.put_line(get_tab_chars(1) || '"keywords": [');
+
+        l_output_clob := '{';
+        l_output_clob := l_output_clob || get_tab_chars(1) || '"keywords": [';
 
         for i in 1..l_keys.count
         loop
@@ -408,59 +408,58 @@ as
 
             if i = l_keys.count
             then
-                dbms_output.put_line(get_tab_chars(2) || rtrim(l_keys(i), ','));
+                l_output_clob := l_output_clob || get_tab_chars(2) || rtrim(l_keys(i), ',');
             else
-                dbms_output.put_line(get_tab_chars(2) || l_keys(i));
+                l_output_clob := l_output_clob || get_tab_chars(2) || l_keys(i);
             end if;
 
         end loop;
 
-        dbms_output.put_line(get_tab_chars(1) || '],');
-        dbms_output.put_line(get_tab_chars(1) || '"packages" : {');
+        l_output_clob := l_output_clob || get_tab_chars(1) || '],';
+        l_output_clob := l_output_clob || get_tab_chars(1) || '"packages" : {';
 
         for i in 1..l_pks.count
         loop
 
             l_procs := get_procedures(l_pks(i));
 
-            dbms_output.put_line(get_tab_chars(2) || '"'||l_pks(i)||'": {');
+            l_output_clob := l_output_clob || get_tab_chars(2) || '"'||l_pks(i)||'": {';
 
 
-            dbms_output.put_line(get_tab_chars(3) || '"procedures": [');
+            l_output_clob := l_output_clob || get_tab_chars(3) || '"procedures": [';
 
             for i in 1..l_procs.count
             loop
-              dbms_output.put_line(get_tab_chars(4) || '"' || l_procs(i) || '"');
-
 
               if i = l_procs.count
               then
-                  dbms_output.put_line(get_tab_chars(4));
+                  l_output_clob := l_output_clob || get_tab_chars(4) || '"' || l_procs(i) || '"';
               else
-                  dbms_output.put_line(get_tab_chars(4) || ',');
+                  l_output_clob := l_output_clob || get_tab_chars(4) || '"' || l_procs(i) || '"' || ',';
               end if;
 
             end loop;
 
-            dbms_output.put_line(get_tab_chars(3) || ']');
+            l_output_clob := l_output_clob || get_tab_chars(3) || ']';
 
             if i = l_pks.count
             then
-                dbms_output.put_line(get_tab_chars(2) || '}');
+                l_output_clob := l_output_clob || get_tab_chars(2) || '}';
             else
-                dbms_output.put_line(get_tab_chars(2) || '},');
+                l_output_clob := l_output_clob || get_tab_chars(2) || '},';
             end if;
         end loop;
 
-        dbms_output.put_line(get_tab_chars(1) || '}');
-        dbms_output.put_line('}');
-
+        l_output_clob := l_output_clob || get_tab_chars(1) || '}';
+        l_output_clob := l_output_clob || '}';
+      
+      insert into clob_scrape_holder(clob_scrape) values (l_output_clob);
 
 
     end databuilder;
 
 
-  
+
     -- Ben Shumway (Insum): Aug/07/2017
     procedure nonDocumentedProcsDataBuilder is
 
@@ -480,19 +479,19 @@ as
                               )
       is
       begin
-      
+
         if l_curr_package is null or l_curr_package != p_package_name then
           l_curr_package := p_package_name;
           dbms_output.put_line(l_curr_package);
           l_curr_proc := null;
         end if;
-      
-      
+
+
         if l_curr_proc is null or l_curr_proc != p_proc_name then
           l_curr_proc := p_proc_name;
           dbms_output.put_line(get_tab_chars(1) || l_curr_proc);
         end if;
-      
+
         if p_position = 0 then
           if p_argument_name is not null then
             dbms_output.put_line('-Error-: Found position non-null name for position 0');
@@ -500,7 +499,7 @@ as
           dbms_output.put_line(get_tab_chars(2) || '#Returning ' || p_data_type);
         else
           dbms_output.put_line(get_tab_chars(2) || p_argument_name || ' ' || p_in_out || ' ' || p_data_type || ' ' || p_defaulted);
-        end if;      
+        end if;
       end;
 
     begin
@@ -1338,7 +1337,7 @@ as
                      )
                 order by package_name, proc_name,position,data_type)
       loop
-        
+
         writeNonDocProcLine(
                            row.package_name,
                            row.proc_name,
@@ -1348,12 +1347,12 @@ as
                            row.in_out,
                            row.defaulted
                           );
-        
-      
+
+
       end loop;
-      
+
       return;
-      
+
       for row in (select package_name,
                          object_name proc_name,
                          argument_name,
@@ -2059,7 +2058,7 @@ as
                      )
                 order by package_name, proc_name,position,data_type)
       loop
-        
+
         writeNonDocProcLine(
                            row.package_name,
                            row.proc_name,
@@ -2069,8 +2068,8 @@ as
                            row.in_out,
                            row.defaulted
                           );
-        
-      
+
+
       end loop;
 
 

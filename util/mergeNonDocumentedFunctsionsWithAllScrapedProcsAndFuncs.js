@@ -6,25 +6,13 @@ var docFuncsFileName = 'oracle12cApexVer51.json';
 var fs = require('fs');
 var nonDocFuncs = fs.readFileSync(nonDocFuncsFileName, {'encoding':'utf8'});
 var docFuncs = fs.readFileSync(docFuncsFileName,{'encoding':'utf8'});
-var allFuncProcs = {};
+docFuncs = JSON.parse(docFuncs);
+var allFuncProcs = docFuncs;
 
 nonDocFuncs = nonDocFuncs.trim();
 nonDocFuncs = nonDocFuncs.split('\n');
 
-docFuncs = JSON.parse(docFuncs);
 
-
-
-function mergeDocFuncsIntoAllFuncProcs() {
-  for(let i = 0; i < docFuncs.length; i++) {
-      var packageName = docFuncs[i].packageName.toUpperCase();
-      var procFuncName = docFuncs[i].procFuncName.toUpperCase();
-      if(!allFuncProcs[packageName]) {
-        allFuncProcs[packageName] = {};
-      }
-      allFuncProcs[packageName][procFuncName] = docFuncs[i];
-  }
-}
 
 
 function mergeNonDocFuncsIntoAllFuncProcs() {
@@ -62,6 +50,10 @@ function mergeNonDocFuncsIntoAllFuncProcs() {
   addFuncProc();
 
   function addFuncProc() {
+    if(allFuncProcs[currentPackage][currentFuncProc]) {
+      //This function is already in the object because it's been documented!
+      return;
+    }
     if(currentFuncProc) {
       currentArguments = currentArguments.replace(/N\n|N$/g, '\n');
       currentArguments = currentArguments.replace(/Y\n|Y$/g, 'default {unknown}\n');
@@ -95,7 +87,6 @@ function mergeNonDocFuncsIntoAllFuncProcs() {
   }
 }
 
-mergeDocFuncsIntoAllFuncProcs()
 mergeNonDocFuncsIntoAllFuncProcs();
 
 fs.writeFileSync('allFuncProcsOracle12CApex51.json', JSON.stringify(allFuncProcs));

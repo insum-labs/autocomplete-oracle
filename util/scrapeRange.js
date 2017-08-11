@@ -3,10 +3,9 @@
 //apex_5.1
 //oracle_12c
 //oracle_11g
-var scrapeType = ['standard'];
+var scrapeType = ['apex_5.1','oracle_12c'];
 var getFirstSignatureOnly = true;
 var doNotScrapeBody = false;
-
 
 /////////////////////////////////
 
@@ -20,7 +19,6 @@ function initScrapeParameters() {
 		case 'standard':
 				beginUrl = 'https://www.techonthenet.com/oracle/functions/index_alpha.php';
 				finishUrl = 'https://www.techonthenet.com/oracle/exceptions/sqlerrm.php';
-				finishUrl = 'https://www.techonthenet.com/oracle/functions/add_months.php';
 				baseUrl = 'https://www.techonthenet.com';
 				isApexScrape = false;
 				filename += 'standardFuncs';
@@ -109,6 +107,7 @@ initScrapeParameters();
 //NOTE: Taken from http://docs.oracle.com/database/apex-5.1/HTMDB/understanding-substitution-strings.htm#GUID-2903142F-17A1-4DF4-956C-1CC0A238A4E4
 //             and http://docs.oracle.com/database/apex-5.1/AEAPI/Global-Variables.htm#AEAPI29544
 //The regexes were $('body').text().match(/v\([^\)]+\)/gi) and $('body').text().match(/\w+\.\w+/gi)
+//TODO: Get rid of "name:" attribute and have "packageName" and "procFuncName"
 var allSubStringsAndGlobals = [
   {name:"APEX_APPLICATION.G_USER", description: 'Specifies the currently logged in user.' },
   {name:"APEX_APPLICATION.G_FLOW_ID", description: 'Specifies the ID of the currently running application.'},
@@ -245,15 +244,15 @@ function scrapeRange(startUrl,endUrl){
 					console.log('\nScraping Complete, sorting then writing allScrapedObjs to file');
 
 					allScrapedObjs.sort(function(a,b) {
-						//console.log('comparing',a['sN'].name,'to',b['sN'].name);
-						let textA = a.name.toLowerCase();
-						let textB = b.name.toLowerCase();
+						let textA = a.packageName.toLowerCase() + '.' + a.procFuncName.toLowerCase();
+						let textB = b.packageName.toLowerCase() + '.' + b.procFuncName.toLowerCase();
 						return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
 					});
-					writeObjectsToFile(allScrapedObjs);
 
 
 					convertAllScrapedObjsToDictionaryFormat();
+
+					writeObjectsToFile(allScrapedObjs);
 
 					process.exit();
 				};
@@ -657,20 +656,20 @@ function scrapeSingleSnippet(syntax, $snippetHNode) {
 		}
 
 		return {
-			name: name,
+			//name: name,
 			packageName: packageName,
 			procFuncName: procFuncName,
-			body: body,
+			//body: body,
 			bodyNoDefault: bodyNoDefault,
 			bodyFullText: bodyFullText,
-			parameters: parameters,
+			//parameters: parameters,
 			url: snippetUrl,
 			descriptionText: descriptionText,
-			rightLabelHTML: '',
-			containsNonStandardParameterLine: containsNonStandardParameterLine,
+			//rightLabelHTML: '',
+			//containsNonStandardParameterLine: containsNonStandardParameterLine,
 			missingPrefix: missingPrefix,
-			isApexFuncProc: isApexScrape,
-			apexVersion: apexVersion ? apexVersion : null,
+			//isApexFuncProc: isApexScrape,
+			//apexVersion: apexVersion ? apexVersion : null,
 			isStandardFunction: false
 		}
 }
@@ -710,17 +709,17 @@ function addPrefixesToAllScrapedObjsWherePossible() {
 	let nextPrefix = "";
 	for(let i = 1; i < allScrapedObjs.length -1; i++) {
 		if(allScrapedObjs[i].missingPrefix) {
-			lastPrefix = allScrapedObjs[i-1].name.match(/^[^\.]+\./);
-			nextPrefix = allScrapedObjs[i+1].name.match(/^[^\.]+\./);
+			lastPrefix = allScrapedObjs[i-1].packageName;
+			nextPrefix = allScrapedObjs[i+1].packageName;
 			if(lastPrefix && nextPrefix) {
-				lastPrefix = lastPrefix[0].replace(/\./,'').toUpperCase();
-				nextPrefix = nextPrefix[0].replace(/\./,'').toUpperCase();
+				lastPrefix = lastPrefix.toUpperCase();
+				nextPrefix = nextPrefix.toUpperCase();
 				if(lastPrefix == nextPrefix) {
-					allScrapedObjs[i].name = nextPrefix + allScrapedObjs[i].name;
+					allScrapedObjs[i].packageName = lastPrefix;
 					allScrapedObjs[i].missingPrefix = false;
 				}
 			} else {
-				console.log('-Error-Cannot find prefix for ' + allScrapedObjs[i].name);
+				console.log('-Error-Cannot find prefix for ' + allScrapedObjs[i].procFuncName);
 			}
 		}
 	}
@@ -728,22 +727,31 @@ function addPrefixesToAllScrapedObjsWherePossible() {
 
 function writeObjectsToFile(allScrapedObjects){
 
-	fs.writeFileSync(filename, JSON.stringify(allScrapedObjects));
-
 	console.log('Finished. Scraped ' + allScrapedObjects.length + ' funcs/procs');
+
 	let missingPrefixCount = 0;
 	let containsNonStandardParameterLineCount = 0;
-	for(let i = 0; i < allScrapedObjects.length; i++) {
-		if(allScrapedObjects[i].missingPrefix) {
-			missingPrefixCount++;
-		}
-		if(allScrapedObjects[i].containsNonStandardParameterLine){
-			containsNonStandardParameterLineCount++;
+	for(let i in allScrapedObjects) {
+		for(let j in allScrapedObjects[i]) {
+			if(allScrapedObjects[i][j].missingPrefix) {
+				missingPrefixCount++;
+			}
+			if(allScrapedObjects[i][j].containsNonStandardParameterLine){
+				containsNonStandardParameterLineCount++;
+			}
+			//Remove these keys for space efficiencey. They were useful during the scrape, but now aren't useufl anymore
+			allScrapedObjects[i][j].containsNonStandardParameterLine = undefined;
+			allScrapedObjects[i][j].missingPrefix = undefined;
+			allScrapedObjects[i][j].isStandardFunction = undefined;
 		}
 	}
 
 	console.log('# MissingPrefixes: ' + missingPrefixCount + ', # w/ nonstandard parameter line: ' + containsNonStandardParameterLineCount );
 	console.log('Writing to File: ' + filename);
+
+	fs.writeFileSync(filename, JSON.stringify(allScrapedObjects));
+
+
 }
 
 //ASSUMPTION: CurrentURL is http://www.techonthenet.com/oracle/functions/index_alpha.php
@@ -801,26 +809,49 @@ function scrapeSnippetsFromStdPage() {
 
 	return
 	[{
-		name: packageName + '.' + funcName,
+		//name: packageName + '.' + funcName,
 		packageName: packageName,
 		procFuncName: procFuncName,
-		body: null,
+		//body: null,
 		bodyNoDefault: bodyNoDefault,
 		bodyFullText: bodyFullText,
-		parameters: null,
+		//parameters: null,
 		url: url,
 		descriptionText: descriptionText,
-		rightLabelHTML: '',
-		containsNonStandardParameterLine: false,
+		//rightLabelHTML: '',
+		//containsNonStandardParameterLine: false,
 		missingPrefix: false,
-		isApexFuncProc: false,
-		apexVersion: null,
+		//isApexFuncProc: false,
+		//apexVersion: null,
 		isStandardFunction: true
 	}]
 }
 
-//ASSUMPTION
+function convertAllScrapedObjsToDictionaryFormat() {
+	let tmpAllScrapedJobs = {};
+
+	var tmpObj = {};
+	for(let key = 0; key < allScrapedObjs.length; key++) {
+	    let currentObj = allScrapedObjs[key];
+	    let currentPackage = currentObj.packageName.toUpperCase();
+	    if(!tmpObj[currentPackage]) {
+				if(!currentPackage.trim() || currentObj.missingPrefix) {
+					console.log('-Warning- no package name or missing prefix, skipping adding ' + currentObj.packageName + '.' + currentObj.procFuncName + ' to file');
+					continue;
+				} else {
+					tmpObj[currentPackage] = {};
+				}
+	    }
+			console.log('package: ' + currentObj.packageName + ', ' + currentObj.procFuncName)
+	    tmpObj[currentPackage][currentObj.procFuncName.toUpperCase()] = currentObj;
+	}
+	allScrapedObjs = tmpObj;
+}
+
+//TODO: IMplement
 function addGlobalsAndSubtitutionStrings() {
+
+
 
 }
 
