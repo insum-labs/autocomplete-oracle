@@ -1,3 +1,24 @@
+## 1.2.0
+
+* The scraper in the util folder now also scrapes Oracle standard functions (e.g. to_date)
+* Users can now type a standard function and see it's description, url, and syntax
+
+## 1.1.0
+
+* Simplified the size of allFuncProcsOracl12CApex51.json so that the package uses less memory
+* Added git ignore / deleted files that were taking up too much space and aren't used by atom
+
+## 1.0.0
+
+* Added descriptions to functions/procedures
+* Added Url to functions/procedures
+* Updated the util folder to include files which scrape this information from oracle's documentation
+* A pop-up now appears when the user accepts a func/proc that shows the parameters / documentation url
+
+## 0.5.0
+
+* Transfer ownership to `insum-labs`
+
 ## 0.4.0
 
 * Add package identifiers (package types)
