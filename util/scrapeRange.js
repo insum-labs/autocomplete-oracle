@@ -3,7 +3,7 @@
 //apex_5.1
 //oracle_12c
 //oracle_11g
-var scrapeType = ['apex_5.1','oracle_12c'];
+var scrapeType = ['oracle_12c','apex_5.1','standard'];
 var getFirstSignatureOnly = true;
 var doNotScrapeBody = false;
 
@@ -18,12 +18,12 @@ function initScrapeParameters() {
 	switch(st){
 		case 'standard':
 				beginUrl = 'https://www.techonthenet.com/oracle/functions/index_alpha.php';
-				finishUrl = 'https://www.techonthenet.com/oracle/exceptions/sqlerrm.php';
-				baseUrl = 'https://www.techonthenet.com';
+				finishUrl = 'http://docs.oracle.com/cd/E11882_01/server.112/e41084/functions256.htm';
+				baseUrl = 'http://docs.oracle.com/cd/E11882_01/server.112/e41084/';
 				isApexScrape = false;
 				filename += 'standardFuncs';
 				scrapingStandardFuncs = true;
-				scrapingSpeed = 1500;
+				scrapingSpeed = 100;
 			break;
 		case 'apex_5':
 				beginUrl = 'http://docs.oracle.com/cd/E59726_01/doc.50/e39149/apex_app.htm';
@@ -87,6 +87,7 @@ var $;
 
 var allSignatures = {};
 var allScrapedObjs = [];
+var allStandardFuncs = null;
 var currentScrapeUrl;
 var isExternalDoc = false;
 var beginUrl  = '';
@@ -96,10 +97,10 @@ var apexVersion;
 var filename = '';
 var scrapingStandardFuncs = false;
 var nextUrl;
-var allStandardFuncUrls = [];
 var scrapingSpeed;
-
-
+var isScrapingStdFunctionImageText = false;
+var nextUrlAfterStdFunctionImageTextIsScraped = '';
+var html;
 
 initScrapeParameters();
 
@@ -161,30 +162,34 @@ var allSubStringsAndGlobals = [
 function scrapeRange(startUrl,endUrl){
 	currentScrapeUrl = startUrl;
 	console.log('start scraping ' + currentScrapeUrl);
-	request(currentScrapeUrl, function(error, response,html){
+	request(currentScrapeUrl, function(error, response,htmlRslt){
+		html = htmlRslt;
 		if(!error){
 			// Now use cheerio on the returned HTML which will give jQuery functionality
 			$ = cheerio.load(html);
-			let scrapedObjs = [];
 
-			//NOTE: scrapingStandardFuncs should always be false because this has not yet been implemented. It's a work in progress at the moment.
 			if(scrapingStandardFuncs) {
-				if(currentScrapeUrl == beginUrl) {
-					allStandardFuncUrls = scrapeStandardFuncUrls();
-					nextUrl = allStandardFuncUrls.pop();
-					console.log('nextUrl', baseUrl + nextUrl);
-				}
-				else {
-					scrapedObjs = scrapeSnippetsFromStdPage();
+				if(!allStandardFuncs) {
+					allStandardFuncs = {'STANDARD':{}};
+					scrapeAllStandardFuncNamesAndUrls();
+					nextUrl = 'functions001.htm'
+				} else if(isScrapingStdFunctionImageText) {
+					//scrape the syntax
+					scrapeStdSnippetSyntax();
+					setNextStdFunctionScrapeMode('desc');
+					nextUrl = nextUrlAfterStdFunctionImageTextIsScraped;
+				} else {
+					scrapeStdSnippet();
 				}
 			}
 			else {
+				let scrapedObjs = [];
 
 				mergeConsecutivePres();
 
 
 				if(!isExternalDoc) {
-					nextUrl = html.match(/<a href="([^"]+)"><img width="24" height="24" src="[^"]*" alt="Go to next page"/)[1];
+					nextUrl = scrapeNextUrlFromNextButton();
 
 					if(html.indexOf('For a complete description of this package') != -1) {
 						let externalDocUrl = $('p:contains("For a complete description of this package")').find('a').first().prop('href');
@@ -204,17 +209,19 @@ function scrapeRange(startUrl,endUrl){
 
 				scrapedObjs = scrapeSnippetsFromPage();
 
-			}
-
-
-			for(let i = 0; i < scrapedObjs.length; i++) {
-				if(scrapedObjs[i]){
-					if(!scrapedObjs[i]) {
-						continue;
+				for(let i = 0; i < scrapedObjs.length; i++) {
+					if(scrapedObjs[i]){
+						if(!scrapedObjs[i]) {
+							continue;
+						}
+						allScrapedObjs.push(scrapedObjs[i]);
 					}
-					allScrapedObjs.push(scrapedObjs[i]);
 				}
+
 			}
+
+
+
 
 			setTimeout(function(){
 				if (startUrl != endUrl){
@@ -249,8 +256,8 @@ function scrapeRange(startUrl,endUrl){
 						return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
 					});
 
-
 					convertAllScrapedObjsToDictionaryFormat();
+					allScrapedObjs['STANDARD'] = allStandardFuncs['STANDARD'];
 
 					writeObjectsToFile(allScrapedObjs);
 
@@ -666,11 +673,10 @@ function scrapeSingleSnippet(syntax, $snippetHNode) {
 			url: snippetUrl,
 			descriptionText: descriptionText,
 			//rightLabelHTML: '',
-			//containsNonStandardParameterLine: containsNonStandardParameterLine,
+			containsNonStandardParameterLine: containsNonStandardParameterLine,
 			missingPrefix: missingPrefix,
 			//isApexFuncProc: isApexScrape,
 			//apexVersion: apexVersion ? apexVersion : null,
-			isStandardFunction: false
 		}
 }
 
@@ -742,7 +748,6 @@ function writeObjectsToFile(allScrapedObjects){
 			//Remove these keys for space efficiencey. They were useful during the scrape, but now aren't useufl anymore
 			allScrapedObjects[i][j].containsNonStandardParameterLine = undefined;
 			allScrapedObjects[i][j].missingPrefix = undefined;
-			allScrapedObjects[i][j].isStandardFunction = undefined;
 		}
 	}
 
@@ -754,21 +759,57 @@ function writeObjectsToFile(allScrapedObjects){
 
 }
 
-//ASSUMPTION: CurrentURL is http://www.techonthenet.com/oracle/functions/index_alpha.php
-function scrapeStandardFuncUrls() {
-	let arr = [];
-	$('.list-group a').each(function() {
-		arr.push($(this).prop('href'))
-	});
-	return arr.reverse();
+function scrapeAllStandardFuncNamesAndUrls(html) {
+
+
+	$('.list-group-item').each(function() {
+		let funcName = $(this).text().trim().toUpperCase();
+		let url = 'http://www.techonthenet.com' + $(this).prop('href');
+
+		if(funcName == 'RETRIEVE USER ID FROM THE CURRENT ORACLE SESSION' ||
+		   funcName == 'RETRIEVE THE SESSION ID FOR THE USER LOGGED IN') {
+				 return;
+		}
+		funcName = funcName.match(/^\w+/)[0];
+
+		if(funcName == 'SQLERRM') {
+			allStandardFuncs['STANDARD'][funcName] = {
+				descriptionText: 'The function SQLERRM returns the error message associated with its error-number argument.',
+				packageName: 'STANDARD',
+				procFuncName: funcName,
+				url: url,
+				bodyNoDefault: 'SQLERRM',
+				bodyFullText: 'SQLERRM'
+			};
+		}
+		else if(funcName == 'SQLCODE') {
+			allStandardFuncs['STANDARD'][funcName] = {
+				description: 'The function SQLCODE returns the number code of the most recent exception.',
+				packageName: 'STANDARD',
+				procFuncName: funcName,
+				url: url,
+				bodyNoDefault: 'SQLCODE',
+				bodyFullText: 'SQLCODE'
+			};
+		}
+		else if(!funcName) {
+			console.log('-Error-, could not scrape function name for standard function - ', this.text());
+		}
+		else {
+			allStandardFuncs['STANDARD'][funcName] = {
+				url: url
+			};
+		}
+
+	})
 }
 
-//NOTE: This function is not yet complete! It does not work.
-//This function runs when we set scrapeType to contain 'standard'
-//Do not use this function until it is finished being written (so do not set scrapeType to contain standard)
-function scrapeSnippetsFromStdPage() {
+
+
+function scrapeStdSnippet() {
+
+
 	let packageName = 'STANDARD';
-	let url = currentScrapeUrl;
 
 	let procFuncName;
 	let bodyNoDefault;
@@ -782,49 +823,110 @@ function scrapeSnippetsFromStdPage() {
 	if(!$pDesc.length || !$pDesc.text().trim().match(/^Purpose/)) {
 		$pDesc = $('p:contains("Syntax")')
 		if(!$pDesc.length || !$pDesc.text().trim().match(/^Purpose/)) {
-			console.log('-error- incorrect description pDesc Syntax/Purpose node');
-			return [null];
+			console.log('Skipping - no syntax/purpose');
+			nextUrl = scrapeNextUrlFromNextButton();
+			setNextStdFunctionScrapeMode('desc');
+			return;
 		}
 	}
+
 	$pDesc = $pDesc.next();
 	if(!$pDesc || !$pDesc.text().trim()) {
-		console.log('-error- incorrect p node for description');
-		return [null];
+		console.log('Skipping -Error- incorrect p node for description');
+		nextUrl = scrapeNextUrlFromNextButton();
+		setNextStdFunctionScrapeMode('desc');
+		return;
 	}
-	descriptionText[0] = descriptionText[0].toUpperCase();
-	$desc = $pDesc.text().match(/^[^\n]+/);
+	descriptionText = $pDesc.text().match(/^[^\n]+/)[0];
+
+	procFuncName = 	$('title').text().trim().toUpperCase();
+	procFuncName = procFuncName.match(/^\w+/)[0];
+	if(!procFuncName) {
+		console.log('-error- could not scrape standard function name');
+	}
+
+	console.log('scraping', procFuncName);
 
 
+	if(!allStandardFuncs['STANDARD'][procFuncName]) {
+		console.log(procFuncName, 'is not standard function from techonthenet, skipping');
+		nextUrl = scrapeNextUrlFromNextButton();
+		setNextStdFunctionScrapeMode('desc');
+		return;
+	}
 
-	bodyFullText = $pSyntax.text().trim();
-	procFuncName = bodyFullText.match(/^\w+/);
-	bodyNoDefault = bodyFullText.replace(/^\w+/,'').trim();
+	allStandardFuncs['STANDARD'][procFuncName].packageName = 'STANDARD';
+	allStandardFuncs['STANDARD'][procFuncName].procFuncName = procFuncName;
+	allStandardFuncs['STANDARD'][procFuncName].descriptionText = descriptionText;
+
+	//Scrape the Url as the second node after the first img
+	let img = $('img')[0];
+	let a = $(img).next().next();
+	if(!$(a).length) {
+		console.log('-Error- finding syntax anchor item')
+		nextUrl = scrapeNextUrlFromNextButton();
+		setNextStdFunctionScrapeMode('desc');
+	}
+	else if($(a).prop('tagName') != 'A'){
+		console.log('-Error- finding syntax anchor item, or resolving tagName');
+		nextUrl = scrapeNextUrlFromNextButton();
+		setNextStdFunctionScrapeMode('desc');
+	}
+	else if($(a).prop('href').indexOf('img_text') != 0) {
+		console.log('-Error- finding syntax anchor item, prefix does not begin with img_text');
+		nextUrl = scrapeNextUrlFromNextButton();
+		setNextStdFunctionScrapeMode('desc');
+
+	}
+	else {
+		nextUrl =	$(a).prop('href');
+		setNextStdFunctionScrapeMode('syntax');
+	}
+
+	return;
+}
 
 
+function setNextStdFunctionScrapeMode(mode) {
+	if(mode == 'syntax') {
+		nextUrlAfterStdFunctionImageTextIsScraped = scrapeNextUrlFromNextButton();
+		isScrapingStdFunctionImageText = true;
+	}
+	else if(mode == 'desc') {
+		isScrapingStdFunctionImageText = false;
+	} else {
+		console.log('-Error- in call setNextStdFunctionScrapeMode')
+	}
+}
+
+//ASSUMPTION: nextUrlAfterStdFunctionImageTextIsScraped is the current URL
+function scrapeStdSnippetSyntax() {
+	let procFuncName = $('pre').text().trim().match(/^\w+/);
+
+	if(!procFuncName) {
+		console.log('-Error- Could not scrape function name for syntax for std function');
+	} else {
+		$('pre').text().trim();
+
+		let bodyFullText  = $('pre').text().trim();
+		if(!bodyFullText) {
+			console.log('-Error- Could not scrape syntax for std function');
+			return;
+		}
+
+		let bodyNoDefault = bodyFullText.replace(/^\w+/,'').trim();
+
+		allStandardFuncs['STANDARD'][procFuncName].bodyNoDefault = bodyNoDefault;
+		allStandardFuncs['STANDARD'][procFuncName].bodyFullText = bodyFullText;
+
+		console.log('scraped ' + procFuncName + ' syntax');
+
+	}
+}
 
 
-
-
-
-
-	return
-	[{
-		//name: packageName + '.' + funcName,
-		packageName: packageName,
-		procFuncName: procFuncName,
-		//body: null,
-		bodyNoDefault: bodyNoDefault,
-		bodyFullText: bodyFullText,
-		//parameters: null,
-		url: url,
-		descriptionText: descriptionText,
-		//rightLabelHTML: '',
-		//containsNonStandardParameterLine: false,
-		missingPrefix: false,
-		//isApexFuncProc: false,
-		//apexVersion: null,
-		isStandardFunction: true
-	}]
+function scrapeNextUrlFromNextButton() {
+	return html.match(/<a href="([^"]+)"><img width="24" height="24" src="[^"]*" alt="Go to next page"/)[1];
 }
 
 function convertAllScrapedObjsToDictionaryFormat() {
@@ -850,7 +952,6 @@ function convertAllScrapedObjsToDictionaryFormat() {
 
 //TODO: IMplement
 function addGlobalsAndSubtitutionStrings() {
-
 
 
 }

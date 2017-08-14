@@ -1,6 +1,6 @@
 /* PARAMETERS*/
 var nonDocFuncsFileName = 'nonDocumentedFunctions12G.txt';
-var docFuncsFileName = 'oracle12cApexVer51.json';
+var docFuncsFileName = 'standardFuncsApexVer51oracle12c.json';
 /* End of Parameters */
 
 var fs = require('fs');
