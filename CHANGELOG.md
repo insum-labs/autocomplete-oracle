@@ -2,7 +2,6 @@
 
 * Updated the readme to include a demo of the new features since 1.0.0
 * Added option to seed parameters with a placeholder
-* Sys functions can now be prefixed with SYS when typed. (e.g. SYS.to_date);
 
 ## 1.2.0
 
