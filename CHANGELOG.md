@@ -1,7 +1,13 @@
+## 1.3.0
+
+* Updated the readme to include a demo of the new features since 1.0.0
+* Added option to seed parameters with a placeholder
+* Sys functions can now be prefixed with SYS when typed. (e.g. SYS.to_date);
+
 ## 1.2.0
 
-* The scraper in the util folder now also scrapes Oracle standard functions (e.g. to_date)
-* Users can now type a standard function and see it's description, url, and syntax
+* The scraper in the util folder now also scrapes Oracle SYS functions (e.g. to_date)
+* Users can now type a Sys function and see it's description, url, and syntax
 
 ## 1.1.0
 
