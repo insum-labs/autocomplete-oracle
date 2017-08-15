@@ -3,7 +3,7 @@
 //apex_5.1
 //oracle_12c
 //oracle_11g
-var scrapeType = ['oracle_12c','apex_5.1','sys'];
+var scrapeType = ['oracle_12c','apex_5.1','standard'];
 var getFirstSignatureOnly = true;
 var doNotScrapeBody = false;
 
@@ -16,13 +16,13 @@ function initScrapeParameters() {
 		st = scrapeType.pop();
 	}
 	switch(st){
-		case 'sys':
+		case 'standard':
 				beginUrl = 'https://www.techonthenet.com/oracle/functions/index_alpha.php';
 				finishUrl = 'http://docs.oracle.com/cd/E11882_01/server.112/e41084/functions256.htm';
 				baseUrl = 'http://docs.oracle.com/cd/E11882_01/server.112/e41084/';
 				isApexScrape = false;
-				filename += 'sysFuncs';
-				scrapingSysFuncs = true;
+				filename += 'standardFuncs';
+				scrapingStandardFuncs = true;
 				scrapingSpeed = 100;
 			break;
 		case 'apex_5':
@@ -32,7 +32,7 @@ function initScrapeParameters() {
 				isApexScrape = true;
 				apexVersion = 5.0;
 				filename += 'apexVer5'
-				scrapingSysFuncs = false;
+				scrapingStandardFuncs = false;
 				scrapingSpeed = 100;
 			break;
 		case 'apex_5.1':
@@ -42,7 +42,7 @@ function initScrapeParameters() {
 				isApexScrape = true;
 				apexVersion = 5.1
 				filename += 'ApexVer51'
-				scrapingSysFuncs = false;
+				scrapingStandardFuncs = false;
 				scrapingSpeed = 100;
 			break;
 		case 'oracle_12c':
@@ -52,7 +52,7 @@ function initScrapeParameters() {
 				isApexScrape = false;
 				apexVersion = null;
 				filename += 'oracle12c'
-				scrapingSysFuncs = false;
+				scrapingStandardFuncs = false;
 				scrapingSpeed = 100;
 			break;
 		case 'oracle_11g':
@@ -62,7 +62,7 @@ function initScrapeParameters() {
 				isApexScrape = false;
 				apexVersion = null;
 				filename += 'oracle11g'
-				scrapingSysFuncs = false;
+				scrapingStandardFuncs = false;
 				scrapingSpeed = 100;
 			break;
 	}
@@ -87,7 +87,7 @@ var $;
 
 var allSignatures = {};
 var allScrapedObjs = [];
-var allSysFuncs = null;
+var allStandardFuncs = null;
 var currentScrapeUrl;
 var isExternalDoc = false;
 var beginUrl  = '';
@@ -95,11 +95,11 @@ var finishUrl = '';
 var isApexScrape;
 var apexVersion;
 var filename = '';
-var scrapingSysFuncs = false;
+var scrapingStandardFuncs = false;
 var nextUrl;
 var scrapingSpeed;
-var isScrapingSysFunctionImageText = false;
-var nextUrlAfterSysFunctionImageTextIsScraped = '';
+var isScrapingStandardFunctionImageText = false;
+var nextUrlAfterStandardFunctionImageTextIsScraped = '';
 var html;
 
 initScrapeParameters();
@@ -172,18 +172,18 @@ function scrapeRange(startUrl,endUrl){
 			$('.infobox-note').remove()
 
 
-			if(scrapingSysFuncs) {
-				if(!allSysFuncs) {
-					allSysFuncs = {'SYS':{}};
-					scrapeAllSysFuncNamesAndUrls();
+			if(scrapingStandardFuncs) {
+				if(!allStandardFuncs) {
+					allStandardFuncs = {'STANDARD':{}};
+					scrapeAllStandardFuncNamesAndUrls();
 					nextUrl = 'functions001.htm'
-				} else if(isScrapingSysFunctionImageText) {
+				} else if(isScrapingStandardFunctionImageText) {
 					//scrape the syntax
-					scrapeSysSnippetSyntax();
-					setNextSysFunctionScrapeMode('desc');
-					nextUrl = nextUrlAfterSysFunctionImageTextIsScraped;
+					scrapeStandardSnippetSyntax();
+					setNextStandardFunctionScrapeMode('desc');
+					nextUrl = nextUrlAfterStandardFunctionImageTextIsScraped;
 				} else {
-					scrapeSysSnippet();
+					scrapeStandardSnippet();
 				}
 			}
 			else {
@@ -261,7 +261,7 @@ function scrapeRange(startUrl,endUrl){
 					});
 
 					convertAllScrapedObjsToDictionaryFormat();
-					allScrapedObjs['SYS'] = allSysFuncs['SYS'];
+					allScrapedObjs['STANDARD'] = allStandardFuncs['STANDARD'];
 
 					writeObjectsToFile(allScrapedObjs);
 
@@ -550,7 +550,7 @@ function scrapeSingleSnippet(syntax, $snippetHNode) {
 		let body = "";
 		let bodyNoDefault = "";
 		let bodyFullText = syntax;
-		let containsNonSysParameterLine = false;
+		let containsNonStandardParameterLine = false;
 		let parameters = [];
 
 		if(!doNotScrapeBody) {
@@ -615,8 +615,8 @@ function scrapeSingleSnippet(syntax, $snippetHNode) {
 							//There is either no parameter here and instead something like "..."
 							//e.g. http://docs.oracle.com/database/apex-5.1/AEAPI/ADD_MEMBER-Procedure.htm
 							tmpCode[i] = tmpCode[i].join(',').trim();
-							console.log('-Warning- found non-sys parameter line: ' + tmpCode[i]);
-							containsNonSysParameterLine = true;
+							console.log('-Warning- found non-standard parameter line: ' + tmpCode[i]);
+							containsNonStandardParameterLine = true;
 							tmpCode[i] = prefixSpaces + tmpCode[i] + '\n';
 							body += tmpCode[i];
 							bodyNoDefault += tmpCode[i];
@@ -677,7 +677,7 @@ function scrapeSingleSnippet(syntax, $snippetHNode) {
 			url: snippetUrl,
 			descriptionText: descriptionText,
 			//rightLabelHTML: '',
-			containsNonSysParameterLine: containsNonSysParameterLine,
+			containsNonStandardParameterLine: containsNonStandardParameterLine,
 			missingPrefix: missingPrefix,
 			//isApexFuncProc: isApexScrape,
 			//apexVersion: apexVersion ? apexVersion : null,
@@ -740,22 +740,22 @@ function writeObjectsToFile(allScrapedObjects){
 	console.log('Finished. Scraped ' + allScrapedObjects.length + ' funcs/procs');
 
 	let missingPrefixCount = 0;
-	let containsNonSysParameterLineCount = 0;
+	let containsNonStandardParameterLineCount = 0;
 	for(let i in allScrapedObjects) {
 		for(let j in allScrapedObjects[i]) {
 			if(allScrapedObjects[i][j].missingPrefix) {
 				missingPrefixCount++;
 			}
-			if(allScrapedObjects[i][j].containsNonSysParameterLine){
-				containsNonSysParameterLineCount++;
+			if(allScrapedObjects[i][j].containsNonStandardParameterLine){
+				containsNonStandardParameterLineCount++;
 			}
 			//Remove these keys for space efficiencey. They were useful during the scrape, but now aren't useufl anymore
-			allScrapedObjects[i][j].containsNonSysParameterLine = undefined;
+			allScrapedObjects[i][j].containsNonStandardParameterLine = undefined;
 			allScrapedObjects[i][j].missingPrefix = undefined;
 		}
 	}
 
-	console.log('# MissingPrefixes: ' + missingPrefixCount + ', # w/ nonsys parameter line: ' + containsNonSysParameterLineCount );
+	console.log('# MissingPrefixes: ' + missingPrefixCount + ', # w/ nonstandard parameter line: ' + containsNonStandardParameterLineCount );
 	console.log('Writing to File: ' + filename);
 
 	fs.writeFileSync(filename, JSON.stringify(allScrapedObjects));
@@ -763,7 +763,7 @@ function writeObjectsToFile(allScrapedObjects){
 
 }
 
-function scrapeAllSysFuncNamesAndUrls(html) {
+function scrapeAllStandardFuncNamesAndUrls(html) {
 
 
 	$('.list-group-item').each(function() {
@@ -777,9 +777,9 @@ function scrapeAllSysFuncNamesAndUrls(html) {
 		funcName = funcName.match(/^\w+/)[0];
 
 		if(funcName == 'SQLERRM') {
-			allSysFuncs['SYS'][funcName] = {
+			allStandardFuncs['STANDARD'][funcName] = {
 				descriptionText: 'The function SQLERRM returns the error message associated with its error-number argument.',
-				packageName: 'SYS',
+				packageName: 'STANDARD',
 				procFuncName: funcName,
 				url: url,
 				bodyNoDefault: 'SQLERRM',
@@ -787,9 +787,9 @@ function scrapeAllSysFuncNamesAndUrls(html) {
 			};
 		}
 		else if(funcName == 'SQLCODE') {
-			allSysFuncs['SYS'][funcName] = {
+			allStandardFuncs['STANDARD'][funcName] = {
 				description: 'The function SQLCODE returns the number code of the most recent exception.',
-				packageName: 'SYS',
+				packageName: 'STANDARD',
 				procFuncName: funcName,
 				url: url,
 				bodyNoDefault: 'SQLCODE',
@@ -797,10 +797,10 @@ function scrapeAllSysFuncNamesAndUrls(html) {
 			};
 		}
 		else if(!funcName) {
-			console.log('-Error-, could not scrape function name for sys function - ', this.text());
+			console.log('-Error-, could not scrape function name for standard function - ', this.text());
 		}
 		else {
-			allSysFuncs['SYS'][funcName] = {
+			allStandardFuncs['STANDARD'][funcName] = {
 				url: url
 			};
 		}
@@ -810,10 +810,10 @@ function scrapeAllSysFuncNamesAndUrls(html) {
 
 
 
-function scrapeSysSnippet() {
+function scrapeStandardSnippet() {
 
 
-	let packageName = 'SYS';
+	let packageName = 'STANDARD';
 
 	let procFuncName;
 	let bodyNoDefault;
@@ -826,7 +826,7 @@ function scrapeSysSnippet() {
 		if(!$pDesc.length || !$pDesc.text().trim().match(/^Purpose/)) {
 			console.log('Skipping - no syntax/purpose');
 			nextUrl = scrapeNextUrlFromNextButton();
-			setNextSysFunctionScrapeMode('desc');
+			setNextStandardFunctionScrapeMode('desc');
 			return;
 		}
 	}
@@ -835,7 +835,7 @@ function scrapeSysSnippet() {
 	if(!$pDesc || !$pDesc.text().trim()) {
 		console.log('Skipping -Error- incorrect p node for description');
 		nextUrl = scrapeNextUrlFromNextButton();
-		setNextSysFunctionScrapeMode('desc');
+		setNextStandardFunctionScrapeMode('desc');
 		return;
 	}
 	descriptionText = $pDesc.text().match(/^[^\n]+/)[0];
@@ -843,22 +843,22 @@ function scrapeSysSnippet() {
 	procFuncName = 	$('title').text().trim().toUpperCase();
 	procFuncName = procFuncName.match(/^\w+/)[0];
 	if(!procFuncName) {
-		console.log('-error- could not scrape sys function name');
+		console.log('-error- could not scrape standard function name');
 	}
 
 	console.log('scraping', procFuncName);
 
 
-	if(!allSysFuncs['SYS'][procFuncName]) {
-		console.log(procFuncName, 'is not sys function from techonthenet, skipping');
+	if(!allStandardFuncs['STANDARD'][procFuncName]) {
+		console.log(procFuncName, 'is not standard function from techonthenet, skipping');
 		nextUrl = scrapeNextUrlFromNextButton();
-		setNextSysFunctionScrapeMode('desc');
+		setNextStandardFunctionScrapeMode('desc');
 		return;
 	}
 
-	allSysFuncs['SYS'][procFuncName].packageName = 'SYS';
-	allSysFuncs['SYS'][procFuncName].procFuncName = procFuncName;
-	allSysFuncs['SYS'][procFuncName].descriptionText = descriptionText;
+	allStandardFuncs['STANDARD'][procFuncName].packageName = 'STANDARD';
+	allStandardFuncs['STANDARD'][procFuncName].procFuncName = procFuncName;
+	allStandardFuncs['STANDARD'][procFuncName].descriptionText = descriptionText;
 
 	//Scrape the Url as the second node after the first img
 	let img = $('img')[0];
@@ -866,59 +866,59 @@ function scrapeSysSnippet() {
 	if(!$(a).length) {
 		console.log('-Error- finding syntax anchor item')
 		nextUrl = scrapeNextUrlFromNextButton();
-		setNextSysFunctionScrapeMode('desc');
+		setNextStandardFunctionScrapeMode('desc');
 	}
 	else if($(a).prop('tagName') != 'A'){
 		console.log('-Error- finding syntax anchor item, or resolving tagName');
 		nextUrl = scrapeNextUrlFromNextButton();
-		setNextSysFunctionScrapeMode('desc');
+		setNextStandardFunctionScrapeMode('desc');
 	}
 	else if($(a).prop('href').indexOf('img_text') != 0) {
 		console.log('-Error- finding syntax anchor item, prefix does not begin with img_text');
 		nextUrl = scrapeNextUrlFromNextButton();
-		setNextSysFunctionScrapeMode('desc');
+		setNextStandardFunctionScrapeMode('desc');
 
 	}
 	else {
 		nextUrl =	$(a).prop('href');
-		setNextSysFunctionScrapeMode('syntax');
+		setNextStandardFunctionScrapeMode('syntax');
 	}
 
 	return;
 }
 
 
-function setNextSysFunctionScrapeMode(mode) {
+function setNextStandardFunctionScrapeMode(mode) {
 	if(mode == 'syntax') {
-		nextUrlAfterSysFunctionImageTextIsScraped = scrapeNextUrlFromNextButton();
-		isScrapingSysFunctionImageText = true;
+		nextUrlAfterStandardFunctionImageTextIsScraped = scrapeNextUrlFromNextButton();
+		isScrapingStandardFunctionImageText = true;
 	}
 	else if(mode == 'desc') {
-		isScrapingSysFunctionImageText = false;
+		isScrapingStandardFunctionImageText = false;
 	} else {
-		console.log('-Error- in call setNextSysFunctionScrapeMode')
+		console.log('-Error- in call setNextStandardFunctionScrapeMode')
 	}
 }
 
-//ASSUMPTION: nextUrlAfterSysFunctionImageTextIsScraped is the current URL
-function scrapeSysSnippetSyntax() {
+//ASSUMPTION: nextUrlAfterStandardFunctionImageTextIsScraped is the current URL
+function scrapeStandardSnippetSyntax() {
 	let procFuncName = $('pre').text().trim().match(/^\w+/);
 
 	if(!procFuncName) {
-		console.log('-Error- Could not scrape function name for syntax for sys function');
+		console.log('-Error- Could not scrape function name for syntax for standard function');
 	} else {
 		$('pre').text().trim();
 
 		let bodyFullText  = $('pre').text().trim();
 		if(!bodyFullText) {
-			console.log('-Error- Could not scrape syntax for sys function');
+			console.log('-Error- Could not scrape syntax for standard function');
 			return;
 		}
 
 		let bodyNoDefault = bodyFullText.replace(/^\w+/,'').trim();
 
-		allSysFuncs['SYS'][procFuncName].bodyNoDefault = bodyNoDefault;
-		allSysFuncs['SYS'][procFuncName].bodyFullText = bodyFullText;
+		allStandardFuncs['STANDARD'][procFuncName].bodyNoDefault = bodyNoDefault;
+		allStandardFuncs['STANDARD'][procFuncName].bodyFullText = bodyFullText;
 
 		console.log('scraped ' + procFuncName + ' syntax');
 
