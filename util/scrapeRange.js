@@ -782,8 +782,8 @@ function scrapeAllStandardFuncNamesAndUrls(html) {
 				packageName: 'STANDARD',
 				procFuncName: funcName,
 				url: url,
-				bodyNoDefault: 'SQLERRM',
-				bodyFullText: 'SQLERRM'
+				bodyNoDefault: '',
+				bodyFullText: ''
 			};
 		}
 		else if(funcName == 'SQLCODE') {
@@ -792,8 +792,8 @@ function scrapeAllStandardFuncNamesAndUrls(html) {
 				packageName: 'STANDARD',
 				procFuncName: funcName,
 				url: url,
-				bodyNoDefault: 'SQLCODE',
-				bodyFullText: 'SQLCODE'
+				bodyNoDefault: '',
+				bodyFullText: ''
 			};
 		}
 		else if(!funcName) {
