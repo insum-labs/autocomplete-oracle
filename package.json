@@ -1,6 +1,6 @@
 {
   "name": "autocomplete-oracle",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Code completions for Oracle PL/SQL",
   "main": "./lib/main.js",
   "license": "MIT",
