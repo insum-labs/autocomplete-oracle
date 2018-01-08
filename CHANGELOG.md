@@ -1,3 +1,6 @@
+## 1.3.1
+ * Removed excessive keywords. Keywords now come from https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/reservewords.htm
+
 ## 1.3.0
 
 * Updated the readme to include a demo of the new features since 1.0.0
